@@ -113,6 +113,8 @@ $INCLUDE us-subdomain.sub
 ```
 [Source](http://www.zytrax.com/books/dns/ch9/subdomain.html)
 
+# Good luck.
+
 
 
 
