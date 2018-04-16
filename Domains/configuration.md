@@ -111,7 +111,7 @@ bill          IN      A      192.168.0.5
 $INCLUDE us-subdomain.sub
 ; other subdomain definitions as required 
 ```
-![Source](http://www.zytrax.com/books/dns/ch9/subdomain.html)
+[Source](http://www.zytrax.com/books/dns/ch9/subdomain.html)
 
 # Good luck.
 
