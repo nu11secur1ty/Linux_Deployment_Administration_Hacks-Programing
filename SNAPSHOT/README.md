@@ -50,6 +50,7 @@ our $tmp = `rsync -a /tmp/ '$host:'/root/snaper/tmp/`;
 our $usr = `rsync -a /usr/ '$host:'/root/snaper/usr/`;
 our $var = `rsync -a /var/ '$host:'/root/snaper/`;
 ```
+- 2
 # In the second part of the program, you have to change your distro "DIRS" if they are different from this what is in the program.
 # Example for varible "$srv":
 ```
@@ -65,5 +66,9 @@ our $srv = `rsync -a /srv/ '$host:'/root/snaper/srv/`;
 ```bash 
 /srv/www/htdocs
 ```
+- 3
 # So you have to set up the program to use your distro!
+
+------------------------------------------------------------------------------------------------------------------------------
+
 # Good luck, friends ;)
