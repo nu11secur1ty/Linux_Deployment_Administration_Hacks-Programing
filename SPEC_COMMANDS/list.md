@@ -4,3 +4,9 @@ ps aufx | more
 ps axlwwf 
 ```
 
+# Print all showing started modules in Linux:
+```
+lsmod
+```
+
+
