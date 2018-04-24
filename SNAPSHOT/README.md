@@ -25,6 +25,7 @@ our $create = `ssh '$ssh_host' mkdir /root/snaper/{bin,boot,usr,var,tmp,sys,srv,
   print "Type your host or IP to send the backup there, example: 192.168.1.1\n";
 my $host = <STDIN>;
 
+### Second Part
 
 our $bin = `rsync -a /bin/ '$host:'/root/snaper/bin/`;
 our $boot = `rsync -a /boot/ '$host:'/root/snaper/boot/`;
@@ -46,5 +47,8 @@ our $tmp = `rsync -a /tmp/ '$host:'/root/snaper/tmp/`;
 our $usr = `rsync -a /usr/ '$host:'/root/snaper/usr/`;
 our $var = `rsync -a /var/ '$host:'/root/snaper/`;
 ```
+# In the seconpart you have to change your distro "DIRS" if they are different of this what is in the program.
+# Example:
+
 
 
