@@ -75,3 +75,7 @@ On_IPurple='\033[0;105m'  # Purple
 On_ICyan='\033[0;106m'    # Cyan
 On_IWhite='\033[0;107m'   # White
 ```
+# syntax
+```bash
+echo -e "\e[00;32mGreen\e[00m"\
+```
