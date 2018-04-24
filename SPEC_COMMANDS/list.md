@@ -16,7 +16,7 @@ netstat -np | grep -v ^unix
 ```bash
 df -h
 ```
-# Read size of file:
+# Read size of file and folder:
 ```bash
 du -h /tmp/
 ```
