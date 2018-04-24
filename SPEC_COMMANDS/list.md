@@ -1,9 +1,4 @@
-# Check for all hidden starting modules and processes.
-```bash
-pstree -a -u -p | grep .* 
+# Print all process tree and their children:
 ```
-# Print a process tree using ps
-```
-ps -ejH
-ps axjf
+ps aufx | more
 ```
