@@ -2,3 +2,8 @@
 ```bash
 pstree -a -u -p | grep .* 
 ```
+# Print a process tree using ps
+```
+ps -ejH
+ps axjf
+```
