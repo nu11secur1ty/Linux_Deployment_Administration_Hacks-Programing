@@ -13,7 +13,7 @@ our $create = `ssh '$ssh_host' mkdir /root/snaper/{bin,boot,usr,var,tmp,sys,srv,
   print "Type your host or IP to send the backup there, example: 192.168.1.1\n";
 my $host = <STDIN>;
 
-
+### Second Part
 our $bin = `rsync -a /bin/ '$host:'/root/snaper/bin/`;
 our $boot = `rsync -a /boot/ '$host:'/root/snaper/boot/`;
 our $dev = `rsync -a /dev/ '$host:'/root/snaper/dev/`;
