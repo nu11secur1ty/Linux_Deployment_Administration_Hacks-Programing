@@ -77,5 +77,9 @@ On_IWhite='\033[0;107m'   # White
 ```
 # syntax
 ```bash
-echo -e "\e[00;32mGreen\e[00m"\
+echo -e "\e[00;32mGreen\e[00m"
+```
+# Output 
+```green
+Green
 ```
