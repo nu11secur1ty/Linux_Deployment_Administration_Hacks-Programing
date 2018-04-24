@@ -8,5 +8,8 @@ ps axlwwf
 ```
 lsmod
 ```
-
+# Which program(s) are generating the traffic
+```
+netstat -np | grep -v ^unix
+```
 
