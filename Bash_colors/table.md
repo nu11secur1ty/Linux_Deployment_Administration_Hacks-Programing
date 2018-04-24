@@ -80,6 +80,6 @@ On_IWhite='\033[0;107m'   # White
 echo -e "\e[00;32mGreen\e[00m"
 ```
 # Output 
-```green
+```ruby
 Green
 ```
