@@ -47,8 +47,20 @@ our $tmp = `rsync -a /tmp/ '$host:'/root/snaper/tmp/`;
 our $usr = `rsync -a /usr/ '$host:'/root/snaper/usr/`;
 our $var = `rsync -a /var/ '$host:'/root/snaper/`;
 ```
-# In the seconpart you have to change your distro "DIRS" if they are different of this what is in the program.
-# Example:
-
-
-
+# In the second part of the program, you have to change your distro "DIRS" if they are different from this what is in the program.
+# Example for varible "$srv":
+```
+our $srv = `rsync -a /srv/ '$host:'/root/snaper/srv/`;
+```
+# In most of the Linux distros the "srv" dir is missing, because the Apache2 web server is using "var" dir
+# for pattern directory, example: in Ubuntu or Debin is:
+```bash
+/var/www/htdocs/
+/var/www/html/
+```
+# In SUSE is:
+```bash 
+/srv/www/htdocs
+```
+# So you have to set up the program to use your distro!
+# Good luck, friends ;)
