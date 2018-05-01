@@ -1,0 +1,21 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>openSUSE:Leap:15.0</name>
+        <summary>openSUSE Leap 15.0</summary>
+        <description></description>
+        <url>http://download.opensuse.org/distribution/leap/15.0/repo/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>pulseaudio</name>
+        <summary>A Networked Sound Server</summary>
+        <description>pulseaudio is a networked sound server for Linux, other Unix like
+operating systems and Microsoft Windows. It is intended to be an
+improved drop-in replacement for the Enlightened Sound Daemon (ESOUND).</description>
+      </item>
+    </software>
+  </group>
+</metapackage>
