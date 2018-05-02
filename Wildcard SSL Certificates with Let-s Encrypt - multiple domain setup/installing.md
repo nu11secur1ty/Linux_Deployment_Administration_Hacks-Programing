@@ -9,7 +9,7 @@ $ sudo ./certbot-auto
 # In my case, I own the domain tashaci.com:
 
 ```bash
-sudo ./certbot-auto certonly --server https://acme-v02.api.letsencrypt.org/directory --manual --preferred-challenges dns -d *.tashaci.com -d *.vutre.tashaci.com
+./certbot-auto certonly --server https://acme-v02.api.letsencrypt.org/directory --manual --preferred-challenges dns -d *.tashaci.com -d *.vutre.tashaci.com
 ```
 # An important parameter to notice is --server https://acme-v02.api.letsencrypt.org/directory, which will instruct the certbot client to use v2 of the Let's Encrypt API (we need that for wildcard certs). Also notice the two wildcard domains.
 
