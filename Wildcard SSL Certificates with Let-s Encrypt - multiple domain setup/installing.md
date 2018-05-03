@@ -30,8 +30,13 @@ Before continuing, verify the record is deployed.
 Press Enter to Continue
 ```
 # How you deploy this TXT record will depend on (where your domain is registered). Once you have completed the TXT record, you should verify that it is working using nslookup:
+# EXAMPLE:
 
-# Check
+- Just head to your dns control panel and add these records, which should look like this.
+
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Wildcard%20SSL%20Certificates%20with%20Let-s%20Encrypt%20-%20multiple%20domain%20setup/shot/image.png)
+
+# Check if everything is ok:
 ```bash
 $ nslookup -type=TXT _acme-challenge.vutre.tashaci.com
  
