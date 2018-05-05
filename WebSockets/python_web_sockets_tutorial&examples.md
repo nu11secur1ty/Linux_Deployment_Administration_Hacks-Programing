@@ -2,7 +2,7 @@
 
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/WebSockets/maxresdefault.jpg)
 
-# Warning
+# Warning!
 ```txt
 This documentation is written for Python ≥ 3.5. If you’re using Python 3.4, you will have to adapt the code samples.
 ```
