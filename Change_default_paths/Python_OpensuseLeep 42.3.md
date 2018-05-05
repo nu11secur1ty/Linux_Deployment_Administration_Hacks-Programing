@@ -19,7 +19,7 @@ alias python='/usr/bin/python3.4'
 ```
 # Change permanent:
 ```bash
-sudo mv /usr/bin/python /root/
+sudo mv /usr/bin/python /root/.python
 sudo ln -s /usr/bin/python3.4 /usr/bin/python
 ```
 # Check
