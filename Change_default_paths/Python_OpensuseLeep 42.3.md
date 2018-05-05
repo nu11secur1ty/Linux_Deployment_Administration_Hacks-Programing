@@ -13,4 +13,21 @@ $ ls /usr/bin/python*
 $ python --version
 Python 2.7.8
 ```
+# Change temporary:
+```bash
+alias python='/usr/bin/python3.4'
+```
+# Change permanet:
+```bash
+sudo rm /usr/bin/python
+sudo ln -s /usr/bin/python3.4 /usr/bin/python
+```
+# Check
+```bash
+python --version
+```
+# List avalible:
+```bash
+ls /usr/bin/ | grep python
+```
 
