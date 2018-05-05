@@ -17,7 +17,7 @@ Python 2.7.8
 ```bash
 alias python='/usr/bin/python3.4'
 ```
-# Change permanet:
+# Change permanent:
 ```bash
 sudo rm /usr/bin/python
 sudo ln -s /usr/bin/python3.4 /usr/bin/python
@@ -26,8 +26,24 @@ sudo ln -s /usr/bin/python3.4 /usr/bin/python
 ```bash
 python --version
 ```
-# List avalible:
+# Check for available:
 ```bash
 ls /usr/bin/ | grep python
 ```
-
+- Output, must be:
+```bash
+mod_python
+python
+python-config
+python2
+python2-config
+python2.7
+python2.7-config
+python3
+python3-config
+python3.4
+python3.4-config
+python3.4m
+python3.4m-config
+```
+# Good luck ;)
