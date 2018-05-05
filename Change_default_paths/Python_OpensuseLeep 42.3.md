@@ -26,6 +26,11 @@ sudo ln -s /usr/bin/python3.4 /usr/bin/python
 ```bash
 python --version
 ```
+- Output, must be:)
+```bash
+Python 3.4.6
+```
+
 # Check for available:
 ```bash
 ls /usr/bin/ | grep python
