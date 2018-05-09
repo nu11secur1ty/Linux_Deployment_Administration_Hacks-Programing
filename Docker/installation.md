@@ -13,6 +13,11 @@ Insert the copied URL from the last step in your shell. The ```DIST``` placehold
 ```bash
 sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder/<DIST>
 ```
+# The command must be:
+```bash
+zypper ar -f http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder/openSUSE_Tumbleweed/ gashnik
+```
+
 # Install KIWI:
 # Note:
 
