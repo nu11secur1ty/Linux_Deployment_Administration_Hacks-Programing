@@ -18,4 +18,10 @@ Virtualization
 ```
 repository to your list:
 
+```bash
+zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/<DIST>
+```
 
+- where the placeholder <DIST> is the preferred distribution.
+
+- Install umoci and skopeo tools
