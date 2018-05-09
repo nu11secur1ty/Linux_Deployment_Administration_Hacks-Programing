@@ -12,7 +12,7 @@ Right-click on the link of your preferred operating system and copy the URL. In 
 Insert the copied URL from the last step in your shell. The ```DIST``` placeholder contains the respective distribution. Use zypper ar to add it to your list of repositories:
 
 ```bash
-sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder/<DIST>
+zypper ar -f http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder/<DIST>
 ```
 # The command must be:
 ```bash
@@ -82,7 +82,7 @@ zypper in umoci skopeo
 - Build the image with KIWI:
 
 ```bash
-$ sudo kiwi-ng --type docker system build --description kiwi-descriptions/suse/x86_64/suse-tumbleweed-docker --target-dir /your/image
+kiwi-ng --type docker system build --description kiwi-descriptions/suse/x86_64/suse-tumbleweed-docker --target-dir /your/image
 ```
 - Test the Docker image.<i>First load the new image</i>:
 
