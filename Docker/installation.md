@@ -55,6 +55,6 @@ docker run -it opensuse:42.2 /bin/bash
 ```
 # Output must be:
 
-
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Docker/Screenshot_20180509_131800.png)
 
 
