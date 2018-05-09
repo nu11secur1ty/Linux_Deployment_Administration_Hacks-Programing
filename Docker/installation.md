@@ -55,6 +55,33 @@ docker run -it opensuse:42.2 /bin/bash
 ```
 # Output must be:
 
-![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Docker/Screenshot_20180509_131800.png)
+```bash
+bash-4.3# cat /etc/*release
+openSUSE 42.2 (x86_64)
+VERSION = 42.2
+CODENAME = Malachite
+# /etc/SuSE-release is deprecated and will be removed in the future, use /etc/os-release instead
+NAME="openSUSE Leap"
+VERSION="42.2"
+ID=opensuse
+ID_LIKE="suse"
+VERSION_ID="42.2"
+PRETTY_NAME="openSUSE Leap 42.2"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:42.2"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+bash-4.3# 
 
+
+
+
+
+
+
+
+```
+
+
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Docker/Screenshot_20180509_131800.png)
 
