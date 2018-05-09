@@ -8,7 +8,30 @@ Packages for the new KIWI version are provided at the openSUSE buildservice.
 Open the [URL](http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder) in your browser.
 Right-click on the link of your preferred operating system and copy the URL. In Firefox it is the menu Copy link address.
 
-Insert the copied URL from the last step in your shell. The DIST placeholder contains the respective distribution. Use zypper ar to add it to your list of repositories:
+Insert the copied URL from the last step in your shell. The ```DIST``` placeholder contains the respective distribution. Use zypper ar to add it to your list of repositories:
+
+```bash
+sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder/<DIST>
+```
+# Install KIWI:
+# Note:
+
+Multipython packages
+
+This version of KIWI is provided for python 2 and python 3 versions. The following information is based on the installation of the python3-kiwi package
+
+```bash
+zypper in python3-kiwi
+```
+# Example Appliance Descriptions:
+
+For use with the next generation KIWI there is also a GitHub project hosting example appliance descriptions. Users who need an example to start with should checkout the project as follows:
+
+```bash
+git clone https://github.com/SUSE/kiwi-descriptions
+```
+
+------------------------------------------------------------------------------------------------------------------
 
 
 # Build a Docker Container Image using KIWI:
