@@ -1,8 +1,8 @@
 # Installation of KIWI:
-![(https://suse.github.io/kiwi/installation.html)](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Docker/kiwi-logo.png)
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Docker/kiwi-logo.png)
 
 
-KIWI can be installed with different methods. For this guide, only the installation as a packages through a package manager is described.
+- KIWI can be installed with different methods. For this guide, only the installation as a packages through a package manager is described.
 
 Packages for the new KIWI version are provided at the openSUSE buildservice.
 - To install KIWI, do:
