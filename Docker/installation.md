@@ -21,3 +21,7 @@ zypper ar -f http://download.opensuse.org/repositories/Virtualization:/container
 - where the placeholder ```<DIST>``` is the preferred distribution.
 
 - Install umoci and skopeo tools
+
+```bash
+zypper in umoci skopeo
+```
