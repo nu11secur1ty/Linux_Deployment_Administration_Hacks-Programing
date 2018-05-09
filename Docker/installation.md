@@ -19,7 +19,7 @@ zypper ar -f http://download.opensuse.org/repositories/Virtualization:/container
 ```
 # NOTE: The path of the command must be:
 ```bash
-zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Tumbleweed/
+zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Tumbleweed/ tupunger
 ```
 - WARNING: You must update your virtual machine:
 ```bash
