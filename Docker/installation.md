@@ -43,7 +43,18 @@ zypper in umoci skopeo
 $ sudo kiwi-ng --type docker system build --description kiwi-descriptions/suse/x86_64/suse-tumbleweed-docker --target-dir /your/image
 ```
 - Test the Docker image.
-<i>First load the new image<i>:
+   <i>First load the new image<i>:
+
+```bash 
+docker load -i openSUSE-Tumbleweed-container-image.x86_64-1.0.4.docker.tar.xz
+```
+- then run the loaded image:
+
+```bash
+docker run -it opensuse:42.2 /bin/bash
+```
+# Output must be:
+
 
 
 
