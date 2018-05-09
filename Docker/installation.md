@@ -27,3 +27,6 @@ zypper in umoci skopeo
 ```
 - Build the image with KIWI:
 
+```bash
+$ sudo kiwi-ng --type docker system build --description kiwi-descriptions/suse/x86_64/suse-tumbleweed-docker --target-dir /your/image
+```
