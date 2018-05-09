@@ -4,14 +4,11 @@
 KIWI can be installed with different methods. For this guide, only the installation as a packages through a package manager is described.
 
 Packages for the new KIWI version are provided at the openSUSE buildservice.
+- To install KIWI, do:
+Open the [URL](http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder) in your browser.
+Right-click on the link of your preferred operating system and copy the URL. In Firefox it is the menu Copy link address.
 
-To install KIWI, do:
-
-    Open the URL http://download.opensuse.org/repositories/Virtualization:/Appliances:/Builder in your browser.
-
-    Right-click on the link of your preferred operating system and copy the URL. In Firefox it is the menu Copy link address.
-
-    Insert the copied URL from the last step in your shell. The DIST placeholder contains the respective distribution. Use zypper ar to add it to your list of repositories:
+Insert the copied URL from the last step in your shell. The DIST placeholder contains the respective distribution. Use zypper ar to add it to your list of repositories:
 
 
 # Build a Docker Container Image using KIWI:
