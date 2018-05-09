@@ -12,16 +12,12 @@ The following configuration metadata can be specified:
 
 - Make sure you have checked out the example image descriptions, see Example [Appliance Descriptions.](https://suse.github.io/kiwi/installation.html#example-descriptions)
 
-- Include the 
-```xml
-Virtualization 
-```
-repository to your list:
+- Include the ```xml Virtualization```repository to your list:
 
 ```bash
 zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/<DIST>
 ```
 
-- where the placeholder <DIST> is the preferred distribution.
+- where the placeholder ```xml<DIST>``` is the preferred distribution.
 
 - Install umoci and skopeo tools
