@@ -17,6 +17,18 @@ The following configuration metadata can be specified:
 ```bash
 zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/<DIST>
 ```
+# NOTE: The path of the command must be:
+```bash
+zypper ar -f http://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Tumbleweed/
+```
+- WARNING: You must update your virtual machine:
+```bash
+zypper up
+zypper dup
+```
+
+
+--------------------------------------------------------------------------------------------------
 
 - where the placeholder ```<DIST>``` is the preferred distribution.
 
@@ -30,3 +42,8 @@ zypper in umoci skopeo
 ```bash
 $ sudo kiwi-ng --type docker system build --description kiwi-descriptions/suse/x86_64/suse-tumbleweed-docker --target-dir /your/image
 ```
+- Test the Docker image.
+<i>First load the new image<i>:
+
+
+
