@@ -22,6 +22,6 @@ du -h /tmp/
 ```
 # Grep proccess pid
 ```bash
-pgrep -f <i>program</i>
+pgrep -f _program_
 ```
 # Will update soon... ;)
