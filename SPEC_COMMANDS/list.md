@@ -20,4 +20,8 @@ df -h
 ```bash
 du -h /tmp/
 ```
+# Grep proccess pid
+```bash
+pgrep -f <i>program</i>
+```
 # Will update soon... ;)
