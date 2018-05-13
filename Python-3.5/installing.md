@@ -16,7 +16,7 @@ Use below set of commands to compile Python source code on your system using alt
 zypper -n in gcc make
 ```
 
-- **LinuxMint system.**
+- **Actions**
 ```bash
 cd Python-3.5.5
 sudo ./configure --enable-optimizations
