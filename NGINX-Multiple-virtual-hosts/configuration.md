@@ -55,10 +55,10 @@ server{
 ------------------------------------------------------------------------------------------------------
 
 # Configure nginx.conf
-- add in nginx.conf
+- add in ```include /etc/nginx/sites/*.conf;```nginx.conf
 ```bash
 http {
 include mime.types;
-```include /etc/nginx/sites/*.conf;```
+include /etc/nginx/sites/*.conf;
 default_type application/octet-stream;
 ```
