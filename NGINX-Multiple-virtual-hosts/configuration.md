@@ -62,3 +62,16 @@ include mime.types;
 include /etc/nginx/sites/*.conf;
 default_type application/octet-stream;
 ```
+# Check if configuration is ok:
+```bash 
+nginx -t
+```
+# Add to hosts file:
+```bash 
+127.0.0.1   www.nu11secur1ty.com
+127.0.0.1   www.nu11secur1ty1.com
+```
+# Restart NGINX
+
+# Have fun ;)
+
