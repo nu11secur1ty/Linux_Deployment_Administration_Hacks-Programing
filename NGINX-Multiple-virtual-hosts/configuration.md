@@ -78,5 +78,51 @@ nginx -t
 ```
 # Restart NGINX
 
+------------------------------------------------------------------------------------------------------------
+
+# NGINX PROXY REVERSE:
+
+
+# On host nu11secur1ty1.com
+- add: ```proxy_pass http://www.nu11secur1ty1.com;```
+```bash
+server{
+      listen 80;
+      server_name varbanovski1.com www.varbanovski1.com;
+      location /{
+      root /srv/www/htdocs/sites2/;
+      index index.html;
+       proxy_pass http://www.nu11secur1ty1.com;
+     }
+}
+```
+- To **redirect** on ```www.nu11secur1ty.com```
+
+# On host nu11secur1ty.com
+- add ```proxy_pass http://www.somewhere.com;```
+```bash
+server{
+      listen 80;
+      server_name nu11secur1ty.com www.nu11secur1ty.com;
+      location / {
+      root /srv/www/htdocs/sites1/;
+      index index.html;
+      proxy_pass http://www.somewhere.com;
+     }
+}
+```
+# Restart NGINX
+
+```bash 
+rcnginx restart
+```
+
+# Output:
+
+- When you call ```www.nu11secur1ty1.com``` you will see result from ```www.nu11secur1ty.com```, which is redirected to  ```www.somewhere.com``` 
+Don't worry if you don't understand anything, feel free to write me! ;)
+
+
+
 # Have fun ;)
 
