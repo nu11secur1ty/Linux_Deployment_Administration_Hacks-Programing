@@ -55,7 +55,7 @@ server{
 ------------------------------------------------------------------------------------------------------
 
 # Configure nginx.conf
-- add in ```include /etc/nginx/sites/*.conf;```nginx.conf
+- add ```include /etc/nginx/sites/*.conf;```in to a nginx.conf
 ```bash
 http {
 include mime.types;
