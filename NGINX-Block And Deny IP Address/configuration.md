@@ -1,3 +1,7 @@
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/NGINX-Block%20And%20Deny%20IP%20Address/nginx-openssl-security-1.png)
+
+-------------------------------------------------------------------------------------------------------------------------
+
 # Configure Nginx To Block IPs
 - Edit nginx.conf file, enter (note my nginx path is set to /usr/local/nginx/, replace this according to your setup):
 
