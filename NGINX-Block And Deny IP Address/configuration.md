@@ -53,7 +53,57 @@ location / {
   deny    all;
 }
 ```
-- Granted access to network 192.168.1.0/24 with the exception of the address 192.168.1.1.
+***Granted access to network 192.168.1.0/24 with the exception of the address 192.168.1.1.***
+
+---------------------------------------------------------------------------------------------------
+
+
+# Customize HTTP 403 Forbidden Error Messages
+
+- Create a file called error403.html in default document root, enter:
+
+```bash
+cd /usr/local/nginx/html
+vim error403.html
+```
+- add in error403.html
+
+```html
+<html>
+<head><title>Error 403 - IP Address Blocked</title></head>
+<body>
+Your IP Address is blocked. If you this an error, please contact webmaster with your IP at webmaster@example.com
+</body>
+</html>
+```
+- If SSI enabled, you can display the client IP easily from the html page itself:
+
+```html
+Your IP Address is <!--#echo var="REMOTE_ADDR" --> blocked.
+```
+
+- Save and close the file. Edit your nginx.conf file, enter:
+
+```bash
+vim nginx.conf
+```
+- add in nginx.conf
+
+```bash
+# redirect server error pages to the static page
+  error_page   403  /error403.html;
+  location = /error403.html {
+         root   html;
+ }
+ ```
+ - Save and close the file. Reload nginx, enter:
+ 
+ ```bash 
+ nginx -s reload
+ ```
+ # Have fun ;)
+ 
+ 
 
 
 
