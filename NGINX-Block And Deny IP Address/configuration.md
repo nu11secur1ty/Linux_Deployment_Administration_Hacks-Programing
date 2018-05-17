@@ -37,6 +37,31 @@ configuration file /usr/local/nginx/conf/nginx.conf test is successful
 ```bash
 nginx -s reload
 ```
+-----------------------------------------------------------------------------------------------------
+
+
+# Deny All and Allow Only Intranet/LAN IPs
+
+- Edit config ```blockips.conf```file as follows:
+```bash 
+location / {
+  # block one workstation
+  deny    192.168.1.1;
+  # allow anyone in 192.168.1.0/24
+  allow   192.168.1.0/24;
+  # drop rest of the world 
+  deny    all;
+}
+```
+- Granted access to network 192.168.1.0/24 with the exception of the address 192.168.1.1.
+
+
+
+
+
+
+
+
 
 
 
