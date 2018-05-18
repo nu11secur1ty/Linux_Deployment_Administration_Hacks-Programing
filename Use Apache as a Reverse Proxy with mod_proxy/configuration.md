@@ -16,7 +16,7 @@ systemctl restart apache2
 
 #  Enable Reverse Proxy
 - Reverse Proxying a Single Backend Server
-- Add on to ypur single ```vhost.conf```
+- Add in to ypur single ```vhost.conf```
 ```bash 
 <VirtualHost *:80>
     ProxyPreserveHost On
