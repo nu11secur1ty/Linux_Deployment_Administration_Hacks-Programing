@@ -27,7 +27,6 @@ systemctl restart apache2
 ```
 # To put these changes into effect, restart Apache.
 ```bash
-rcapache2 restart
 systemctl restart apache2
 ```
 
@@ -49,7 +48,6 @@ systemctl restart apache2
 # To put these changes into effect, restart Apache.
 
 ```bash
-rcapache2 restart
 systemctl restart apache2
 ```
 
