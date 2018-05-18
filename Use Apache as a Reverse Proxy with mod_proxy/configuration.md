@@ -18,6 +18,7 @@ systemctl restart apache2
 ```bash
 a2enmod proxy
 a2enmod proxy_http
+a2enmod lbmethod_byrequests
 
 rcapache2 restart
 ```
