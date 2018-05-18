@@ -13,8 +13,12 @@
 ```bash
 systemctl restart apache2
 ```
-- For SuSE
+- For ***SuSE***
+
 ```bash
+a2enmod proxy
+a2enmod proxy_http
+
 rcapache2 restart
 ```
 #  Enable Reverse Proxy
