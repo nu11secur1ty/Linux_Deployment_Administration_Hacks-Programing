@@ -1,4 +1,4 @@
-# Use Apache as a Reverse Proxy with mod_proxy 
+# Use Apache as a Reverse Proxy with mod_proxy on Debian
 
 
 # Enable these four necessary modules for apache2, execute the following commands in succession.
@@ -9,19 +9,11 @@
     sudo a2enmod lbmethod_byrequests
 ```
 # To put these changes into effect, restart Apache.
-- For debian
+
 ```bash
 systemctl restart apache2
 ```
-- For ***SuSE***
 
-```bash
-a2enmod proxy
-a2enmod proxy_http
-a2enmod lbmethod_byrequests
-
-rcapache2 restart
-```
 #  Enable Reverse Proxy
 - Reverse Proxying a Single Backend Server
 - Add on to ypur single ```vhost.conf```
