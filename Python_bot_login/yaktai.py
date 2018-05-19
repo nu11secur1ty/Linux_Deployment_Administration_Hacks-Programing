@@ -15,7 +15,5 @@ def loginBOT(usr, pas):
 
 	btn = br.find_element_by_css_selector("#u_0_5")
 	btn.click()
-
-
 if __name__ == "__main__":
-loginBOT('username or email', 'yourpassword')
+	loginBOT('username or email', 'yourpassword')
