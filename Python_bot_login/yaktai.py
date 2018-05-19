@@ -3,7 +3,7 @@ from selenium import webdriver
 
 def loginBOT(usr, pas):
 	br = webdriver.Firefox()
-	br.get("https://web.facebook.com/")
+	br.get("https://www.example.com")
 
 	user = br.find_element_by_css_selector("#email")
 	user.clear()
