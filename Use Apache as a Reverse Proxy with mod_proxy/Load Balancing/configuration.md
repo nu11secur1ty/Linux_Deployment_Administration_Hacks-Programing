@@ -1,0 +1,41 @@
+Listen 8080
+Listen 8081
+Listen 8082
+Listen 8083
+Listen 8084
+
+
+# Proxy Multiple
+<VirtualHost *:80>
+<Proxy balancer://mycluster>
+    BalancerMember http://127.0.0.1:8080
+    BalancerMember http://127.0.0.1:8081
+</Proxy>
+
+    ProxyPreserveHost On
+
+    ProxyPass / balancer://mycluster/
+    ProxyPassReverse / balancer://mycluster/
+</VirtualHost>
+
+
+
+<VirtualHost *:8080>
+        ServerName www.venvaropt.com
+
+        ServerAdmin venvaropt@localhost
+        DocumentRoot /var/www/venvaropt.com/public_html
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:8081>
+        ServerName 1.venvaropt.com
+
+        ServerAdmin venvaropt@localhost
+        DocumentRoot /var/www/1.venvaropt.com/public_html
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
