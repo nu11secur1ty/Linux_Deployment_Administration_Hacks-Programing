@@ -28,7 +28,7 @@ pgrep -f _program_
 ```bash
 zypper -n in net-tools-deprecated
 ```
-# Network Statistics
+# Network,storage & memory Statistics
 ```bash
 netstat -a
 netstat -tulpn
