@@ -24,4 +24,9 @@ du -h /tmp/
 ```bash
 pgrep -f _program_
 ```
+# Installing net-tool for Open Suse Leap42.3
+```bash
+zypper install net-tools-deprecated
+```
+
 # Will update soon... ;)
