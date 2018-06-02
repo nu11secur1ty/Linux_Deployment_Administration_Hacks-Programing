@@ -43,6 +43,29 @@ iostat
 zypper -n in iptraf
 iptraf
 ```
+- vmstat
+```bash
+vmstat 
+
+Options:
+ -a, --active           active/inactive memory
+ -f, --forks            number of forks since boot
+ -m, --slabs            slabinfo
+ -n, --one-header       do not redisplay header
+ -s, --stats            event counter statistics
+ -d, --disk             disk statistics
+ -D, --disk-sum         summarize disk statistics
+ -p, --partition <dev>  partition specific statistics
+ -S, --unit <char>      define display unit
+ -w, --wide             wide output
+ -C, --full-cache       add further cache lines to main cache
+ -t, --timestamp        show timestamp
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+```
+
+
 # Will update soon... ;)
 
 
