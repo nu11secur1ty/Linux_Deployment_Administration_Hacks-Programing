@@ -26,7 +26,7 @@ pgrep -f _program_
 ```
 # Installing net-tools for Open Suse Leap42.3
 ```bash
-zypper install net-tools-deprecated
+zypper -n in net-tools-deprecated
 ```
 # Network Statistics
 ```bash
@@ -35,12 +35,12 @@ netstat -tulpn
 ```
 - Iostat
 ```bash
-zypper install sysstat
+zypper -n in sysstat
 iostat
 ```
 - iptraf
 ```bash
-zypper in iptraf
+zypper -n in iptraf
 iptraf
 ```
 # Will update soon... ;)
