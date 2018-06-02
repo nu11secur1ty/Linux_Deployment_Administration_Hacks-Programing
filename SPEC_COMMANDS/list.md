@@ -37,6 +37,14 @@ netstat -tulpn
 ```bash
 zypper -n in sysstat
 iostat
+
+
+Usage: iostat [ options ] [ <interval> [ <count> ] ]
+Options are:
+[ -c ] [ -d ] [ -h ] [ -k | -m ] [ -N ] [ -s ] [ -t ] [ -V ] [ -x ] [ -y ] [ -z ]
+[ -j { ID | LABEL | PATH | UUID | ... } ] [ --human ] [ -o JSON ]
+[ [ -H ] -g <group_name> ] [ -p [ <device> [,...] | ALL ] ]
+[ <device> [...] | ALL ]
 ```
 - iptraf
 ```bash
