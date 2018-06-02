@@ -28,5 +28,24 @@ pgrep -f _program_
 ```bash
 zypper install net-tools-deprecated
 ```
-
+# Network Statistics
+```bash
+netstat -a
+netstat -tulpn
+```
+- Iostat
+```bash
+zypper install sysstat
+iostat
+```
+- iptraf
+```bash
+zypper in iptraf
+iptraf
+```
 # Will update soon... ;)
+
+
+
+
+
