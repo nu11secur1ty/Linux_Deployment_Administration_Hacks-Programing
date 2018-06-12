@@ -23,11 +23,13 @@ zypper -n in gcc make
 ```bash
 cd Python-3.5.5
 sudo ./configure --enable-optimizations
+sudo make test
 sudo make install
 sudo make altinstall - Multiple
 ------------------------------
 cd Python-3.6.5
 sudo ./configure --enable-optimizations
+sudo make test
 sudo make install
 sudo make altinstall - Multiple
 
