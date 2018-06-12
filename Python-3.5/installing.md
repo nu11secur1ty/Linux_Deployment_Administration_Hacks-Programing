@@ -2,6 +2,7 @@
 ```bash
 cd /usr/src
 wget https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tgz
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
 ```
 # Now extract the downloaded archive on your system.
 ```bash
