@@ -109,6 +109,17 @@ Options:
  -h, --help     display this help and exit
  -V, --version  output version information and exit
 ```
+---------------------------------------------------------------------------------------------------
+
+# How Long A Process Has Been Running In Linux
+```bash 
+ps -p _your_pid -o etime
+```
+- Not only a single process, we can also display the uptime of all processes using command:
+```bash
+ps -eo pid,comm,lstart,etime,time,args
+```
+
 
 
 # Will update soon... ;)
