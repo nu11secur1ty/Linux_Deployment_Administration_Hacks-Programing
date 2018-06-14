@@ -88,5 +88,23 @@ rcdovecot status
    Active: active (running) since Thu 2018-06-14 17:27:31 EEST; 28min ago
 ```
 
+# Test
+
+```bash 
+telnet localhost smtp
+telnet localhost pop3
+```
+ - to exit you must type
+ ***quit*** 
+ 
+# Output 
+```bash
+cd /your_home/Maildir/new
+ls
+```
+- output
+```txt
+1528985254.V802I844fa7M656132.user  1528986290.V802I844300M466544.user
+```
 
 # Have fun ;)
