@@ -67,5 +67,26 @@ service dovecot start
 rcdovecot start
 ```
 
+# ATTENTION! ***Check if everything is ok!***
+
+```bash
+rcpostfix status
+```
+  - output for postfix
+```xml
+* postfix.service - Postfix Mail Transport Agent
+   Loaded: loaded (/usr/lib/systemd/system/postfix.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2018-06-14 17:27:39 EEST; 26min ago
+```
+```bash
+rcdovecot status
+```
+ - output for dovecot
+```xml
+* dovecot.service - Dovecot IMAP/POP3 email server
+   Loaded: loaded (/usr/lib/systemd/system/dovecot.service; enabled; vendor preset: disabled)
+   Active: active (running) since Thu 2018-06-14 17:27:31 EEST; 28min ago
+```
+
 
 # Have fun ;)
