@@ -6,19 +6,19 @@ zypper install dovecot
 ```
 # Edit Dovecot main configuration file to allow IMAP, POP3 and LMPT protocols. Edit file ***/etc/dovecot/dovecot.conf***
 
-```txt
+```css
 protocols = imap pop3 lmtp
 ```
 
 # Edit Mailbox location for mail users. Edit file ***/etc/dovecot/conf.d/10-mail.conf***
 
-```txt
+```css
 mail_location = maildir:~/Maildir
 ```
 
 # Edit authentication process. Edit file ***/etc/dovecot/conf.d/10-auth.conf***
 
-```txt
+```css
 disable_plaintext_auth = yes
 
 auth_mechanisms = plain login
@@ -26,7 +26,7 @@ auth_mechanisms = plain login
 
 # Edit master process. Add an Postfix Unix Listener in service auth. Edit file ***/etc/dovecot/conf.d/10-master.conf***
 
-```txt
+```css
 service auth {
   ...
   unix_listener /var/spool/postfix/private/auth {
@@ -45,7 +45,7 @@ service auth {
 ```bash
 vim /etc/postfix/main.cf
 ```
-```txt
+```css
 home_mailbox = Maildir/
 inet_interfaces = localhost, 0.0.0.0
 inet_protocols = all
@@ -73,7 +73,7 @@ rcdovecot start
 rcpostfix status
 ```
   - output for postfix
-```txt
+```css
 * postfix.service - Postfix Mail Transport Agent
    Loaded: loaded (/usr/lib/systemd/system/postfix.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2018-06-14 17:27:39 EEST; 26min ago
@@ -82,7 +82,7 @@ rcpostfix status
 rcdovecot status
 ```
  - output for dovecot
-```txt
+```css
 * dovecot.service - Dovecot IMAP/POP3 email server
    Loaded: loaded (/usr/lib/systemd/system/dovecot.service; enabled; vendor preset: disabled)
    Active: active (running) since Thu 2018-06-14 17:27:31 EEST; 28min ago
@@ -103,7 +103,7 @@ cd /your_home/Maildir/new
 ls
 ```
 - output
-```txt
+```css
 1528985254.V802I844fa7M656132.user  1528986290.V802I844300M466544.user
 ```
 
