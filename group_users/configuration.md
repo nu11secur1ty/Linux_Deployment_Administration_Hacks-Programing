@@ -1,4 +1,4 @@
-#chown command
+# chown command
 - chown command changes the user and/or group ownership of for given file. The syntax is:
 
 ```bash
