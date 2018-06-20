@@ -12,7 +12,7 @@ ls -ld /root/
 must be 700
 drwx------ 29 root root 4096 Jun 20 21:58 /root/
 ```
-# And all in .ssh must be...
+# And all in .ssh node must be with this privileges...
 ```bash
 ls -ld /root/.ssh/*
 -rw------- 1 root root 1679 Apr 21 00:05 /root/.ssh/id_rsa
