@@ -32,7 +32,7 @@ Once its parent process gets killed, the zombie will be adopted by the init proc
 
 # Get the Zombie from process list.
 ```bash
-ps aux |grep "defunct"
+ps aux | grep "defunct"
 ```
 #  List the PID of Zombie
 ```bash
