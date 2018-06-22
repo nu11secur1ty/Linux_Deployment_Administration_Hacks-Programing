@@ -1,3 +1,6 @@
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/zombi/tjoOp.jpg)
+
+
 A process is called a zombie process if the process has been completed, but its PID and process entry remains in the Linux process table. A process is removed from the process table when the process is completed, and its parent process reads the completed process' exit status by using the wait() system call. If a parent process fails to call wait() for whatever reason, its child process will be left in the process table, becoming a zombie.
 
 # To find zombie processes on Linux:
