@@ -25,5 +25,26 @@ kill -s SIGCHLD 250
 
 Once its parent process gets killed, the zombie will be adopted by the init process, which is a parent of all processes in Linux. The init process periodically calls wait() to reap any zombie process.
 
+-------------------------------------------------------------------------------------------------------------
 
-# Feel performance with nu11secur1ty ;)
+# Get the Zombie from process list.
+```bash
+ps aux |grep "defunct"
+```
+#  List the PID of Zombie
+```bash
+ps aux | awk '{ print $8 " " $2 }' | grep -w Z
+```
+
+#  find the parent process.
+
+```bash 
+pstree -paul
+```
+# Now you need to kill the parent process
+```bash 
+kill -9 _pid_
+killall -9 _pid_
+```
+
+# Feel with better performance with nu11secur1ty ;)
