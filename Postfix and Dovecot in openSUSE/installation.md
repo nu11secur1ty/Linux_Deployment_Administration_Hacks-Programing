@@ -64,7 +64,7 @@ rcpostfix restart
 
 ```bash
 service dovecot start
-rcdovecot start
+rcdovecot restart
 ```
 
 # ATTENTION! ***Check if everything is ok!***
