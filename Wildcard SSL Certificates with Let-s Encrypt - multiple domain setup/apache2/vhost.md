@@ -9,7 +9,7 @@
     DocumentRoot "/home/tashaci/web/htdocs"
     ServerName tashaci.com
     ServerAlias www.tashaci.com
-    ErrorLog "/home/tashacilog/tashaci_error_log"
+    ErrorLog "/home/tashaci/log/tashaci_error_log"
     CustomLog "/home/tashaci/log/tashaci_access_log" combined
 <Directory "/home/tashaci/web/htdocs">
       #Options All MultiViews               -sec
