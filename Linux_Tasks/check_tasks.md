@@ -1,0 +1,10 @@
+# You can see them and count them ;)
+```ps -e -o s | grep -o 'R' -c
+```
+# To see Linux Tasks:
+
+```top -b -n1 > tasks.log && cat tasks.log | grep Tasks && rm tasks.log
+```
+# Check for zombie pattern
+```pstree | grep _your_proc_name_
+```
