@@ -1,5 +1,5 @@
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Linux_Tasks/Penguin-task.jpg)
-# You can see them and count them ;) - Bonus :)
+# count runnig proc ;) - Bonus :)
 
 ```bash
   ps -e -o s | grep -o 'R' -c
