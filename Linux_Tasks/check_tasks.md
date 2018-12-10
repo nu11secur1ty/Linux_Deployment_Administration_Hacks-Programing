@@ -1,4 +1,4 @@
-[](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Linux_Tasks/Penguin-task.jpg)
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Linux_Tasks/Penguin-task.jpg)
 # You can see them and count them ;) - Bonus :)
 
 ```bash
