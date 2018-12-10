@@ -1,8 +1,12 @@
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Linux_Tasks/Penguin-task.jpg)
-# count runnig proc ;) - Bonus :)
+# count runnig processes - Bonus :)
 
 ```bash
   ps -e -o s | grep -o 'R' -c
+```
+# Check for sleeping processes - Bonus :)
+```bash
+ps -e -o s | grep -o 'S' -c
 ```
 # To see Linux Tasks:
 
