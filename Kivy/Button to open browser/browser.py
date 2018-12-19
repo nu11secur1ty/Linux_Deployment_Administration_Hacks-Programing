@@ -14,7 +14,7 @@ Builder.load_string('''
         padding: root.width*0.1
         Button:
             background_normal: ''
-            background_color:(0.862, 0.078, 0.235, 0.9)
+            background_color:(0, 1, 0, .5)
             text: 'PLAY'
             font_size: '20sp'
             on_press: root.val1()
