@@ -1,4 +1,3 @@
-import kivy
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
@@ -23,7 +22,6 @@ Builder.load_string('''
 
 class MenuScreen(Screen):
     def val1(self):
-        print "i am executed"
         webbrowser.open("http://google.com/")
 
 sm = ScreenManager()
