@@ -40,7 +40,16 @@ vim main.c
 - Add this contend in to a file ***main.c***
 ```C
 #include<stdio.h>
-#include<stdio.h>
+#include<unistd.h>
+int main() {
+        int real = getuid();
+        int euid = geteuid();
+        printf("The REAL UID is: %d\n ",real);
+        printf("The EFFECTIVE UID is: %d\n ",euid);
+}
+```
+
+
 
 
 
