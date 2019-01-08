@@ -48,6 +48,30 @@ int main() {
         printf("The EFFECTIVE UID is: %d\n ",euid);
 }
 ```
+# Create Makefile
+```bash
+vim Makefile
+```
+- Add in to a Makefile
+```C
+all: suid
+suid: main.c
+        gcc -o displayeuid main.c
+install: suid
+        mkdir -p ${RPM_BUILD_ROOT}/usr/bin
+        cp displayeuid ${RPM_BUILD_ROOT}/usr/bin
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
