@@ -1,6 +1,8 @@
 # 
-ls
+# Create RPM-BUILD-Directory
+```
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+```
 ls
 cd rpmbuild/
 ls
