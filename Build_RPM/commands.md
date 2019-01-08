@@ -177,7 +177,25 @@ make install
 %defattr(4755,root,rooti,0755)
 /usr/bin/displayeuid
 ```
+# Create tar.gz Archive
+```bash
+tar -czvf rpmbuild/SOURCES/displayeuid.tar.gz displayeuid-1.0/
+```
+# Building RPM
+```bash
+rpmbuild -ba displayeuid-1.0/displayeuid.spec
+```
+# Install the program from RPM
+```
+sudo rpm -Uvh /home/build/rpmbuild/RPMS/x86_64/displayeuid-1.0-1.x86_64.rpm
+```
+# Uninstall the program:
+```
+sudo zypper remove displayeuid
+```
 
+
+# Have fun with nu11secur1ty ;)
 
 
 
