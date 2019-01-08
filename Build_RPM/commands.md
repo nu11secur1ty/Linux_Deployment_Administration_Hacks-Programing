@@ -1,21 +1,59 @@
 # 
 # Create RPM-BUILD-Directory and Resources
-```
+```bash
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
 # Check for Basic-Devel tools
-```
+```bash
 zypper se -i -t pattern
 ```
 # Create user
-```
+```bash
 useradd -m build
 passwd build
 ```
 # Login with build user
-```
+```bash
 su - build
 ```
+
+# Build rpmmacros
+```bash
+vim .rpmmacros
+```
+- add in to a file:
+```bash
+%_topdir   /home/buld/rpmbuild
+```
+# Create application node
+```bash
+mkdir displayeuid-1.0
+```
+# Navigate to the node
+```bash
+cd displayeuid-1.0
+```
+# Create the program using C 
+```bash
+vim main.c
+```
+- Add this contend in to a file ***main.c***
+```C
+#include<stdio.h>
+#include<stdio.h>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
