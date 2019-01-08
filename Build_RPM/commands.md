@@ -10,7 +10,7 @@ zypper se -i -t pattern
 # Create user
 ```
 useradd -m build
-passwd buil
+passwd build
 ```
 # Login with build user
 ```
