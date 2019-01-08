@@ -162,10 +162,8 @@ A simple demo program that has the SUID bit set and display the REAL user ID
 and the EFFECTIVE UID 
 Authors:
 -------
-     Andrew Mallett
-editor:
--------
      Ventsislav Varbanovski
+
 %prep
 %setup
 
