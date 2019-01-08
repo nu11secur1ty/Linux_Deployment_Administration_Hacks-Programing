@@ -3,15 +3,32 @@
 ```
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
-ls
-cd rpmbuild/
-ls
-ls /usr/src/packages/
-cd
-vim .rpmmacros
-ls
-ls -al
-pwd
+# Check for Basic-Devel tools
+```
+zypper se -i -t pattern
+```
+# Create user
+```
+useradd -m build
+passwd buil
+```
+# Login with build user
+```
+su - build
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 mkdir displayeuid-1.0
 ls
 cd displayeuid-1.0/
