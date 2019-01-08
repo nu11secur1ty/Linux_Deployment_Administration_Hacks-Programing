@@ -1,5 +1,5 @@
 # 
-# Create RPM-BUILD-Directory
+# Create RPM-BUILD-Directory and Resources
 ```
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
