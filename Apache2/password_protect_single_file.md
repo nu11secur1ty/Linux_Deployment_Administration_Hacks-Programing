@@ -3,7 +3,7 @@
 <FilesMatch "your_file.xxx">
   AuthName "Member Only"
   AuthType Basic
-  AuthUserFile /home/username/.htpasswd
+  AuthUserFile /path/pathto/htpassword/.htpasswd
   require valid-user
 </FilesMatch>
 ```
