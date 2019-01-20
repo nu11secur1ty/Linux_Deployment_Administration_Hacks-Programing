@@ -1,5 +1,5 @@
 # 
-# Create RPM-BUILD-Directory and Resources
+# Create RPM-BUILD-Directory and Resources. This program is showing you your hostname and your IP.
 ```bash
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
