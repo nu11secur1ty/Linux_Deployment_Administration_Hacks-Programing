@@ -1,5 +1,5 @@
 # 
-# Create RPM-BUILD-Directory and Resources. This program is showing you your hostname and your IP.
+# Create RPM-BUILD-Directory and Resources 
 ```bash
 mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
@@ -37,7 +37,7 @@ cd displayeuid-1.0
 ```bash
 vim main.c
 ```
-- Add this contend in to a file ***main.c***
+- Add this contend in to a file ***main.c*** ***This program is showing you your hostname and your IP.***
 ```C
 // C program to display hostname 
 // and IP address 
