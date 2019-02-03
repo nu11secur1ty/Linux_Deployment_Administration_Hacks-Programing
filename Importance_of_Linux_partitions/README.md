@@ -6,7 +6,7 @@
 **Important**
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Importance_of_Linux_partitions/alert-attention-circle-exclamation-important-notification-warning-512.png)
 
-**Many new Linux sys admin - users (or Windows admin) create only two partitions** ***/ (root)*** **and** ***swap*** **for entire hard drive. This is really a bad idea. You need to consider the following points while partitioning disk.**
+**Many new Linux sys admins - users (or Windows admin) create only two partitions** ***/ (root)*** **and** ***swap*** **for entire hard drive. This is really a bad idea. You need to consider the following points while partitioning disk.**
 --------------------------------------------------------------------------------------------------
 
 # Purposes for Disk Partitioning
