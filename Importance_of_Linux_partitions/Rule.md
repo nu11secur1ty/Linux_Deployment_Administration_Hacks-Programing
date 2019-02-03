@@ -39,3 +39,25 @@ File systems that need their own partitions
 **If your system are is using from other users**
 
 - Let us assume you have 120 GB SCSI hard disk with / (root) and swap partitions only. One of user (may be internal or external or cracker ) runs something which eats up all your hard disk space (DoS attack). For example, consider following tiny script that user can run in /tmp directory:
+
+
+```bash
+#!/bin/sh
+man bash > $(mktemp)
+$0
+```
+- Anyone can run above script via cron (if allowed), or even with nohup command:
+
+```bash
+$ nohup bad-script &
+```
+The result can be a total disaster as entire file system comes under Denial of Service attack. It will even bypass the disk quota restriction. One of our Jr. Linux sys admin created only two partition. Later poorly written application eats up all space in /var/log/. End result was memo for him (as he did not followed internal docs that has guidelines for partition setup for clients server). Bottom line create the partition on Linux server.
+
+If you do not have a partition schema, than following attacks can take place:
+
+    1. Runaway processes.
+    2. Denial of Service attack against disk space (see above example script).
+    3. Users can download or compile SUID programs in /tmp or even in /home.
+    4. Performance tuning is not possible.
+    5. Mounting /usr as read only not possible to improve security.
+    6. All of this attack can be stopped by adding following option to /etc/fstab file:
