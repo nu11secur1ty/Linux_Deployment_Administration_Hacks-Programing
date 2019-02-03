@@ -76,3 +76,60 @@ If you do not have a partition schema, than following attacks can take place:
     /usr – Set option nodev
     /tmp – Set option nodev, nosuid, noexec option must be enabled
 ```
+# For example entry in /etc/fstabe for /home should read as follows:
+
+```css
+/dev/sda1  /home          ext3    defaults,nosuid,nodev 1 2
+```
+
+- Here is mount command output from one of my OpenBSD production server:
+
+```css
+/dev/wd0a on / type ffs (local)
+/dev/wd1a on /home type ffs (local, nodev, nosuid, with quotas)
+/dev/wd0d on /root type ffs (local)
+/dev/wd0e on /usr type ffs (local, nodev)
+/dev/wd0f on /tmp type ffs (local, nodev)
+/dev/wd0h on /var type ffs (local, nodev, nosuid)
+/dev/wd0g on /var/log type ffs (local, nodev)
+```
+
+
+# How do I obtain information about partitions?
+
+- There are several ways that information about partitions can be obtained on Linux / UNIX like operating systems.
+
+***List partitions:***
+```
+fdisk -l
+```
+***Report file system disk space usage:***
+```
+df -h
+```
+- OR
+```
+df -k
+```
+**Display partition mount options including mount points**
+
+```bash
+/dev/sda2 on / type ext3 (rw,relatime,errors=remount-ro)
+tmpfs on /lib/init/rw type tmpfs (rw,nosuid,mode=0755)
+/proc on /proc type proc (rw,noexec,nosuid,nodev)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+varrun on /var/run type tmpfs (rw,nosuid,mode=0755)
+varlock on /var/lock type tmpfs (rw,noexec,nosuid,nodev,mode=1777)
+udev on /dev type tmpfs (rw,mode=0755)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=620)
+fusectl on /sys/fs/fuse/connections type fusectl (rw)
+/dev/sda1 on /media/sda1 type fuseblk (rw,nosuid,nodev,allow_other,default_permissions,blksize=4096)
+/dev/sda5 on /share type fuseblk (rw,nosuid,nodev,allow_other,default_permissions,blksize=4096)
+/dev/sdb2 on /disk1p2 type ext3 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw)
+debugfs on /sys/kernel/debug type debugfs (rw)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfs-fuse-daemon on /home/vivek/.gvfs type fuse.gvfs-fuse-daemon (rw,nosuid,nodev,user=vivek)
+```
+
