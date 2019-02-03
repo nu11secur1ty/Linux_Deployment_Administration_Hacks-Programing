@@ -16,3 +16,10 @@ An operating system like Windows / Linux can be installed on a single, unpartiti
    - Testing – Boot multiple operating systems such as Linux, Windows and FreeBSD from a single hard disk.
 
 File systems that need their own partitions
+
+# Partition	Purpose
+/usr	   - This is where most executable binaries, the kernel source tree and much documentation go.
+/var	   - This is where spool directories such as those for mail and printing go. In addition, it contains the error log directory.
+/tmp	   - This is where most temporary data files stored by apps.
+/boot	   - This is where your kernel images and boot loader configuration go.
+/home	   - This is where users home directories go.
