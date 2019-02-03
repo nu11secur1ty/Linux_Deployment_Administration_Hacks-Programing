@@ -1,3 +1,6 @@
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Importance_of_Linux_partitions/GrUbA.png)
+
+
 # Disk partitioning is the creation of separate divisions of a hard disk drive using partition editors such as fdisk. Once a disk is divided into several partitions, directories and files of different categories may be stored in different partitions.
 
 ***Important***
