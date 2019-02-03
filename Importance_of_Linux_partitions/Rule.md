@@ -20,13 +20,14 @@ File systems that need their own partitions
 # Partition	Purpose
 ------------------------------------------------------------------------------------------------------
 
-/usr	      ***This is where most executable binaries, the kernel source tree and much documentation go.***
+/usr	  -    ***This is where most executable binaries, the kernel source tree and much documentation go.***
 -----------------------------------------------------------------------------------------------------
 
-/var	      ***This is where spool directories such as those for mail and printing go. In addition, it contains the error log directory.***
+/var	  -    ***This is where spool directories such as those for mail and printing go. 
+                In addition, it contains the error log directory.***
 ------------------------------------------------------------------------------------------------------
 
-/tmp	      ***This is where most temporary data files stored by apps.***
+/tmp	 -     ***This is where most temporary data files stored by apps.***
 ------------------------------------------------------------------------------------------------------
 
 /boot	   -   ***This is where your kernel images and boot loader configuration go.***
