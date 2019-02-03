@@ -61,3 +61,18 @@ If you do not have a partition schema, than following attacks can take place:
     4. Performance tuning is not possible.
     5. Mounting /usr as read only not possible to improve security.
     6. All of this attack can be stopped by adding following option to /etc/fstab file:
+    
+- nosuid – Do not set SUID/SGID access on this partition
+- nodev – Do not character or special devices on this partition
+- noexec – Do not set execution of any binaries on this partition
+- ro – Mount file system as readonly
+- quota – Enable disk quota
+
+---------------------------------------------------------------------------------------------------
+# Please note that above options can be set only, if you have a separate partition. Make sure you create a partition as above with special option set on each partition:
+
+```css
+    /home – Set option nosuid, and nodev with diskquota option
+    /usr – Set option nodev
+    /tmp – Set option nodev, nosuid, noexec option must be enabled
+```
