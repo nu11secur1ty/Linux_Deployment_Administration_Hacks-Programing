@@ -133,3 +133,21 @@ binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev
 gvfs-fuse-daemon on /home/vivek/.gvfs type fuse.gvfs-fuse-daemon (rw,nosuid,nodev,user=vivek)
 ```
 
+# Display / edit file system configuration options
+```
+less /etc/fstab
+```
+- or
+```
+vim /etc/fstab
+```
+- Quickly remount /usr in ro mode
+```
+mount -o remount, ro /usr
+```
+- Quickly mount all file system configured in /etc/fstab
+```
+mount -a
+```
+
+
