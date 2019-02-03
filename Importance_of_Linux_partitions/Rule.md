@@ -29,8 +29,8 @@ File systems that need their own partitions
 /tmp	      ***This is where most temporary data files stored by apps.***
 ------------------------------------------------------------------------------------------------------
 
-/boot	      ***This is where your kernel images and boot loader configuration go.***
+/boot	   -   ***This is where your kernel images and boot loader configuration go.***
 ------------------------------------------------------------------------------------------------------
 
-/home	      ***This is where users home directories go.***
+/home	  -    ***This is where users home directories go.***
 ------------------------------------------------------------------------------------------------------
