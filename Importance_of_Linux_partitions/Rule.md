@@ -36,5 +36,6 @@ File systems that need their own partitions
 /home	  -    ***This is where users home directories go.***
 ------------------------------------------------------------------------------------------------------
 
+**If your system are is using from other users**
 
-# Let us assume you have 120 GB SCSI hard disk with / (root) and swap partitions only. One of user (may be internal or external or cracker ) runs something which eats up all your hard disk space (DoS attack). For example, consider following tiny script that user can run in /tmp directory:
+- Let us assume you have 120 GB SCSI hard disk with / (root) and swap partitions only. One of user (may be internal or external or cracker ) runs something which eats up all your hard disk space (DoS attack). For example, consider following tiny script that user can run in /tmp directory:
