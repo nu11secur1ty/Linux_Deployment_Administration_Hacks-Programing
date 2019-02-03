@@ -57,7 +57,7 @@ $0
 ```bash
 $ nohup bad-script &
 ```
-The result can be a total disaster as entire file system comes under Denial of Service attack. It will even bypass the disk quota restriction. One of our Jr. Linux sys admin created only two partition. Later poorly written application eats up all space in /var/log/. End result was memo for him (as he did not followed internal docs that has guidelines for partition setup for clients server). Bottom line create the partition on Linux server.
+The result can be a total disaster as entire file system comes under Denial of Service attack. It will even bypass the disk quota restriction. One of our Jr. Linux sys admin - user created only two partition. Later poorly written application eats up all space in /var/log/. End result was memo for him (as he did not followed internal docs that has guidelines for partition setup for clients server). Bottom line create the partition on Linux server.
 
 If you do not have a partition schema, than following attacks can take place:
 
