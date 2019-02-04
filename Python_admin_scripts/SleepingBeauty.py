@@ -8,7 +8,7 @@ from email.MIMEBase import MIMEBase
 from email import encoders
 import os
 
-##NOTE and WARNING!
+##WARNING!
 # This part is very IMPORTANT for what services you use and what command you must use to check of your services 
 # if they working properly!
 # ---------------------------------------------------------------------------------------- #
