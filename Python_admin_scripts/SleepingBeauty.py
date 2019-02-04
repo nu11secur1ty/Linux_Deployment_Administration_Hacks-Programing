@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# by Ventsislav Varbanovski
+# by Ventsislav Varbanovski @nu11secur1ty
 
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
