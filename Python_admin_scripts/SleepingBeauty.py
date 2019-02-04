@@ -8,31 +8,31 @@ from email import encoders
 import os
 
 # Operations:
-os.system("echo -e 'Report Status of the PROD Server' > /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Report Status of the PROD Server' > /path/to/your/attac.txt")
 
-os.system("echo -e 'Sleeping Proc\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps -e -o s | grep -o 'S' -c >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Sleeping Proc\n-----------------------' >> /path/to/your/attac.txt")
+os.system("ps -e -o s | grep -o 'S' -c >> /path/to/your/attac.txt")
 
-os.system("echo -e 'Disk status\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("df -h >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Disk status\n-----------------------' >> /path/to/your/attac.txt")
+os.system("df -h >> /path/to/your/attac.txt")
 
-os.system("echo -e 'Running Proc\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps -e -o s | grep -o 'R' -c >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Running Proc\n------------------------' >> /path/to/your/attac.txt")
+os.system("ps -e -o s | grep -o 'R' -c >> /path/to/your/attac.txt")
 
-os.system("echo -e 'CPU average\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'CPU average\n------------------------' >> /path/to/your/attac.txt")
 os.system("w >> /root/.scripts/mail/pyproc/report_proc.txt")
 
-os.system("echo -e 'Selenium-Sleep\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps aux | grep -i chromedriver -c >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Selenium-Sleep\n------------------------' >> /path/to/your/attac.txt")
+os.system("ps aux | grep -i chromedriver -c >> /path/to/your/attac.txt")
 
-os.system("echo -e 'Chrom-Sleep\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps aux | grep -i chrom -c >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Chrom-Sleep\n------------------------' >> /path/to/your/attac.txt")
+os.system("ps aux | grep -i chrom -c >> /path/to/your/attac.txt")
 
-os.system("echo -e 'Controllers-Sleep\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps aux | grep -i controller -c >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Controllers-Sleep\n------------------------' >> /path/to/your/attac.txt")
+os.system("ps aux | grep -i controller -c >> /path/to/your/attac.txt")
 
-os.system("echo -e 'Apache childs\n------------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("pgrep httpd | wc -l >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Apache childs\n------------------------' >> /path/to/your/attac.txt")
+os.system("pgrep httpd | wc -l >> /path/to/your/attac.txt")
 
 
 
