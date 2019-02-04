@@ -8,6 +8,10 @@ from email.MIMEBase import MIMEBase
 from email import encoders
 import os
 
+# This part is very IMPORTANT for what services you use and what command you must use to check of your services 
+# if they working properly!
+# ---------------------------------------------------------------------------------------- #
+
 # Operations:
 os.system("echo -e 'Report Status of the name of your PROD Server' > /path/to/your/attac.txt")
 
