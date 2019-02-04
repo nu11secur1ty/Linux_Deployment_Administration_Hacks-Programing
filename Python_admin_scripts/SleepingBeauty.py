@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# by Ventsislav Varbanovski
 
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
@@ -8,7 +9,7 @@ from email import encoders
 import os
 
 # Operations:
-os.system("echo -e 'Report Status of the PROD Server' > /path/to/your/attac.txt")
+os.system("echo -e 'Report Status of the name of your PROD Server' > /path/to/your/attac.txt")
 
 os.system("echo -e 'Sleeping Proc\n-----------------------' >> /path/to/your/attac.txt")
 os.system("ps -e -o s | grep -o 'S' -c >> /path/to/your/attac.txt")
@@ -20,7 +21,7 @@ os.system("echo -e 'Running Proc\n------------------------' >> /path/to/your/att
 os.system("ps -e -o s | grep -o 'R' -c >> /path/to/your/attac.txt")
 
 os.system("echo -e 'CPU average\n------------------------' >> /path/to/your/attac.txt")
-os.system("w >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("w >> /path/to/your/attac.txt")
 
 os.system("echo -e 'Selenium-Sleep\n------------------------' >> /path/to/your/attac.txt")
 os.system("ps aux | grep -i chromedriver -c >> /path/to/your/attac.txt")
@@ -46,7 +47,7 @@ msg['From'] = fromaddr
 msg['To'] = toaddr
 msg['Subject'] = "Report"
  
-body = "Sleeping processes in YourServername"
+body = "Sleeping processes in Your PROD Servername"
  
 msg.attach(MIMEText(body, 'plain'))
  
