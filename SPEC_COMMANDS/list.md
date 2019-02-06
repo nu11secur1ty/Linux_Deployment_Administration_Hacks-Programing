@@ -141,6 +141,7 @@ ps -eo pid,comm,lstart,etime,time,args
 
 # CPU consuming processes with `ps` "first 5"
 ```bash
+watch "ps aux k-pcpu | head" # all in head
 watch "ps aux k-pcpu | head -6"
 watch "ps auxk-c | head -6"
 watch "ps -eo pcpu,args --sort=-%cpu | head"   # with child
