@@ -139,7 +139,12 @@ ps -p _your_pid -o etime
 ps -eo pid,comm,lstart,etime,time,args
 ```
 
-
+# CPU consuming processes with `ps` "first 5"
+```bash
+watch "ps aux k-pcpu | head -6"
+watch "ps auxk-c | head -6"
+watch "ps -eo pcpu,args --sort=-%cpu | head"   # with child
+```
 
 # Will update soon... ;)
 
