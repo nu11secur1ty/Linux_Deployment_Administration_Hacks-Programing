@@ -1,3 +1,25 @@
+# Using UUIDs to Mount Devices
+
+This section describes the use of UUIDs (Universally Unique Identifiers) instead of device names (such as /dev/sda1) to identify file system devices. Starting with SUSE Linux Enterprise Server 12, UUIDs are used by default in the boot loader file and the /etc/fstab file. 
+
+------------------------------------------------------------------------------------------------------------------
+# Persistent Device Names with udev
+
+
+
+Starting with Linux kernel 2.6, udev provides a user space solution for the dynamic /dev directory, with persistent device naming. As part of the hotplug system, udev is executed if a device is added to or removed from the system.
+
+A list of rules is used to match against specific device attributes. The udev rules infrastructure (defined in the /etc/udev/rules.d directory) provides stable names for all disk devices, regardless of their order of recognition or the connection used for the device. The udev tools examine every appropriate block device that the kernel creates to apply naming rules based on certain buses, drive types, or file systems. For information about how to define your own rules for udev, see Writing udev Rules.
+
+Along with the dynamic kernel-provided device node name, udev maintains classes of persistent symbolic links pointing to the device in the /dev/disk directory, which is further categorized by the by-id, by-label, by-path, and by-uuid subdirectories.
+
+**NOTE:** UUID Generators
+
+Other programs besides udev, such as LVM or md, might also generate UUIDs, but they are not listed in /dev/disk.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
 # Understanding UUIDs
 
 A ***UUID*** **(Universally Unique Identifier)** is a 128-bit number for a file system that is unique on both the local system and across other systems. It is randomly generated with system hardware information and time stamps as part of its seed. UUIDs are commonly used to uniquely tag devices.
