@@ -13,3 +13,8 @@ You can find the UUID for any block device in the /dev/disk/by-uuid directory. F
 tux > ls -og /dev/disk/by-uuid/
 lrwxrwxrwx 1 10 Dec  5 07:48 e014e482-1c2d-4d09-84ec-61b3aefde77a -> ../../sda1
 
+----------------------------------------------------------------------------------------
+# Dynamic Kernel Device Management with udev
+
+The kernel can add or remove almost any device in a running system. Changes in the device state (whether a device is plugged in or removed) need to be propagated to user space. Devices need to be configured when they are plugged in and recognized. Users of a certain device need to be informed about any changes in this device's recognized state. udev provides the needed infrastructure to dynamically maintain the device node files and symbolic links in the /dev directory. udev rules provide a way to plug external tools into the kernel device event processing. This allows you to customize udev device handling by adding certain scripts to execute as part of kernel device handling, or request and import additional data to evaluate during device handling. 
+
