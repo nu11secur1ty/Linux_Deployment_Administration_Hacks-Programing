@@ -1,4 +1,4 @@
-
+# Understanding UUIDs
 
 A ***UUID*** **(Universally Unique Identifier)** is a 128-bit number for a file system that is unique on both the local system and across other systems. It is randomly generated with system hardware information and time stamps as part of its seed. UUIDs are commonly used to uniquely tag devices.
 
