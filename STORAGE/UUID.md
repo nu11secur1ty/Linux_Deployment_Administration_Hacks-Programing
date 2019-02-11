@@ -1,6 +1,6 @@
 
 
-A UUID (Universally Unique Identifier) is a 128-bit number for a file system that is unique on both the local system and across other systems. It is randomly generated with system hardware information and time stamps as part of its seed. UUIDs are commonly used to uniquely tag devices.
+A ***UUID*** **(Universally Unique Identifier)** is a 128-bit number for a file system that is unique on both the local system and across other systems. It is randomly generated with system hardware information and time stamps as part of its seed. UUIDs are commonly used to uniquely tag devices.
 
 Using non-persistent "traditional" device names such as /dev/sda1 may render the system unbootable when adding storage. For example, if root (/) is assigned to /dev/sda1, it might be reassigned to /dev/sdg1 after a SAN has been attached or additional hard disks have been applied to the system. In this case the boot loader configuration and the /etc/fstab file need to be adjusted, otherwise the system will no longer boot.
 
