@@ -464,6 +464,6 @@ The foreach is a handy way to go through a list an element at a time. Use it whe
 By brian d foy
 
 ----------------------------------------------------------------------------------------------------------------------------
-<img src="https://www.perl.com//images/author/brian-d-foy.jpg" width="50" height="70" />
+<img src="https://www.perl.com//images/author/brian-d-foy.jpg" width="70" height="70" />
 
 
