@@ -117,6 +117,331 @@ This output will go on forever:
 
 ---------------------------------------------------------------------------------------------------------------------
 
+```
+$number is 1
+$number is 1
+$number is 1
+$number is 1
+```
+---------------------------------------------------------------------------------------------------------------------
+
+
+# Naming your own topic variable
+
+The $_ is often handy because it’s the default variable for several Perl functions, such as chomp or split. You can use your own name by specifying a scalar variable between the foreach and the parentheses. Usually you don’t want to use that variable for something other than the loop so the usual style declares it inline with the foreach:
+
+----------------------------------------------------------------------------------------------------------------------
+
+```perl
+foreach my $number ( 1, 3, 7 ) {
+	print "\$number is $number";
+	}
+```
+----------------------------------------------------------------------------------------------------------------------
+
+Since Perl flattens lists into one big list, you can use more than one list source in the parentheses:
+
+----------------------------------------------------------------------------------------------------------------------
+
+```perl
+my @numbers      = ( 1, 3, 7 );
+my @more_numbers = ( 5, 8, 13 );
+foreach my $number ( @numbers, @more_numbers ) {
+	print "\$number is $number";
+	}
+```
+
+---------------------------------------------------------------------------------------------------------------------
+
+Or a mix of source types:
+
+---------------------------------------------------------------------------------------------------------------------
+
+```perl
+my @numbers      = ( 1, 3, 7 );
+my @more_numbers = ( 5, 8, 13 );
+foreach my $number ( @numbers, numbers(), keys %hash ) {
+	print "\$number is $number";
+	}
+```
+-------------------------------------------------------------------------------------------------------------------
+Using your own named topic variable acts just like what you saw with $_:
+
+-------------------------------------------------------------------------------------------------------------------
+```perl
+my @numbers      = ( 1, 3, 7 );
+
+my $number = 'Original value';
+say "Before: $number";
+foreach $number ( @numbers ) {
+	say "\$number is $number";
+	}
+say "After: $number";
+```
+-------------------------------------------------------------------------------------------------------------------
+
+The output shows the aliasing effect and that the original value is restored after the foreach:
+
+-------------------------------------------------------------------------------------------------------------------
+
+```
+Before: Original value
+$number is 1
+$number is 3
+$number is 7
+After: Original value
+```
+------------------------------------------------------------------------------------------------------------------
+# Controlling
+
+There are three keywords that let you control the operation of the foreach (and other looping structures): last, next, and redo.
+
+The last stops the current iteration. It’s as if you immediately go past the last statement in the block then breaks out of the loop. It does not look at the next item. You often use this with a postfix conditional:
+
+------------------------------------------------------------------------------------------------------------------
+```perl
+foreach $number ( 0 .. 5 ) {
+	say "Starting $number";
+	last if $number > 3;
+	say "\$number is $number";
+	say "Ending $number";
+	}
+say 'Past the loop';
+```
+-------------------------------------------------------------------------------------------------------------------
+You start the block for element 3 but end the loop there and continue the program after the loop:
+
+-------------------------------------------------------------------------------------------------------------------
+
+```
+Starting 0
+$number is 0
+Ending 0
+Starting 1
+$number is 1
+Ending 1
+Starting 2
+$number is 2
+Ending 2
+Starting 3
+Past the loop
+```
+-----------------------------------------------------------------------------------------------------------------------------
+The next stops the current iteration and moves on to the next one. This makes it easy to skip elements that you don’t want to process:
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+foreach my $number ( 0 .. 5 ) {
+	say "Starting $number";
+	next if $number % 2;
+	say "\$number is $number";
+	say "Ending $number";
+	}
+```
+
+--------------------------------------------------------------------------------------------------------------------------
+The output shows that you run the block with each element but only the even numbers make it past the next:
+
+--------------------------------------------------------------------------------------------------------------------------
+
+```
+Starting 0
+$number is 0
+Ending 0
+Starting 1
+Starting 2
+$number is 2
+Ending 2
+Starting 3
+Starting 4
+$number is 4
+Ending 4
+Starting 5
+```
+--------------------------------------------------------------------------------------------------------------------------
+
+The redo restarts the current iteration of a block. You can use it with a foreach although it’s more commonly used with looping structures that aren’t meant to go through a list of items.
+
+Here’s an example where you want to get three “good” lines of input. You iterate through the number of lines that you want and read standard input each time. If you get a blank line, you restart the same loop with
+
+---------------------------------------------------------------------------------------------------------------------------
+
+```perl
+my $lines_needed = 3;
+my @lines;
+foreach my $animal ( 1 .. $lines_needed ) {
+	chomp( my $line = <STDIN> );
+	redo if $line =~ /\A \s* \z/x;  # skip "blank" lines
+	push @lines, $line;
+	}
+
+say "Lines are:\n\t", join "\n\t", @lines;
+```
+---------------------------------------------------------------------------------------------------------------------------
+The output shows that the loop effectively ignore the blank lines and goes back to the top of the loop. It does not use the next item in the list though. After getting a blank line when it tries to read the second line, it tries the second line again:
+
+---------------------------------------------------------------------------------------------------------------------------
+```
+Reading line 1
+First line
+Reading line 2
+
+Reading line 2
+
+Reading line 2
+Second line
+Reading line 3
+
+Reading line 3
+
+Reading line 3
+Third line
+Lines are:
+    First line
+    Second line
+    Third line
+```
+----------------------------------------------------------------------------------------------------------------------------
+
+That’s not very Perly though but this is an article about foreach. A better style might be to read lines with while to the point that @lines is large enough:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+my $lines_needed = 3;
+my @lines;
+while( <STDIN> ) {
+	next if /\A \s* \z/x;
+	chomp;
+	push @lines, $_;
+	last if @lines == $lines_needed;
+	}
+say "Lines are:\n\t", join "\n\t", @lines;
+```
+----------------------------------------------------------------------------------------------------------------------------
+
+There’s more that you can do with these. The work with labels and nested loops. You can read more about them in perlsyn or Learning Perl.
+
+# A common file-reading gotcha
+
+Since foreach goes through each element of a list, some people reach for it when they want to go through each line in a file:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+foreach my $line ( <STDIN> ) { ... }
+```
+----------------------------------------------------------------------------------------------------------------------------
+
+This is usually not a good idea. The foreach needs to have to entire list all at once. This isn’t a lazy construct like you’d see in some other languages. This means that the foreach reads in all of standard input before it does anything. And, if standard input doesn’t close, the program appears to hang. Or worse, it tries to completely read terabytes of data from that filehandle. Memory is cheap, but not that cheap.
+
+A suitable replacement is the while idiom that reads and processes one line at a time:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+while( <STDIN> ) { ... }
+```
+---------------------------------------------------------------------------------------------------------------------------
+
+This is really a shortcut for an assignment in scalar context. That reads only one line from the filehandle:
+
+---------------------------------------------------------------------------------------------------------------------------
+
+```perl
+while( defined( $_ = <STDIN> ) ) { ... }
+```
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# An experimental convenience
+
+Perl v5.22 added an experimental refaliasing feature. Assigning to a reference makes the thing on the right an alias for the thing on the left. Here’s a small demonstration where you assign an anonymous hash to a reference to a named hash variable. Now %h is another name (the alias) for that hash reference:
+
+--------------------------------------------------------------------------------------------------------------------------
+
+```perl
+use feature qw(refaliasing);
+use Data::Dumper;
+
+\my %h = { qw(a 1 b 2) };
+say Dumper( \%h );
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
