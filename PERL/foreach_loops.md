@@ -461,7 +461,7 @@ no warnings qw(experimental::refaliasing);
 
 The foreach is a handy way to go through a list an element at a time. Use it when you already have the list completely constructed (and not to process a filehandle). Define your own topic variable to choose a descriptive name.
 
-
+![]()
 
 
 
