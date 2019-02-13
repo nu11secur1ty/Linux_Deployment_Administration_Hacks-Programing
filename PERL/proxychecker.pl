@@ -10,13 +10,13 @@ our @proxys = ('0.0.0.0 0000', '0.0.0.0 0000', '0.0.0.0 0000',
 
 	foreach (@proxys) {
 		print "Proxy testing $_\n";
-        	our $check_proxy = `nc -vz $_ >> /path/outputproxy.txt 2>&1`;
+        		our $check_proxy = `nc -vz $_ >> /path/outputproxy.txt 2>&1`;
 		print "proxies is tested\n---------------------\n";
 	}
 	     my $clean = `pgrep -f nc`;
 	     	print "Check netcat for sleeping processes:$clean\n";
 	     	print "Please see the result in 'outputproxy.txt'\n";
                 	print "command: cat outputproxy.txt\n";
-				our $time_check = `date >> /path/outputproxy.txt 2>&1`;
+			our $time_check = `date >> /path/outputproxy.txt 2>&1`;
 
 		exit 0;	
