@@ -38,7 +38,7 @@ foreach ( numbers() ) {
 ```
 -------------------------------------------------------------------------------------------------------------------
 
-```css
+```
 Some people like to use the synonym for. There’s a proper C-style for that has three semicolon-separated parts in the parentheses. If Perl doesn’t see the two semicolons it treats for just like a foreach:
 ```
 --------------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ for ( 0 .. 4 ) {  # foreach synonym
 --------------------------------------------------------------------------------------------------------------------
 
 # Element source gotchas
-```css
+```
 The aliasing is only temporary. After the foreach the topic variable returns to its original value:
 ```
 --------------------------------------------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ print "\$_ after: $_\n";
 ```
 --------------------------------------------------------------------------------------------------------------------
 
-```css
+```
 The output shows that $_ appears unaffected by the foreach:
 ```
 --------------------------------------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ foreach ( @numbers ) {
 print "After: @numbers\n";   # After: 2 6 14
 ```
 ---------------------------------------------------------------------------------------------------------------------
-```css
+```
 Not only that, but if you change the source by adding or removing elements you can screw up the foreach. This loops infinitely processing the same element because each go through the block moves the array elements over one position; when the iterator moves onto the next position it finds the same one it just saw:
 ```
 ---------------------------------------------------------------------------------------------------------------------
