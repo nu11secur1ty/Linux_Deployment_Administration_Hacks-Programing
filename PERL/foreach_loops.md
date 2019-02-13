@@ -462,6 +462,7 @@ no warnings qw(experimental::refaliasing);
 The foreach is a handy way to go through a list an element at a time. Use it when you already have the list completely constructed (and not to process a filehandle). Define your own topic variable to choose a descriptive name.
 
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/PERL/wall/brian-d-foy.jpg | width 100)
+<img src="https://www.perl.com//images/author/brian-d-foy.jpg" width="200" height="400" />
 
 
 
