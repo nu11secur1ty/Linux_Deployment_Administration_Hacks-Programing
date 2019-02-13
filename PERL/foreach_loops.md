@@ -368,6 +368,120 @@ use Data::Dumper;
 \my %h = { qw(a 1 b 2) };
 say Dumper( \%h );
 ```
+---------------------------------------------------------------------------------------------------------------------------
+ 
+This is handy in a foreach where the elements of the list are hash references. First, here’s how you might do this without the feature. Inside the block you interact the $hash as a reference; you must dereference it to get to a value:
+
+---------------------------------------------------------------------------------------------------------------------------
+
+```perl
+my @mascots = (
+	{
+		type => 'camel',
+		name => 'Amelia',
+	},
+	{
+		type => 'butterfly',
+		name => 'Camelia',
+	},
+	{
+		type  => 'go',
+		name  => 'Go Gopher',
+	},
+	{
+		type  => 'python',
+		name  => 'Monty',
+	},
+	);
+```
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+foreach my $hash ( @mascots ) {
+	say $hash->{'name'}
+	}
+```
+----------------------------------------------------------------------------------------------------------------------------
+
+With v5.22’s refaliasing feature you can use a named hash variable as the topic. Inside the block you interact with the current element as a named hash. There’s no -> for a dereference:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+use v5.22;
+use feature qw(refaliasing);
+use Data::Dumper;
+
+my @mascots = (
+	{
+		type => 'camel',
+		name => 'Amelia',
+	},
+	{
+		type => 'butterfly',
+		name => 'Camelia',
+	},
+	{
+		type  => 'go',
+		name  => 'Go Gopher',
+	},
+	{
+		type  => 'python',
+		name  => 'Monty',
+	},
+	);
+
+foreach \my %hash ( @mascots ) {
+	say $hash{'name'}
+	}
+```
+----------------------------------------------------------------------------------------------------------------------------
+The output is the same in both programs:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```
+Amelia
+Camelia
+Go Gopher
+Monty
+Aliasing via reference is experimental at ...
+```
+---------------------------------------------------------------------------------------------------------------------------
+There’s a warning from this experimental feature (and, all such features). The feature might change or even disappear according to Perl’s feature policy. Disable the warning if you are comfortable with that:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+```perl
+no warnings qw(experimental::refaliasing);
+```
+----------------------------------------------------------------------------------------------------------------------------
+# Conclusion
+
+The foreach is a handy way to go through a list an element at a time. Use it when you already have the list completely constructed (and not to process a filehandle). Define your own topic variable to choose a descriptive name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
