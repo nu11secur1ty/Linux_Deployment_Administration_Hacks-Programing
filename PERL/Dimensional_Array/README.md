@@ -1,1 +1,3 @@
+# Creating and Accessing a Two-Dimensional Array
+
 There are many kinds of nested data structures. The simplest kind to build is an array of arrays, also called a two-dimensional array or a matrix. (The obvious generalization applies: an array of arrays of arrays is a three-dimensional array, and so on for higher dimensions.) It's reasonably easy to understand, and nearly everything that applies here will also be applicable to the fancier data structures that we'll explore in subsequent sections.
