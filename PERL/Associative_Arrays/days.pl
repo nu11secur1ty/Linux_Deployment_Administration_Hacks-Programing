@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use diagnostics;
 
-my @days = ('monday', 
+my @days = ('Monday', 
 	    'Tuesday', 
 	    'Wensday', 
 	    'Thursday', 
