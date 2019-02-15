@@ -7,6 +7,7 @@
 # Check for sleeping processes - Bonus :)
 ```bash
 ps -e -o s | grep -o 'S' -c
+ps h -eo s,pid | awk '{ if ($1 == "S" || $1 == "D") { print $2 } }'      #by PID'S
 ```
 # To see Linux Tasks:
 
