@@ -146,6 +146,13 @@ watch "ps aux k-pcpu | head -6"
 watch "ps auxk-c | head -6"
 watch "ps -eo pcpu,args --sort=-%cpu | head"   # with child
 ```
+# Counting a sleeping proccesses
+
+```bash
+ps -e -o s | grep -o 'S\|D' -c 
+```
+
+
 
 # Will update soon... ;)
 
