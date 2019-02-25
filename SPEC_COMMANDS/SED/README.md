@@ -3,5 +3,3 @@ more: [link](https://www.gnu.org/software/sed/manual/sed.html)
 
 
 
-var conv = new showdown.Converter();
-document.getElementById('trg').innerHTML = conv.makeHtml(document.getElementById('src').value);
