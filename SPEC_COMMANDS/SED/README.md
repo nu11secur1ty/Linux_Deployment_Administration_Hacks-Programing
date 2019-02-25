@@ -3,4 +3,5 @@ more: [link](https://www.gnu.org/software/sed/manual/sed.html)
 
 
 
-[adjustable](http://google.com "Giiidd"){:target="_blank"}
+var conv = new showdown.Converter();
+document.getElementById('trg').innerHTML = conv.makeHtml(document.getElementById('src').value);
