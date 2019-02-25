@@ -2,3 +2,4 @@
 more: [link](https://www.gnu.org/software/sed/manual/sed.html)
 
 
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
