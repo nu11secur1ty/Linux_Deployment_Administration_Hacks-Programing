@@ -2,3 +2,9 @@
 more: [link](https://www.gnu.org/software/sed/manual/sed.html) 
 
 
+a {
+  cursor: url('/en/images/cursor.png') 4 7, auto;
+  &[target="_blank"] {
+    cursor: url('/en/images/cursor-ext.png') 4 7, auto;
+  }
+}
