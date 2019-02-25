@@ -9,3 +9,11 @@ sed -r -i.bak 's/example/example/g' ~/roster.txt
 ```bash 
 sed -r -i.bak 's/original-string/change_string_with_original/g' ~/your_file.txt
 ```
+# Replacing specific line
+```bash
+sed -i '2 s/second/sec/' text.txt
+```
+- Eplain:
+```bash
+'2 - is the number of line 
+```
