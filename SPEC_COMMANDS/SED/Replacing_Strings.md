@@ -7,5 +7,5 @@ sed -r -i.bak 's/example/example/g' ~/roster.txt
 ```
 - explain:
 ```bash 
-sed -r -i.bak 's/original-string/change_string_with_original/g' ~/roster.txt
+sed -r -i.bak 's/original-string/change_string_with_original/g' ~/your_file.txt
 ```
