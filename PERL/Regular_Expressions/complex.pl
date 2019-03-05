@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# author V.Varbanovski @nu11secur1ty
 use strict;
 use warnings;
 use diagnostics;
