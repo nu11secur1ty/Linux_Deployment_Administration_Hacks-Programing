@@ -277,19 +277,16 @@ Matches newlines, carriage returns, tabs, etc.
 Matches nth grouped subexpression.
 
 ------------------------------------------------------
-27 	
-\10
+27. 	\10
 
 Matches nth grouped subexpression if it matched already. Otherwise refers to the octal representation of a character code.
 
 -----------------------------------------------------
-28 	
-[aeiou]
+28. 	[aeiou]
 
 Matches a single character in the given set
 
 -----------------------------------------------------
-29 	
-[^aeiou]
+29. 	[^aeiou]
 
 Matches a single character outside the given set
