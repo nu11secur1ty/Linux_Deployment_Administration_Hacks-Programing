@@ -13,3 +13,32 @@ If you enable verbose mode with ***-v*** when talking to a proxy, you will see t
 ```bash
 curl -v 0.0.0.0:00 http://example.com/
 ```
+
+-----------------------------------------------------------------------------------------------------------
+
+# HTTPS and proxy
+
+HTTPS was designed to allow and provide secure and safe end-to-end privacy from the client to the server (and back). In order to provide that when speaking to an HTTP proxy, the HTTP protocol has a special request that curl uses to setup a tunnel through the proxy that it then can encrypt and verify. This HTTP method is known as CONNECT.
+
+When the proxy tunnels encrypted data through to the remote server after a CONNECT method sets it up, the proxy cannot see nor modify the traffic without breaking the encryption:
+
+
+```bash
+curl -x proxy.example.com:80 https://example.com/
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
