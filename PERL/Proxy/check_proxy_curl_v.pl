@@ -10,7 +10,7 @@ our @proxys = ('0.0.0.0 0000', '0.0.0.0 0000', '0.0.0.0 0000',
 
 	foreach (@proxys) {
 		print "Proxy testing $_\n";
-        		our $check_proxy = `nc -vz $_ >> /path/outputproxy.txt 2>&1`;
+        		our $check_proxy = `curl -v $_  http://www.example.com/ >> /path/outputproxy.txt 2>&1`;
 		print "proxies is tested\n---------------------\n";
 	}
 	     my $clean_nc = `pgrep -f nc`;
@@ -19,4 +19,4 @@ our @proxys = ('0.0.0.0 0000', '0.0.0.0 0000', '0.0.0.0 0000',
                 	print "command: cat outputproxy.txt\n";
 			our $time_check = `date >> /path/outputproxy.txt 2>&1`;
 
-		exit 0;
+exit 0;
