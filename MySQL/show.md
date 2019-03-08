@@ -1,4 +1,6 @@
 # Showing running queries in MySQL
+
+# Show all processlist
 ```mysql
 show processlist;
 ```
