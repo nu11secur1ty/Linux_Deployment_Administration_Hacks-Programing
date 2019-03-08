@@ -3,6 +3,7 @@
 # Show all processlist
 ```mysql
 show processlist;
+show full processlist\G;
 ```
 # Show all tasks
 
