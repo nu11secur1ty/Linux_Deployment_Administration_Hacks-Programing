@@ -1,7 +1,9 @@
 #!/usr/bin/perl
+# author @ nu11secur1ty
 use strict;
 use warnings;
 use diagnostics;
+
 
 # не фактор
 my $number = 7; # Change the number here 
