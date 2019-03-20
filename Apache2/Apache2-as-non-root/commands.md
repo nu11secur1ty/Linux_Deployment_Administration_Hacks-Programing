@@ -62,8 +62,10 @@ vim apache/conf/httpd.conf
 - change this
 
 ```bash
-#Listen 80 # for root
-Listen 8080 # for user
+# for root
+#Listen 80
+# for user
+Listen 8080
 ```
 
 
