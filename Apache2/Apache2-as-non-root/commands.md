@@ -54,3 +54,17 @@ cd httpd-2.4.38/
 make
 make install
 ```
+# Configure Apache
+- on httpd.conf
+```bash
+vim apache/conf/httpd.conf
+```
+- change this
+
+```bash
+#Listen 80 # for root
+Listen 8080 # for user
+```
+
+
+
