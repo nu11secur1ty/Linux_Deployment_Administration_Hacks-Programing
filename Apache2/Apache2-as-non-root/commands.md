@@ -43,7 +43,7 @@ mkdir -p opt/
 mkdir -p opt/applications/
 ```
 
-# Installing Apache as non root:
+# Installing Apache as non-root:
 
 ```bash
 cd /home/apache-management/httpd-2.4.38/srclib/apr/
