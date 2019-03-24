@@ -1,4 +1,4 @@
-# Installing depend on Open Suse Leap 42.3
+# Installation of dependent packages, for Opensuse Leap 42.3
 
 - Download openssl:
 
