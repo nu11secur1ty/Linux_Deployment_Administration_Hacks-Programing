@@ -1,6 +1,7 @@
 #!/bin/bash
 ######################################
 # Create Backup every night in 00:30 #
+# author nu11secur1ty                #
 ######################################
 
 # Dump mysql bases.
