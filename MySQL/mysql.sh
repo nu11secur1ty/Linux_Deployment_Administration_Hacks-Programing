@@ -4,13 +4,13 @@
 ######################################
 
 # Dump mysql bases.
-mysqldump -u root -pxxxxxx --opt --all-databases | gzip > ~/.sync/mysql/$(date "+%Y-%m-%d").sql.gz
+mysqldump -u root -pyour_password --opt --all-databases | gzip > ~/your/path/$(date "+%Y-%m-%d").sql.gz
 
 # What to backup. 
 backup_files="/var/lib/mysql/";
 
 # Where to backup to.
-dest="/root/.sync/mysql";
+dest="/your/path";
 
 # Create archive filename.
 day=$(date +'%Y-%m-%d');
@@ -19,7 +19,7 @@ archive_file="$hostnamectli_$day.tgz";
 
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file";
-      date >> /root/.sync/mysql/$day;
+      date >> /your/path/$day;
 echo
 
 # Backup the files using tar.
