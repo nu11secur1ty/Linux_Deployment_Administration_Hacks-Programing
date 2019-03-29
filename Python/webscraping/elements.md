@@ -7,7 +7,6 @@ drawn between children and descendants: much like in a human family tree,
 children are always exactly one tag below a parent, whereas descendants can be at
 any level in the tree below a parent. For example, the tr tags are children of the
 
----------------------------------------------------------------------------------
 
 table tag, whereas tr, th, td, img, and span are all descendants of the table tag
 (at least in our example page). All children are descendants, but not all descendants
@@ -53,4 +52,10 @@ for sibling in bsObj.find("table",{"id":"giftList"}).tr.next_siblings:
     print(sibling)
 ```
 
+The output of this code is to print all rows of products from the product table,
+except for the first title row. Why does the title row get skipped? Two reasons:
+first, objects cannot be siblings with themselves. Any time you get siblings of an
+object, the object itself will not be included in the list. Second, this function calls
+next siblings only. If we were to select a row in the middle of the list, for example,
+and call next_siblings on it, only the subsequent (next) siblings would be
 
