@@ -1,7 +1,5 @@
 import requests
-
 d = requests.get('https://www.bet365.com/#/HO/')
-
 print(d.headers)
 
 # Output
