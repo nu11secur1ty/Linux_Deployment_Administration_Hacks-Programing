@@ -6,8 +6,6 @@ In the BeautifulSoup library, as well as many other libraries, there is a distin
 drawn between children and descendants: much like in a human family tree,
 children are always exactly one tag below a parent, whereas descendants can be at
 any level in the tree below a parent. For example, the tr tags are children of the
-
-
 table tag, whereas tr, th, td, img, and span are all descendants of the table tag
 (at least in our example page). All children are descendants, but not all descendants
 are children.
@@ -58,4 +56,5 @@ first, objects cannot be siblings with themselves. Any time you get siblings of 
 object, the object itself will not be included in the list. Second, this function calls
 next siblings only. If we were to select a row in the middle of the list, for example,
 and call next_siblings on it, only the subsequent (next) siblings would be
-
+returned. So, by selecting the title row and calling next_siblings, we can select
+all the rows in the table, without selecting the title row itself.
