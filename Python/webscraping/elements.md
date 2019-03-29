@@ -31,3 +31,26 @@ for child in bsObj.find("table",{"id":"giftList"}).children:
     print(child)
 
 ````
+-----------------------------------------------------------------------------------
+
+This code prints out the list of product rows in the giftList table. If you were to
+write it using the descendants() function instead of the children() function,
+about two dozen tags would be found within the table and printed, including img
+tags, span tags, and individual td tags. It’s definitely important to differentiate
+between children and descendants!
+Dealing with siblings
+The BeautifulSoup next_siblings() function makes it trivial to collect data from
+tables, especially ones with title rows:
+
+
+```python
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+html = urlopen("http://www.pythonscraping.com/pages/page3.html")
+bsObj = BeautifulSoup(html)
+for sibling in bsObj.find("table",{"id":"giftList"}).tr.next_siblings:
+    print(sibling)
+```
+
+
