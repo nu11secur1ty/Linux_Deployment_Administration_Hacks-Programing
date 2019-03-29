@@ -7,6 +7,9 @@ soup = BeautifulSoup(source, 'lxml')
 # Print all content from <script></script>
 # Ebasi tupotiqta :D
 bukluci = soup.find('script')
-# Da podredim buklucite
-print(bukluci.preaty)
+
+# Da viim boklucite
+print(bukluci)
+
+# Da podredim vslichki bokluci v supata :D
 #print(soup.prettify)
