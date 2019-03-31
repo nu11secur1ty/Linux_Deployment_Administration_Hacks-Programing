@@ -1,3 +1,4 @@
+# author nu11secur1ty
 from bs4 import BeautifulSoup
 import urllib.request
 import csv
