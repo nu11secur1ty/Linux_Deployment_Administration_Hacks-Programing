@@ -1,4 +1,5 @@
 # Basi tupotiqta :D
+- Set manual time zone in Python
 
 ```python
 Python 3.7.2 (default, Mar 26 2019, 09:58:54) 
