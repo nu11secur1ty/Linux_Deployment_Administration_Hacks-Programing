@@ -16,3 +16,9 @@ http://chromedriver.chromium.org/downloads
 ```bash
 chromedriver = '/path/path/chromedriver'
 ```
+# Executing
+- Run google.py
+```bash
+python google.py
+```
+# Enjoy ;)
