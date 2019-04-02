@@ -12,3 +12,7 @@ pip3 install selenium
 ```link
 http://chromedriver.chromium.org/downloads
 ```
+- Specify the path of your "chromedriver"
+```bash
+chromedriver = '/path/path/chromedriver'
+```
