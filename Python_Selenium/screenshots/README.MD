@@ -3,7 +3,12 @@
 
 # installing packages
 
+- selenium
 ```bash
 pip install selenium
 pip3 install selenium
+```
+- Chrome driver
+```link
+http://chromedriver.chromium.org/downloads
 ```
