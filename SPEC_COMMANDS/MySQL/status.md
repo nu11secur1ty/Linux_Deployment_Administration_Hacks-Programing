@@ -1,3 +1,5 @@
+# Mysql status
+```bash
 MariaDB [(none)]> status
 --------------
 mysql  Ver 15.1 Distrib 10.0.35-MariaDB, for Linux (x86_64) using readline 5.1
@@ -22,7 +24,10 @@ Uptime:			49 min 51 sec
 
 Threads: 1  Questions: 29  Slow queries: 0  Opens: 1  Flush tables: 1  Open tables: 64  Queries per second avg: 0.009
 --------------
+```
+# Process
 
+```bash
 MariaDB [(none)]> SHOW FULL PROCESSLIST\G
 *************************** 1. row ***************************
       Id: 12
@@ -35,5 +40,5 @@ MariaDB [(none)]> SHOW FULL PROCESSLIST\G
     Info: SHOW FULL PROCESSLIST
 Progress: 0.000
 1 row in set (0.00 sec)
-
+```
 MariaDB [(none)]>
