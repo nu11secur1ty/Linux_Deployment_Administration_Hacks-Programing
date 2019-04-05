@@ -1,6 +1,8 @@
 # Mysql status
-```bash
+
 MariaDB [(none)]> status
+
+```bash
 --------------
 mysql  Ver 15.1 Distrib 10.0.35-MariaDB, for Linux (x86_64) using readline 5.1
 
