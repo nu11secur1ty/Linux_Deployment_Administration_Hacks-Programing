@@ -36,8 +36,15 @@ Loaded Modules:
  perl_module (shared)
  info_module (shared)
  status_module (shared)
+ ```
+- Load pmp_prefork_module
+
+```bash
+a2enmod mpm_prefork_module
+a2enmod mpm_prefork
 ```
-- Grep
+- Check
+
 ```bash
 modperl:~ # apachectl -M | grep prefork
 [Mon Apr 08 13:39:30.596382 2019] [so:warn] [pid 86713] AH01574: module alias_module is already loaded, skipping
