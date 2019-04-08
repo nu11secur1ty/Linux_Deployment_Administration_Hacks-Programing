@@ -1,3 +1,4 @@
+```bash
 modperl:~ # apachectl -M
 [Mon Apr 08 13:39:24.626156 2019] [so:warn] [pid 86703] AH01574: module alias_module is already loaded, skipping
 [Mon Apr 08 13:39:24.626229 2019] [so:warn] [pid 86703] AH01574: module cgi_module is already loaded, skipping
@@ -35,9 +36,15 @@ Loaded Modules:
  perl_module (shared)
  info_module (shared)
  status_module (shared)
+```
+- Grep
+```bash
 modperl:~ # apachectl -M | grep prefork
 [Mon Apr 08 13:39:30.596382 2019] [so:warn] [pid 86713] AH01574: module alias_module is already loaded, skipping
 [Mon Apr 08 13:39:30.596454 2019] [so:warn] [pid 86713] AH01574: module cgi_module is already loaded, skipping
 [Mon Apr 08 13:39:30.596464 2019] [so:warn] [pid 86713] AH01574: module cgi_module is already loaded, skipping
  mpm_prefork_module (static)
 modperl:~ # 
+```
+
+
