@@ -2,13 +2,14 @@
 ```bash
 top -n 1 -p `pgrep -f mysqld | tr '\n' , | sed s/,$//`
 ```
-- Using ps
+- Using ***ps***
 
 ```bash
 ps -eo %mem -S -p $(pgrep mysqld) | tail +2
 ps -eo %mem,%cpu -S -p $(pgrep mysqld) | tail +2
 ```
-- with abrivitures
+- with ***abbreviation***
+
 ```bash
 ps -eo %mem -S -p $(pgrep mysqld)
 ps -eo %mem,%cpu -S -p $(pgrep mysqld)
