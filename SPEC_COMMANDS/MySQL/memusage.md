@@ -8,3 +8,8 @@ top -n 1 -p `pgrep -f mysqld | tr '\n' , | sed s/,$//`
 ps -eo %mem -S -p $(pgrep mysqld) | tail +2
 ps -eo %mem,%cpu -S -p $(pgrep mysqld) | tail +2
 ```
+- with abrivitures
+```bash
+ps -eo %MEM -S -p $(pgrep mysqld)
+ps -eo %MEM,%CPU -S -p $(pgrep mysqld)
+```
