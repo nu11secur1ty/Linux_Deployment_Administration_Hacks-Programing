@@ -121,8 +121,8 @@ ls
 <?php
   ini_set( 'display_errors', 1 );
   error_reporting( E_ALL );
-    $from = "tonykfc@lkybast.com";
-    $to = "limpeh@lkybast.com";
+    $from = "someonelse@example.com";
+    $to = "someonelse@example.com";
       $subject = "PHP Mail Test script";
         $message = "This is a test to check the PHP Mail functionality";
       $headers = "From:" . $from;
