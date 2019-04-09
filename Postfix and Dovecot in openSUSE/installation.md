@@ -94,6 +94,15 @@ rcdovecot status
 telnet localhost smtp
 telnet localhost pop3
 ```
+- Send an email directly from postfix using terminal
+
+```bash
+sendmail recipient@elsewhere.com
+From: you@example.com
+Subject: Test mail
+This is a test email
+.
+```
  - to exit you must type
  ***quit*** 
  
