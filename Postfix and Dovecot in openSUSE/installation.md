@@ -119,13 +119,15 @@ ls
 
 ```php
 <?php
-  $to = "someone@example.com";
-    $subject = "Test mail";
-    $message = "Hello! This is a simple email message.";
-        $from = "someonelse@example.com";
-    $headers = "From: $from";
-    mail($to,$subject,$message,$headers);
-echo "Mail Sent.";
+  ini_set( 'display_errors', 1 );
+  error_reporting( E_ALL );
+    $from = "tonykfc@lkybast.com";
+    $to = "limpeh@lkybast.com";
+      $subject = "PHP Mail Test script";
+        $message = "This is a test to check the PHP Mail functionality";
+      $headers = "From:" . $from;
+        mail($to,$subject,$message, $headers);
+echo "Test email sent";
 ?>
 ```
 # Have fun ;)
