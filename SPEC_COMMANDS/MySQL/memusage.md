@@ -10,6 +10,6 @@ ps -eo %mem,%cpu -S -p $(pgrep mysqld) | tail +2
 ```
 - with abrivitures
 ```bash
-ps -eo %MEM -S -p $(pgrep mysqld)
-ps -eo %MEM,%CPU -S -p $(pgrep mysqld)
+ps -eo %mem -S -p $(pgrep mysqld)
+ps -eo %mem,%cpu -S -p $(pgrep mysqld)
 ```
