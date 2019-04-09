@@ -115,6 +115,13 @@ ls
 ```css
 1528985254.V802I844fa7M656132.user  1528986290.V802I844300M466544.user
 ```
+
+- Enable services
+```bash
+~ # systemctl enable postfix
+~ # systemctl enable dovecot
+```
+
 - Simple PHP sender
 
 ```php
