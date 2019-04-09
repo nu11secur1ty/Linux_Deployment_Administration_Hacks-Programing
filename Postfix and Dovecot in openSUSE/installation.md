@@ -115,5 +115,17 @@ ls
 ```css
 1528985254.V802I844fa7M656132.user  1528986290.V802I844300M466544.user
 ```
+- Simple PHP sender
 
+```php
+<?php
+  $to = "someone@example.com";
+    $subject = "Test mail";
+    $message = "Hello! This is a simple email message.";
+        $from = "someonelse@example.com";
+    $headers = "From: $from";
+    mail($to,$subject,$message,$headers);
+echo "Mail Sent.";
+?>
+```
 # Have fun ;)
