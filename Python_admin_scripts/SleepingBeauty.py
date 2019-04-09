@@ -10,7 +10,7 @@ import os
 
 ##WARNING!
 # This part is very IMPORTANT for what services you use and what command you must use to check of your services 
-# if they working properly!
+# if they working properly and sending an email to your email address!
 # ---------------------------------------------------------------------------------------- #
 
 # Operations:
