@@ -10,6 +10,11 @@ show full processlist\G;
 ```mysql 
 show variables\G;
 ```
+
+# Show warnings
+```mysql
+SHOW COUNT(*) WARNINGS;
+```
 # Show mem & cpu load average
 ```bash
 ps -eo %mem,%cpu -S -p $(pgrep mysqld)
