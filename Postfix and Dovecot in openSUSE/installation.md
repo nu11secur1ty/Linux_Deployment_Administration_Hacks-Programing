@@ -122,6 +122,13 @@ ls
 ~ # systemctl enable dovecot
 ```
 
+- Disable services
+```bash
+~ # rcpostfix stop
+~ # rcdovecot stop
+~ # systemctl enable postfix
+~ # systemctl enable dovecot
+```
 - Simple PHP sender
 
 ```php
