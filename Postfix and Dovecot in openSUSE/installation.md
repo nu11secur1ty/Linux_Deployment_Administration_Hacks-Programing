@@ -126,8 +126,8 @@ ls
 ```bash
 ~ # rcpostfix stop
 ~ # rcdovecot stop
-~ # systemctl enable postfix
-~ # systemctl enable dovecot
+~ # systemctl disable postfix
+~ # systemctl disable dovecot
 ```
 - Simple PHP sender
 
