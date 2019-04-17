@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+# modified by nu11secur1ty@
 import scapy.all as scapy
 import time
 import argparse
 import os
 
 # allow hacker host to send packager from target host to router:
-os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
+# os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
 
 
 def get_arguments():
