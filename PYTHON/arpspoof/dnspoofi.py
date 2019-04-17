@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import netfilterqueue
 import scapy.all as scapy
 import argparse
