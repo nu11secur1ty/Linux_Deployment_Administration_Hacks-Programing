@@ -12,6 +12,7 @@ $python spoofi.py -t 10.0.2.4 -g 10.0.2.1
 
 * Install scupy
 ```bash
+apt-get install tcpdump graphviz imagemagick python-gnuplot python-crypto python-pyx
 pip install scapy
 ```
 * Install netfilterqueue
