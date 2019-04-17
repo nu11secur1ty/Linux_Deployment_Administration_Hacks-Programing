@@ -16,10 +16,10 @@ pip install scapy
 ```
 * Install netfilterqueue
 ```bash
-% sudo apt-get install build-essential python-dev libnetfilter-queue-dev
-% git clone https://github.com/nu11secur1ty/python-netfilterqueue
-% cd python-netfilterqueue
-% python setup.py install
+apt-get install build-essential python-dev libnetfilter-queue-dev
+git clone https://github.com/nu11secur1ty/python-netfilterqueue
+cd python-netfilterqueue
+python setup.py install
 ```
 * Create queue
 ```bash
@@ -31,7 +31,7 @@ python spoofi.py -t target_ip -g gateway_ip
 ```
 * Run dns_spoofing script
 ```bash
-python dns_spoofing
+python dnspoofi
 ```
 Run script with --help to get help
 ```bash
