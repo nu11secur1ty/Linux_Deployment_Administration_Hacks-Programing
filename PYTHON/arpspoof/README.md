@@ -32,5 +32,5 @@ python dns_spoofing
 ```
 Run script with --help to get help
 ```bash
-python dns_spoofing.py --help
+python dnspoofi.py --help
 ```
