@@ -30,7 +30,7 @@ iptables -I FORWARD -j NFQUEUE --queue-num 0
 ```bash
 python spoofi.py -t target_ip -g gateway_ip
 ```
-* Run dns_spoofing script
+* Run dnspoofi script
 ```bash
 python dnspoofi
 ```
