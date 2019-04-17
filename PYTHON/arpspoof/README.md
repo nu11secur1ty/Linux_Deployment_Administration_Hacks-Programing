@@ -16,7 +16,10 @@ pip install scapy
 ```
 * Install netfilterqueue
 ```bash
-pip install netfilterqueue
+% sudo apt-get install build-essential python-dev libnetfilter-queue-dev
+% git clone https://github.com/nu11secur1ty/python-netfilterqueue
+% cd python-netfilterqueue
+% python setup.py install
 ```
 * Create queue
 ```bash
