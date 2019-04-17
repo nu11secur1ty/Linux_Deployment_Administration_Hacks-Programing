@@ -23,7 +23,7 @@ python setup.py install
 ```
 * Create queue
 ```bash
-iptables -I FORWARD -j NFQUEUE --queue-num 0`
+iptables -I FORWARD -j NFQUEUE --queue-num 0
 ```
 * Run arp spoofing script
 ```bash
