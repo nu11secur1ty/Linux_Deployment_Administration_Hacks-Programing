@@ -1,7 +1,6 @@
 # author nu11secur1ty
 from bs4 import BeautifulSoup
 import urllib.request
-import csv
 
 # url investigated
 urlpage = 'https://softuni.bg/blog/interview-ines-ivanova-python-development-module?fbclid=IwAR1d-panjpa9QMMNEfLG5VKxqcXtQoQkMxv0bfPwHsdw3OJBNBcJffbHucc'
