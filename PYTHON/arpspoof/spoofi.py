@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# modified by nu11secur1ty@
+# nu11secur1ty@
 import scapy.all as scapy
 import time
 import argparse
