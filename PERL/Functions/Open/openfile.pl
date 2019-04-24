@@ -4,6 +4,6 @@ use strict;
 use warnings;
 use diagnostics;
 
-open(my $fh, "+>> output.txt")
+open(my $fh, ">", "output.txt")
 or die "Can't open > output.txt: $!";
 
