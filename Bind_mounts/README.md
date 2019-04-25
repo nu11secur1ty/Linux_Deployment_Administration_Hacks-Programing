@@ -18,7 +18,7 @@ Or you would need to use recursive bind mount:
 ```
 
 What this do is telling the kernel to look for any filesystems mounted under / and mount them also under the new bind mount at /home/testing/nifty. This way, if your /usr or /var dirs are on different filesystems you don't need to enter 3 different mount commands, but instead a single one.
-Bind mounting parts of filesystems
+- ***Bind mounting parts of filesystems***
 
 Bind mounting makes even more neat things possible. Let's say that you have a tmpfs filesystem mounted at /dev/shm, its traditional location, and you decide that you'd like to start using tmpfs for /tmp, which currently lives on your root filesystem. Rather than mounting a new tmpfs filesystem to /tmp (which is possible), you may decide that you'd like the new /tmp to share the currently mounted /dev/shm filesystem. However, while you could bind mount /dev/shm to /tmp and be done with it, your /dev/shm contains some directories that you don't want to appear in /tmp. So, what do you do? How about this:
 
