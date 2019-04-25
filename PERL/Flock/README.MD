@@ -15,3 +15,5 @@ Note that the fcntl(2) emulation of flock(3) requires that FILEHANDLE be open wi
 Note also that some versions of flock cannot lock things over the network; you would need to use the more system-specific fcntl for that. If you like you can force Perl to ignore your system's flock(2) function, and so provide its own fcntl(2)-based emulation, by passing the switch -Ud_flock to the Configure program when you configure and build a new Perl.
 
 Here's a mailbox appender for BSD systems.
+
+On systems that support a real flock(2), locks are inherited across fork calls, whereas those that must resort to the more capricious fcntl(2) function lose their locks, making it seriously harder to write servers.
