@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use diagnostics;
 
-print "Type youtr messagae here...\n";
+print "Type your message here...\n";
 my $msg = <STDIN>;
 # import LOCK_* and SEEK_END constants
 use Fcntl qw(:flock SEEK_END);
