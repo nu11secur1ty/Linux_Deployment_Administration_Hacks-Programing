@@ -11,9 +11,9 @@ date +'%r'
 time_zone=$(date +'%m/%d/%Y')
 echo""
 
-# Input your user
+# Input your user for mysql
 user=""
-# Input your password
+# Input your password for mysql
 password=""
 
 # Checking a global status
