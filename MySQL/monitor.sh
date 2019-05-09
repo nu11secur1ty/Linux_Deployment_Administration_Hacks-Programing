@@ -7,11 +7,15 @@ user=""
 password=""
 
 # Checking a global status
+echo "===STATUS===";
 	mysql -u $user -p$password -e "SHOW GLOBAL STATUS;"
-		echo "===Processlist===";
+	echo""
+echo "===Processlist===";
 	mysql -u $user -p$password -e "SHOW PROCESSLIST;"
-		echo "===Queriesi===";
+	echo""
+echo "===Queriesi===";
 	mysql -u $user -p$password -e "SHOW FULL PROCESSLIST\G;"
-		echo "===WARNINGS===";
+	echo""
+echo "===WARNINGS===";
 	mysql -u $user -p$password -e "SHOW COUNT(*) WARNINGS;"
 exit 0;
