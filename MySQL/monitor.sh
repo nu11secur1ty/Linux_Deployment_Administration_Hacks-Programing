@@ -1,6 +1,16 @@
 #!/usr/bin/bash
 # Author V.Varbanovski @nu11secur1ty
 
+
+# You must install truncate 
+truncate -s 0 /path/to/your/log/sqlreport.log
+
+date +'FORMAT'
+date +'%m/%d/%Y'
+date +'%r'
+time_zone=$(date +'%m/%d/%Y')
+echo""
+
 # Input your user
 user=""
 # Input your password
