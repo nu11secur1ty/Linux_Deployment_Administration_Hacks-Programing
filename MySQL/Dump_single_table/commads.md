@@ -1,9 +1,10 @@
-Dump and restore a single table from a compressed (.sql.gz) format
-Credit: John McGrath
+# Dump and restore a single table from a compressed (.sql.gz) format
 
-Dump
-
+- Dump
+```bash
 mysqldump db_name table_name | gzip > table_name.sql.gz
-Restore
-
+```
+- Restore
+```bash
 gunzip < table_name.sql.gz | mysql -u username -p db_name
+```
