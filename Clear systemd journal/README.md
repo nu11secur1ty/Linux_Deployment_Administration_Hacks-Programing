@@ -39,7 +39,8 @@ $ du -hs /var/log/journal
 ```
 # Saves you some GBs on disk!
 
-
+# More...
+- Link: [Read](https://www.freedesktop.org/software/systemd/man/journald.conf.html)
 
 
 
