@@ -4,5 +4,6 @@
 
 ```bash
 certbot delete --cert-name example.com
+./certbot-auto delete --cert-name example.com
 ```
 
