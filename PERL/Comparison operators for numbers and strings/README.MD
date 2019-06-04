@@ -1,27 +1,2 @@
 # Comparison operators for numbers and strings
-
-- Equality              Numeric 	String
-```
-Equal  	                 == 	      eq
-```
-```
-Not Equal 	             != 	      ne
-```
-```
-Comparison 	             <=> 	      cmp
-```
-```
-Relational             Numeric 	  String
-```
-```
-Less than 	              < 	      lt
-```
-```
-Greater than 	            > 	      gt
-```
-```
-Less than or equal 	      <= 	      le
-```
-```
-Greater than or equal     >= 	      ge`
-```
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/tree/master/PERL/Cleaning_files)
