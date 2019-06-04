@@ -23,6 +23,7 @@ my $check_file_size = `du -sh $file`;
 	if($check_file_size lt $size){
 		my $truncate = `truncate -s $size $file`;
 		}
+# Checking for last size of your log file ;)		
 my $last_check = `du -sh $file`;
   print "$last_check\n";
 exit 0;
