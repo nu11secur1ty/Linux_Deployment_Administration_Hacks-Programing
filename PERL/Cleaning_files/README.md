@@ -28,3 +28,6 @@ my $last_check = `du -sh $file`;
   print "$last_check\n";
 exit 0;
 ```
+- More:
+
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/PERL/Cleaning_files/operators.jpg)
