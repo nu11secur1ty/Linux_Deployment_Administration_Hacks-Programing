@@ -12,8 +12,14 @@ use warnings;
 use diagnostics;
 
 my $file = "/your/path/to/file.out";
+
+# Your size limit of your file
 my $size = '10MB';
+
+# Checking for current size of your log file
 my $check_file_size = `du -sh $file`;
+
+# Executing operation for resizing of your log file
 	if($check_file_size lt $size){
 		my $truncate = `truncate -s $size $file`;
 		}
