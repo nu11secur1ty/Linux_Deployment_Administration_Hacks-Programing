@@ -4,5 +4,12 @@ You must show on the program how days you want to check.`
 - Example:
 
 ```bash
-find $i -mtime +5 | xargs ls -ltr;
+tupotii=( folder0 folder1 folder2 )
+
+for i in "${tupotii[@]}"
+do       
+	find $i -mtime +`your days` | xargs ls -ltr;
+done
+	echo "Djanki"
+exit 0;
 ```
