@@ -8,7 +8,7 @@ tupotii=( folder0 folder1 folder2 )
 
 for i in "${tupotii[@]}"
 do       
-	find $i -mtime +`your days` | xargs ls -ltr;
+	find $i -mtime +`your days 0 0 0 ` | xargs ls -ltr;
 done
 	echo "Djanki"
 exit 0;
