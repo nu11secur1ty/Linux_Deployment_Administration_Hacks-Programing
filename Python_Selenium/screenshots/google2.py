@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import time
  
 # Provide a list of urls to create screenshots from
-links = ['http://example1.com','http://example2.com']
+links = ['https://www.google.com','https://www.google.fr/']
  
 # The Chrome and ChromeDriver Paths will vary based on your Operating System. 
 # This example shows how to configure ChromeDriver for Mac
