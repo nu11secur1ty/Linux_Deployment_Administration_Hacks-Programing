@@ -7,8 +7,8 @@ links = ['http://example1.com','http://example2.com']
  
 # The Chrome and ChromeDriver Paths will vary based on your Operating System. 
 # This example shows how to configure ChromeDriver for Mac
-CHROME_PATH = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
+CHROME_PATH = '/path/to/your/google-chrome-stable'
+CHROMEDRIVER_PATH = '/path/to/your/chromedriver'
  
 # Set the Browser Size
 WINDOW_SIZE = "1200,1200"
