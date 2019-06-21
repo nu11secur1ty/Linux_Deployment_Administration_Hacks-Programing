@@ -1,0 +1,939 @@
+#
+# Certificate-Based Repositories
+# Managed by (rhsm) subscription-manager
+#
+# *** This file is auto-generated.  Changes made here will be over-written. ***
+# *** Use "subscription-manager repo-override --help" if you wish to make changes. ***
+#
+# If this file is empty and this system is subscribed consider
+# a "yum repolist" to refresh available repos
+#
+
+[rhel-atomic-7-cdk-3.1-debug-rpms]
+name = Red Hat Container Development Kit 3.1 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.1/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-resilientstorage-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Resilient Storage (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/resilientstorage/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-resilientstorage-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Resilient Storage (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/resilientstorage/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.1-rpms]
+name = Red Hat Container Development Kit 3.1 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.1/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.5-rpms]
+name = Red Hat Container Development Kit 3.5 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.5/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[satellite-tools-6.5-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Satellite Tools 6.5 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-tools/6.5/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-8-for-x86_64-rt-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Real Time (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/rt/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.7-rpms]
+name = Red Hat Container Development Kit 3.7 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.7/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.4-debug-rpms]
+name = Red Hat Container Development Kit 3.4 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.4/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.3-rpms]
+name = Red Hat Container Development Kit 3.3 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.3/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-2.4-debug-rpms]
+name = Red Hat Container Development Kit 2.4 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.4/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-supplementary-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Supplementary (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/supplementary/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-sap-solutions-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP Solutions (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap-solutions/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[satellite-tools-6.5-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Satellite Tools 6.5 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-tools/6.5/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[codeready-builder-for-rhel-8-x86_64-source-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/codeready-builder/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-sap-solutions-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP Solutions (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap-solutions/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.8-rpms]
+name = Red Hat Container Development Kit 3.8 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.8/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-rt-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Real Time (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/rt/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.4-rpms]
+name = Red Hat Container Development Kit 3.4 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.4/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-supplementary-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Supplementary (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/supplementary/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.6-rpms]
+name = Red Hat Container Development Kit 3.6 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.6/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[ansible-2-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Ansible Engine 2 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[codeready-builder-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/codeready-builder/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-rt-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Real Time (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/rt/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[codeready-builder-for-rhel-8-x86_64-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/codeready-builder/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-sap-netweaver-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP NetWeaver (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.1-source-rpms]
+name = Red Hat Container Development Kit 3.1 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.1/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.2-source-rpms]
+name = Red Hat Container Development Kit 3.2 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.2/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.0-beta-source-rpms]
+name = Red Hat Container Development Kit 3.0 Beta /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/beta/rhel/atomic/7/$basearch/cdk/3.0/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-resilientstorage-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Resilient Storage (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/resilientstorage/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[satellite-tools-6.5-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Tools 6.5 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-tools/6.5/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-8-for-x86_64-sap-solutions-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP Solutions (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap-solutions/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-2.4-rpms]
+name = Red Hat Container Development Kit 2.4 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.4/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-2.3-debug-rpms]
+name = Red Hat Container Development Kit 2.3 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.3/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-2.3-source-rpms]
+name = Red Hat Container Development Kit 2.3 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.3/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[ansible-2.8-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Ansible Engine 2.8 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2.8/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-8-for-x86_64-baseos-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.5-debug-rpms]
+name = Red Hat Container Development Kit 3.5 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.5/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[ansible-2.8-for-rhel-8-x86_64-rpms]
+name = Red Hat Ansible Engine 2.8 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2.8/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-atomic-7-cdk-3.0-source-rpms]
+name = Red Hat Container Development Kit 3.0 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.0/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.0-beta-debug-rpms]
+name = Red Hat Container Development Kit 3.0 Beta /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/beta/rhel/atomic/7/$basearch/cdk/3.0/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.2-rpms]
+name = Red Hat Container Development Kit 3.2 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.2/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.6-debug-rpms]
+name = Red Hat Container Development Kit 3.6 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.6/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[ansible-2-for-rhel-8-x86_64-rpms]
+name = Red Hat Ansible Engine 2 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-atomic-7-cdk-3.0-debug-rpms]
+name = Red Hat Container Development Kit 3.0 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.0/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.3-debug-rpms]
+name = Red Hat Container Development Kit 3.3 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.3/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-2.3-rpms]
+name = Red Hat Container Development Kit 2.3 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.3/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.6-source-rpms]
+name = Red Hat Container Development Kit 3.6 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.6/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.5-source-rpms]
+name = Red Hat Container Development Kit 3.5 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.5/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-highavailability-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - High Availability (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/highavailability/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[ansible-2-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Ansible Engine 2 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-8-for-x86_64-sap-netweaver-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP NetWeaver (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.4-source-rpms]
+name = Red Hat Container Development Kit 3.4 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.4/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-baseos-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 1
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-2.4-source-rpms]
+name = Red Hat Container Development Kit 2.4 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/2.4/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-atomic-7-cdk-3.3-source-rpms]
+name = Red Hat Container Development Kit 3.3 /(Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.3/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-appstream-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-baseos-debug-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-sap-netweaver-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - SAP NetWeaver (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/sap/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-highavailability-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - High Availability (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/highavailability/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-atomic-7-cdk-3.0-rpms]
+name = Red Hat Container Development Kit 3.0 /(RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.0/os
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[ansible-2.8-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Ansible Engine 2.8 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2.8/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+
+[rhel-atomic-7-cdk-3.2-debug-rpms]
+name = Red Hat Container Development Kit 3.2 /(Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel/atomic/7/7Server/$basearch/cdk/3.2/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = http://
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = basearch
+
+[rhel-8-for-x86_64-appstream-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-supplementary-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Supplementary (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/supplementary/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-highavailability-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - High Availability (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/highavailability/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 0
+ui_repoid_vars = releasever
+
+[rhel-8-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/249950847969225085-key.pem
+sslclientcert = /etc/pki/entitlement/249950847969225085.pem
+metadata_expire = 86400
+enable_metadata = 1
+ui_repoid_vars = releasever
