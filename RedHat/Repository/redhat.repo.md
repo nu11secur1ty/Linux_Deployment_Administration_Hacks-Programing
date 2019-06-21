@@ -8,7 +8,7 @@
 # If this file is empty and this system is subscribed consider
 # a "yum repolist" to refresh available repos
 #
-
+```bash
 [rhel-7-server-dotnet-debug-rpms]
 metadata_expire = 86400
 sslclientcert = /etc/pki/entitlement/735720938490286558.pem
@@ -3713,3 +3713,4 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 enabled = 0
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 gpgcheck = 1
+```
