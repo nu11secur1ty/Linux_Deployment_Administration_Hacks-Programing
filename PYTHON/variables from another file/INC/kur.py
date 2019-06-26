@@ -1,4 +1,4 @@
 #!/usr/bin/python
 
-import data
-print data.ebanie
+import kusaebe
+print kusaebe.ebanie
