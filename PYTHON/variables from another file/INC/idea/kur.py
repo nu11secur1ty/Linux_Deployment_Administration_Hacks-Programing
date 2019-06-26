@@ -1,4 +1,4 @@
 #!/usr/bin/python
 
-import kusaebe, os
+import kusaebe
 print kusaebe.truti
