@@ -49,5 +49,16 @@ pstree -paul
 kill -9 _pid_
 killall -9 _pid_
 ```
+-----------------------------------------------------------------------
+
+# Easiest way
+```bash
+ps -elf | grep Z
+```
+- Find a tree of the zombie
+```bash
+pstree -aps xxxx # yurpid
+```
+
 
 # Feel with better performance with nu11secur1ty ;)
