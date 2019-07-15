@@ -53,7 +53,7 @@ killall -9 _pid_
 
 # Easiest way
 ```bash
-ps -elf | grep Z
+ps aux | grep "defunct"
 ```
 - Find a tree of the zombie
 ```bash
