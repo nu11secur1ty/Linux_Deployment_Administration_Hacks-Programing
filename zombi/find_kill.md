@@ -57,7 +57,7 @@ ps aux | grep "defunct"
 ```
 - Find a tree of the zombie
 ```bash
-pstree -aps xxxx # yurpid
+pstree -aps xxxx # your_pid
 ```
 
 
