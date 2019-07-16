@@ -24,9 +24,9 @@ nmap -sS 192.168.1.1                  # Scan using TCP SYN scan (default)
 nmap -sU -p 123,161,162 192.168.1.1   # Scan UDP ports
 nmap -Pn -F 192.168.1.1               # Scan selected ports - ignore discovery
 ```
-Privileged access is required to perform the default SYN scans. If privileges are insufficient a TCP connect scan will be used. A TCP connect requires a full TCP connection to be established and therefore is a slower scan. Ignoring discovery is often required as many firewalls or hosts will not respond to PING, so could be missed unless you select the -Pn parameter. Of course this can make scan times much longer as you could end up sending scan probes to hosts that are not there.
+Privileged access is required to perform the default `SYN` scans. If privileges are insufficient a TCP connect scan will be used. A TCP connect requires a full TCP connection to be established and therefore is a slower scan. Ignoring discovery is often required as many firewalls or hosts will not respond to `PING`, so could be missed unless you select the `-Pn` parameter. Of course this can make scan times much longer as you could end up sending scan probes to hosts that are not there.
 
-Take a look at the Nmap Tutorial for a detailed look at the scan process.
+Take a look at the `Nmap Tutorial` for a detailed look at the scan process.
 
 ------------------------------------------------------------------------------------------------------
 
