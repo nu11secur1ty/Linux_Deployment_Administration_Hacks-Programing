@@ -11,11 +11,11 @@ nmap -iL list-of-ips.txt   # Scan targets from a text file
 # Nmap Port Selection
 
 ```bash
- 	nmap -p 22 192.168.1.1     # Scan a single Port
-  nmap -p 1-100 192.168.1.1  # Scan a range of ports
-  nmap -F 192.168.1.1        # Scan 100 most common ports (Fast)
-  nmap -p- 192.168.1.1       # Scan all 65535 ports
-  ```
+ nmap -p 22 192.168.1.1     # Scan a single Port
+ nmap -p 1-100 192.168.1.1  # Scan a range of ports
+ nmap -F 192.168.1.1        # Scan 100 most common ports (Fast)
+ nmap -p- 192.168.1.1       # Scan all 65535 ports
+ ```
 # Nmap Port Scan types
 
 ```bash
