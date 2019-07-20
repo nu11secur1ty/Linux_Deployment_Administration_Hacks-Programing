@@ -1,9 +1,9 @@
 # Securing Apache2 icons/README
-- Going to 
+- Navigate to
 ```bash 
 cd /usr/share/apache2/icons
 ```
-- Create .htaccess file and add in to
+- Create a .htaccess file and add in to
 ```bash
 # Protect README
 <Files README.html>
@@ -15,3 +15,4 @@ cd /usr/share/apache2/icons
   Deny from all
 </Files>
 ```
+# Good luck friends ;)
