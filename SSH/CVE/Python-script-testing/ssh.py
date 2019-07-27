@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-import sys,paramiko,socket
+import sys
+import paramiko
+import socket
 
 s = socket.socket()
 s = connect(("0.0.0.0",0000))
