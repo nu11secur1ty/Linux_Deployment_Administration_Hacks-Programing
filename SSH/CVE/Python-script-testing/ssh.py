@@ -4,7 +4,7 @@ import paramiko
 import socket
 
 s = socket.socket()
-s = connect(("0.0.0.0",0000))
+s.connect(("0.0.0.0",0000))
 m = paramiko.message.Message()
 t = paramika.transport.Transport(s)
 t.start_client()
