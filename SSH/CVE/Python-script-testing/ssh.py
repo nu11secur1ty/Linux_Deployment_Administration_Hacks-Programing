@@ -4,6 +4,7 @@ import paramiko
 import socket
 
 s = socket.socket()
+# Your ip ...
 s.connect(("0.0.0.0",0000))
 m = paramiko.message.Message()
 t = paramika.transport.Transport(s)
