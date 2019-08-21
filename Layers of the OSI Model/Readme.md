@@ -17,4 +17,4 @@ Note: Click each hyperlink in the list below to read detailed information and ex
 - Layer 1 - Physical
 ```
 
-![]()
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/Layers%20of%20the%20OSI%20Model/wall/7-layers-of-osi-icon.jpg)
