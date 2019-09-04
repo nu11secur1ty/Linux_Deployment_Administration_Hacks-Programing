@@ -19,6 +19,7 @@ First, you can try sending SIGCHLD signal to the zombie's parent process using t
 ```bash
 sudo kill -s SIGCHLD 250
 kill -s SIGCHLD 250
+kill -9 250
 ```
 - ***If a zombie process still does not go away, you can kill the parent process (e.g., 250) of the zombie.***
 ```bash
