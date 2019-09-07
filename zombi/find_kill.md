@@ -6,6 +6,7 @@ A process is called a zombie process if the process has been completed, but its 
 # Find zombie processes on Linux:
 ```bash
 ps axo stat,ppid,pid,comm | grep -w defunct
+ps aux | awk {'print $8'}|grep -c Z
 ```
 - Output
 ```xml
