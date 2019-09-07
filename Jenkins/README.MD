@@ -7,7 +7,7 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 
 - More: https://jenkins.io/doc/
 
-# Run
+# Running the service
 ```url
 https://localhost/jenkins
 ```
