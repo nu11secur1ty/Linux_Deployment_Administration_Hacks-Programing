@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/usr/bin/bash
 
 jenkins_install()
 {
