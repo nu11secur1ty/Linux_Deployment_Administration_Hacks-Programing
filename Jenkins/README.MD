@@ -25,7 +25,9 @@ https://localhost/jenkins
 ```bash 
 vim /etc/default/jenkins
 ```
-- Edit: `JENKINS_HOME=/var/lib/$NAME` and add in this line your path of your `root` directory `/your/path/$PATH`
+- Edit:
+. Change the variable content, with your content `NAME=yourname`
+. Edit this `JENKINS_HOME=/var/lib/$NAME` line and add in this line your path of your `root` directory `/your/path/$PATH`
 
 ```bash
 # defaults for Jenkins automation server
