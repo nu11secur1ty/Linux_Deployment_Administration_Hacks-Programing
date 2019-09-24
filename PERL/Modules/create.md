@@ -50,5 +50,18 @@ sub set_level{
  
 1;
 ```
-
+- Create an app which will collect the log from the current time
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+ 
+use FileLogger;
+ 
+FileLogger::open("logtest.log");
+ 
+FileLogger::log(1,"This is a test message");
+ 
+FileLogger::close();
+```
 
