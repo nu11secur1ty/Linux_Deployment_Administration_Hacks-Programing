@@ -1,8 +1,8 @@
-- Find your #INC module directory of Perl
+- Find your `#INC` module directory of Perl
 ```bash
 perl -V
 ```
-# Create the module in my case the @INC is in `/usr/share/perl/5.26`
+# Create the module in my case, the @INC is in `/usr/share/perl/5.26`
 - Create your module in my case the module is shoing the time
 ```bash
 cd /usr/share/perl/5.26
@@ -50,7 +50,7 @@ sub set_level{
  
 1;
 ```
-- Create an app which will collect the log from the current time
+- Create an app which will collect the log from the current time and will use your new module.
 ```perl
 #!/usr/bin/perl
 use strict;
