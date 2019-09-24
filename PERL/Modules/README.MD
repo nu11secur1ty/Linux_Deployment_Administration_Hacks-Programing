@@ -6,7 +6,7 @@
 perl -V
 ```
 # Create the module in my case, the @INC is in `/usr/share/perl/5.26`
-- Create your module in my case the module will take the information for the current time.
+- Create your module in my case the module will take the information for the current time from NTP.
 ```bash
 cd /usr/share/perl/5.26
 vim FileLogger.pm
