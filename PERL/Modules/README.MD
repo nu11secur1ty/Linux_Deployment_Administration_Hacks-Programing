@@ -60,7 +60,7 @@ sub set_level{
 use strict;
 use warnings;
  
-use FileLogger;
+use FileLogger; # Defined your Perl module
  
 FileLogger::open("logtest.log");
  
