@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-
+# Udri kume taa ma4ka nea nashta by nu11secur1ty
 
 jenkins_install()
 {
