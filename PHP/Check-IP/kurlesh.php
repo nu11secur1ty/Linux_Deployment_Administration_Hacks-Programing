@@ -18,6 +18,5 @@ function getVisIpAddr() {
 $vis_ip = getVisIPAddr();
 
 // Display the IP address 
-echo $vis_ip;
- 
+   echo $vis_ip;
 ?>
