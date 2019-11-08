@@ -1,4 +1,3 @@
-
 <?php 
 // PHP code to obtain country, city,  
 // continent, etc using IP Address 
@@ -18,5 +17,4 @@ echo 'Longitude: ' . $ipdat->geoplugin_longitude . "\n";
 echo 'Currency Symbol: ' . $ipdat->geoplugin_currencySymbol . "\n"; 
 echo 'Currency Code: ' . $ipdat->geoplugin_currencyCode . "\n"; 
 echo 'Timezone: ' . $ipdat->geoplugin_timezone; 
-   
 ?> 
