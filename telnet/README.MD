@@ -1,4 +1,4 @@
-# How to stop connection:
+# How to stop a connection:
 ```
 1. Open the telnet prompt by holding down the 'Ctrl' key and push the ']' key. (prompt: Microsoft Telnet>)
 
