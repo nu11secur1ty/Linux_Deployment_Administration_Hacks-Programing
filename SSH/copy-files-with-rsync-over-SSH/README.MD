@@ -20,7 +20,7 @@ If the connection is successful then you should not experience problems initiati
 
 Depending on the SSH authentication method configured on the server you might be prompted to fill in SSH password or key passphrase upon execution of the rsync command.
 
-```xml
+```
 Transfer data using rsync
 ```
 - Copy a file from local server to remote one:
