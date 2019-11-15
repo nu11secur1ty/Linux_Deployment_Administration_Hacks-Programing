@@ -5,9 +5,9 @@
 - root privileges
 - Basic skills for working on a Linux environment
 
-```txt
+
 Rsync is a great tool that allows you to transfer and synchronize data between servers. The command can be used over SSH which encrypts the connection. It also provides large amount of options which can be used such as archive mode, backup mode, data compression during the transfer etc.
-```
+
 
 # Check SSH configuration
 
