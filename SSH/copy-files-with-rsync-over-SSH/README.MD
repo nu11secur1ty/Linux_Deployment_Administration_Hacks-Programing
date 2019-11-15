@@ -24,6 +24,7 @@ Depending on the SSH authentication method configured on the server you might be
 Transfer data using rsync
 ```
 - Copy a file from local server to remote one:
+
 ```bash
 rsync -v -e ssh /home/localuser/testfile.txt remoteuser@X.X.X.X:/home/remoteuser/transfer
 ```
@@ -43,7 +44,7 @@ rsync -v -e "ssh -p2222" /home/localuser/testfile.txt remoteuser@X.X.X.X:~/trans
 
 Again the testfile.txt will be copied inside the /home/remoteuser/transfer folder situated on the remote server.
 
-Copy a file from remote server into a local folder:
+- Copy a file from remote server into a local folder:
 
 ```bash
 rsync -v -e ssh remoteuser@X.X.X.X:/home/remoteuser/transfer/testfile.txt /home/localuser/
@@ -51,12 +52,12 @@ rsync -v -e ssh remoteuser@X.X.X.X:/home/remoteuser/transfer/testfile.txt /home/
 
 In the above example we will copy a file called testfile.txt from the remote server inside a local folder called `/home/localuser/`.
 
-Synchronize local folder on remote server:
+- Synchronize local folder on remote server:
 
 ```bash
 rsync -r -a -v -e ssh --delete /home/localuser/testfolder remoteuser@X.X.X.X:/home/remoteuser/testfolder
 ```
-Synchronize folder from the remote server on the local server:
+- Synchronize folder from the remote server on the local server:
 
 ```bash
 rsync -r -a -v -e ssh --delete remoteuser@X.X.X.X:/home/remoteuser/testfolder /home/localuser/testfolder
@@ -69,9 +70,9 @@ When not using "/" at the end of source folder, rsync will copy the folder itsel
 
 If "/" is placed at the end of the destination folder, rsync will paste the data directly inside the folder.
 When not using "/" at the end of destination folder, rsync will create a folder with that name and paste the data inside that folder.
-
 Here is a list of some of the most common rsync options:
 
+-----------------------------------------------------------------------
 - --delete - delete files that don't exist on sender (system)
 - -v - verbose (-vv will provide more detailed information)
 - -e "ssh options" - specify the ssh as remote shell
