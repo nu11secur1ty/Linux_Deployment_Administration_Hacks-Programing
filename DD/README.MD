@@ -72,18 +72,18 @@ $ sudo dd if=name-of-iso.iso of=/dev/sdb status="progress"
 ```
 
 
-Where “name-of-iso.iso” is of course replaced by the actual name of your ISO file.
+Where `“name-of-iso.iso”` is of course replaced by the actual name of your ISO file.
 At the time of writing, I’m following along here, using the dd command to put bootable Manjaro Architect on a 16GB Sandisk Cruzer Glide 3.0 USB drive. My command looks like this
-$ sudo dd if=manjaro-architect-17.1.9-stable-x86_64.iso of=/dev/sdb status=”progress”
+`$ sudo dd if=manjaro-architect-17.1.9-stable-x86_64.iso of=/dev/sdb status=”progress”`
 
 This may take several minutes to execute without any visual feedback from the terminal if you don’t use status=”progress”. You can use htop from another terminal window if you want to see the process running. However, if you don’t get an error, you can assumed the process is running. You should see something like these results returned:
-1054648+0 records in
-1054648+0 records out
-539979776 bytes (540 MB, 515 MiB) copied, 107.609 s, 5.0 MB/s
+`1054648+0 records in`
+`1054648+0 records out`
+`539979776 bytes (540 MB, 515 MiB) copied, 107.609 s, 5.0 MB/s`
 … which is what we’d expect to see after copying the Manjaro Architect ISO onto the usb drive. If we’re using a larger ISO, like Fedora AtomicWorkstation, the resultant size would be 2.3 GB. Other operating system ISO files will translate into even larger file sizes.
 
 After navigating this article, the usb drive is bootable, by the machine you used to create it or another machine. This can be used to make any operating system ISO file bootable on a USB drive.
-Ahem.. we won’t mention it, but this even works for creating bootable windows, assuming you set up the file system as ntfs, substituting “$ sudo mkfs.ext4 /dev/sdb” with “$ sudo mkfs.ntfs /dev/sdb”
+Ahem.. we won’t mention it, but this even works for creating bootable windows, assuming you set up the file system as ntfs, substituting “$ sudo mkfs.ext4 /dev/sdb” with “$ sudo mkfs.`ntfs` /dev/sdb”
 
 
 
