@@ -4,7 +4,7 @@
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 ```
 
-# Grant permissions for a user
+# Grant permissions for a user to a specific table from a database:
 
  - database – the name of the MySQL database to which we grant access
  - table – the name of the database table to which we grant access
