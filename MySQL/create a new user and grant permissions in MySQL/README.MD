@@ -46,6 +46,12 @@ GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 ```bash
 GRANT SELECT, INSERT, DELETE ON database.* TO 'user'@'localhost';
 ```
+- or more privileges
+
+```bash
+GRANT SELECT, INSERT, DELETE, UPDATE, DROP ON database.* TO 'user'@'localhost';
+```
+
 - Apply
 
 ```bash
