@@ -23,3 +23,31 @@ GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
  	
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 ```
+# MySQL privileges which are most commonly used:
+
+
+- ALL PRIVILEGES – grants all privileges to the MySQL user
+- CREATE – allows the user to create databases and tables
+- DROP - allows the user to drop databases and tables
+- DELETE - allows the user to delete rows from specific MySQL table
+- INSERT - allows the user to insert rows into specific MySQL table
+- SELECT – allows the user to read the database
+- UPDATE - allows the user to update table rows
+
+
+# Only two privileges
+
+```bash
+GRANT SELECT, INSERT, DELETE ON database.* TO 'user'@'localhost';
+```
+- Apply
+
+```bash
+FLUSH PRIVILEGES;
+```
+# Remove an existing MySQL user
+```
+DROP USER 'user'@'localhost'
+```
+
+
