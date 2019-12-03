@@ -3,6 +3,7 @@
 ```bash	
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 ```
+------------------------------------------------------------
 
 # Grant permissions for a user to a specific table from a database:
 
@@ -12,22 +13,30 @@ CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 ```bash
 GRANT ALL PRIVILEGES ON database.table TO 'user'@'localhost';
 ```
+--------------------------------------------------------------
+
 # grant access to all databases/tables:
 
 ```bash
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
 ```
-- For only `SELECT`
+- For only `SELECT` or more
 
 ```
 GRANT SELECT ON database.table TO 'user'@'localhost';
 ```
-- to all
+- or more privileges:
+
+```bash
+GRANT SELECT, INSERT, UPDATE ON database.table TO 'user'@'localhost';
+```
+- to all databases
 
 ```bash
  	
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 ```
+-------------------------------------------------------------------------------------
 
 # MySQL privileges which are most commonly used:
 
@@ -40,6 +49,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 - SELECT – allows the user to read the database
 - UPDATE - allows the user to update table rows
 
+--------------------------------------------------------------------------------------
 
 # Only two privileges
 
@@ -57,6 +67,8 @@ GRANT SELECT, INSERT, DELETE, UPDATE, DROP ON database.* TO 'user'@'localhost';
 ```bash
 FLUSH PRIVILEGES;
 ```
+---------------------------------------------------------------------------------
+
 # Remove an existing MySQL user
 ```
 DROP USER 'user'@'localhost'
