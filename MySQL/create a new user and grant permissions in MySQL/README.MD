@@ -55,5 +55,5 @@ FLUSH PRIVILEGES;
 ```
 DROP USER 'user'@'localhost'
 ```
-
+# Have fun ;)
 
