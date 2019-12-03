@@ -17,7 +17,7 @@ GRANT ALL PRIVILEGES ON database.table TO 'user'@'localhost';
 ```bash
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
 ```
-- For anly `SELECT`
+- For only `SELECT`
 
 ```
 GRANT SELECT ON database.table TO 'user'@'localhost';
