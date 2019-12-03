@@ -17,12 +17,18 @@ GRANT ALL PRIVILEGES ON database.table TO 'user'@'localhost';
 ```bash
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
 ```
-- or
+- For anly `SELECT`
+
+```
+GRANT SELECT ON database.table TO 'user'@'localhost';
+```
+- to all
 
 ```bash
  	
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
 ```
+
 # MySQL privileges which are most commonly used:
 
 
