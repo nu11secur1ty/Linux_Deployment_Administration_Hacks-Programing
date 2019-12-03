@@ -15,7 +15,7 @@ GRANT ALL PRIVILEGES ON database.table TO 'user'@'localhost';
 ```
 --------------------------------------------------------------
 
-# grant access to all databases/tables:
+# grant access to all databases/tables and single:
 
 ```bash
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
