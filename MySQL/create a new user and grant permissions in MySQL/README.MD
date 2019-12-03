@@ -17,3 +17,9 @@ GRANT ALL PRIVILEGES ON database.table TO 'user'@'localhost';
 ```bash
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost';
 ```
+- or
+
+```bash
+ 	
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
+```
