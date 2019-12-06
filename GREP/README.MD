@@ -82,6 +82,45 @@ For example, suppose you want to search for words "how", "to", and "forge" in al
 grep -e how -e to -e forge *.txt
 ```
 
+#  limit grep output to a particular number of lines
+
+```bash
+grep "how" -m3 testfile1.txt
+```
+# make grep obtain patterns from file
+
+```bash
+grep -f input *.txt
+```
+#  display only those lines that completely match the search pattern
+
+```bash
+grep -x "how are you?" *.txt
+```
+# orce grep to not display anything in the output
+By default, the grep command displays the name of files containing the search pattern (as well as matched lines). This is quite logical, as that's what expected of this tool. However, there might be cases wherein the requirement could be to get names of those files that do not contain the searched pattern.
+
+This is also possible with grep - the -L options lets you do this. So, for example, to find all those text files in the current directory that does not contain the word "how", you can run the following command:
+
+```bash
+grep -L "how" *.txt
+```
+
+#  recursively search directories
+As clear from the example used in the previous point, the grep command doesn't do a recursive search by default. To make sure your grep search is recursive, use the -d command-line option and pass the value 'recurse' to it.
+```bash
+grep -d recurse "how" *
+```
+
+#  terminate file names with NULL character
+
+```bash
+grep -lZ "how" *.txt
+```
+
+
+
+
 
 
 
