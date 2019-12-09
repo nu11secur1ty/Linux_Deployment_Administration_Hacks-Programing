@@ -161,6 +161,15 @@ awk '{ if($3 == "B6") print $0;}' geeksforgeeks.txt
 ```bash
 awk 'BEGIN { for(i=1;i<=6;i++) print "square of", i, "is",i*i; }'
 ```
+. out
 
+```
+square of 1 is 1
+square of 2 is 4
+square of 3 is 9
+square of 4 is 16
+square of 5 is 25
+square of 6 is 36
+```
 
  
