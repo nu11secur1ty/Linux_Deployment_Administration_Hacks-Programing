@@ -1,8 +1,9 @@
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks/blob/master/Postfix%20and%20Dovecot%20in%20openSUSE/troubleshooting-problems-with-postfix-dovecot-and-mysql.jpg)
 
-# Install and setup Dovecot
+# Install and setup Dovecot and Postfix
 ```bash
 zypper install dovecot
+zypper install postfix
 ```
 # Edit Dovecot main configuration file to allow IMAP, POP3 and LMPT protocols. Edit file ***/etc/dovecot/dovecot.conf***
 
