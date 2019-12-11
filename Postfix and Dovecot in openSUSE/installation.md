@@ -52,7 +52,7 @@ home_mailbox = Maildir/
 inet_interfaces = localhost
 inet_protocols = all
 mydestination = $myhostname, localhost.$mydomain, $mydomain
-myhostname = mail.gashnik.com
+myhostname = mail.nu11secur1ty.com
 ```
 
 # Restart Postfix service.
