@@ -48,7 +48,8 @@ vim /etc/postfix/main.cf
 ```
 ```css
 home_mailbox = Maildir/
-inet_interfaces = localhost, 0.0.0.0
+# inet_interfaces = localhost, 0.0.0.0
+inet_interfaces = localhost
 inet_protocols = all
 mydestination = $myhostname, localhost.$mydomain, $mydomain
 myhostname = mail.gashnik.com
