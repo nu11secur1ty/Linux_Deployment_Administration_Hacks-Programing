@@ -22,7 +22,7 @@ du -sh test.txt.bz2
 4,0K	test.txt.bz2
 ```
 ---------------------------------------------------------------------------
-# Turnback
+# Turn back
 - Decompress
 ```bash
 bzip2 -d test.txt.bz2
