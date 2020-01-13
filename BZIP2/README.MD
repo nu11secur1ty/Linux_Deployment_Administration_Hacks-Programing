@@ -7,3 +7,8 @@ bzip2 -z filename
 ```bash
 bzip2 -d filename.bz2
 ```
+# test
+- Create 1G file
+```
+fallocate -l 1G test.txt
+```
