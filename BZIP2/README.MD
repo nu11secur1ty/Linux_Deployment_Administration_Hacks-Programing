@@ -12,3 +12,12 @@ bzip2 -d filename.bz2
 ```
 fallocate -l 1G test.txt
 ```
+- - test
+```bash 
+bzip2 -z test.txt
+```
+- - Output
+```bash
+du -sh test.txt.bz2 
+4,0K	test.txt.bz2
+```
