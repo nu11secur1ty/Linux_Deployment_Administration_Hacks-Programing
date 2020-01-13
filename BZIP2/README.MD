@@ -21,3 +21,15 @@ bzip2 -z test.txt
 du -sh test.txt.bz2 
 4,0K	test.txt.bz2
 ```
+---------------------------------------------------------------------------
+# Turnback
+- Decompress
+```bash
+bzip2 -d test.txt.bz2
+```
+- - output
+```bash
+du -sh test.txt 
+1,1G	test.txt
+```
+# Have fun ;)
