@@ -4,7 +4,7 @@ To test the connection remotely, access the MySQL server from another Linux® se
 The following example uses 44.55.66.77 as the IP address of the MySQL server:
 
 ```bash
-# mysql -u fooUser -p -h 44.55.66.77
+:~# mysql -u fooUser -p -h 44.55.66.77
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 17
