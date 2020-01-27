@@ -8,7 +8,7 @@
 zypper install python-pip
 zypper install python-pip3
 ```
-# Install google-chrome on the server
+# Installing google-chrome on the server
 ```bash
 zypper addrepo http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome
 zypper refresh
@@ -32,7 +32,7 @@ exec -a "$0" "$HERE/chrome" "$@" --no-sandbox
 ```
 
 ---------------------------------------------------------------------
-# Installing Selenium:
+# Installing Selenium on the server:
 
 - selenium
 ```bash
