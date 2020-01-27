@@ -8,6 +8,33 @@
 zypper install python-pip
 zypper install python-pip3
 ```
+# Install google-chrome on the server
+```bash
+zypper addrepo http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome
+zypper refresh
+wget https://dl.google.com/linux/linux_signing_key.pub
+rpm --import linux_signing_key.pub
+zypper install google-chrome-stable
+```
+- Run as root
+```bash
+vim /usr/bin/google-chrome
+```
+- Change:
+```bash
+# Note: exec -a below is a bashism.
+exec -a "$0" "$HERE/chrome" "$@"
+```
+- to:
+```bash
+# Note: exec -a below is a bashism.
+exec -a "$0" "$HERE/chrome" "$@" --no-sandbox
+```
+
+---------------------------------------------------------------------
+# Selenium# Note: exec -a below is a bashism.
+exec -a "$0" "$HERE/chrome" "$@" --no-sandbox
+
 
 - selenium
 ```bash
