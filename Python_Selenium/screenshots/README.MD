@@ -3,16 +3,16 @@
 
 # installing packages
 
-- selenium
-```bash
-pip install selenium
-pip3 install selenium
-```
-
 - NOTE: for OpenSuse Leap42.3
 ```bash
 zypper install python-pip
 zypper install python-pip3
+```
+
+- selenium
+```bash
+pip install selenium
+pip3 install selenium
 ```
 
 - Chrome driver
