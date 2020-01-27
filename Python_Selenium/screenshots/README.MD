@@ -23,4 +23,7 @@ chromedriver = '/path/path/chromedriver'
 ```bash
 python google.py
 ```
+# NOTE:
+- For the project, I use the `ChromeDriver 79 version` which is needed for the Chrome Web browser 79 version!
+
 # Enjoy ;)
