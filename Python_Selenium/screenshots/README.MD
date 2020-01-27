@@ -24,6 +24,7 @@ chromedriver = '/path/path/chromedriver'
 python google.py
 ```
 # NOTE: 2020
-- For the new https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/Python_Selenium/screenshots/README.MDproject, I use the `ChromeDriver 79 version` which is needed for the Chrome Web browser 79 version!
+
+- For the new project, I use the `ChromeDriver 79 version` which is needed for the Chrome Web browser 79 version!
 
 # Enjoy ;)
