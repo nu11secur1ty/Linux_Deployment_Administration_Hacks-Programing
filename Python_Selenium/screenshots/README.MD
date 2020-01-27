@@ -19,7 +19,7 @@ pip3 install selenium
 ```link
 http://chromedriver.chromium.org/downloads
 cd /path/to/your/location/ 
-wget https://chromedriver.storage.googleapis.com/75.0.3770.8/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_linux64.zip
 ```
 - Specify the path of your "chromedriver"
 ```bash
