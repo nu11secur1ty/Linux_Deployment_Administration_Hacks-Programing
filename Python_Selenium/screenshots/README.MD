@@ -32,9 +32,7 @@ exec -a "$0" "$HERE/chrome" "$@" --no-sandbox
 ```
 
 ---------------------------------------------------------------------
-# Selenium# Note: exec -a below is a bashism.
-exec -a "$0" "$HERE/chrome" "$@" --no-sandbox
-
+# Installing Selenium:
 
 - selenium
 ```bash
