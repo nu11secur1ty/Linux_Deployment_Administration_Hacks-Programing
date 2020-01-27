@@ -8,6 +8,13 @@
 pip install selenium
 pip3 install selenium
 ```
+
+- NOTE: for OpenSuse Leap42.3
+```bash
+zypper install python-pip
+zypper install python-pip3
+```
+
 - Chrome driver
 ```link
 http://chromedriver.chromium.org/downloads
