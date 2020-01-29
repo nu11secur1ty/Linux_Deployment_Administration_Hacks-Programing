@@ -2,7 +2,7 @@
 
 # Creating a large file on a Linux using fallocate command for the test!
 
-- Create folder
+- Create a folder, simulate database from `/var/lib/mysql/78`
 ```bash
 mkdir -p 78
 ```
