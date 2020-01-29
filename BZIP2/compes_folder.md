@@ -17,7 +17,7 @@ du -sh test.img
 ```
 - Lets compress
 ```bash
-
+tar -cf 78.tar 78 && bzip2 78.tar
 ```
 
 
