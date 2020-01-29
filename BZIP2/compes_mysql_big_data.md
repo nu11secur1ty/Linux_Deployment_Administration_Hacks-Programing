@@ -21,10 +21,10 @@ tar -czvf "$(date '+%Y-%m-%d_')78.tar.gz" 78 && bzip2 -z "$(date '+%Y-%m-%d_')"7
 ```
 - Check the compressed size
 ```bash
-du -sh 2020-01-29_78.tar.gz.bz2
+du -sh 0000-00-00_78.tar.gz.bz2
 ```
 - Decompressing and usage
 ```bash
-bzip2 -d 2020-01-29_78.tar.gz.bz2 && tar -xvf 2020-01-29_78.tar.gz
+bzip2 -d 0000-00-00_78.tar.gz.bz2 && tar -xvf 2020-01-29_78.tar.gz
 ```
 # All is done congratulations ;)
