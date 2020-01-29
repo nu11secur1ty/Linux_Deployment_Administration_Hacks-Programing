@@ -17,14 +17,14 @@ du -sh test.img
 ```
 - Let's compress
 ```bash
-tar -czvf 78.tar 78 && bzip2 78.tar
+tar -czvf 78.tar.gz 78 && bzip2 -z 78.tar.gz
 ```
 - Check the compressed size
 ```bash
-du -sh 78.tar.bz2
+du -sh 78.tar.gz.bz2
 ```
 - Decompressing and usage
 ```bash
-bzip2 -d 78.tar.bz2 && tar -xvf 78.tar
+bzip2 -d 78.tar.gz.bz2 && tar -xvf 78.tar.gz
 ```
 # All is done congratulations ;)
