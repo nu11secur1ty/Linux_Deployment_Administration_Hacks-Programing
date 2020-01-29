@@ -1,6 +1,6 @@
-# Compress folder
+# Compress folder - mysql big data
 
-# Creating a large file on a Linux using fallocate command
+# Creating a large file on a Linux using fallocate command for the test!
 
 - Create folder
 ```bash
@@ -11,19 +11,19 @@ mkdir -p 78
 ```bash
 fallocate -l 1G test.img
 ```
-- Check size
+- Checking the size
 ```bash 
 du -sh test.img
 ```
-- Lets compress
+- Let's compress
 ```bash
 tar -cf 78.tar 78 && bzip2 78.tar
 ```
-- Check
+- Check the compressed size
 ```bash
 du -sh 78.tar.bz2
 ```
-- Decompress
+- Decompressing and usage
 ```bash
 bzip2 -d 78.tar.bz2 && tar -xvf 78.tar
 ```
