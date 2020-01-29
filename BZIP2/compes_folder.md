@@ -19,5 +19,10 @@ du -sh test.img
 ```bash
 tar -cf 78.tar 78 && bzip2 78.tar
 ```
-
+- Check
+```bash
+du -sh 78.tar.bz2
+```
+- Decompress
+```bash
 
