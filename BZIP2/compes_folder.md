@@ -25,4 +25,6 @@ du -sh 78.tar.bz2
 ```
 - Decompress
 ```bash
-
+bzip2 -d 78.tar.bz2 && tar -xvf 78.tar
+```
+# All is done congratulations ;)
