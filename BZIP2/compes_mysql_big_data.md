@@ -17,7 +17,7 @@ du -sh test.img
 ```
 - Let's compress
 ```bash
-tar -czvf 78.tar.gz 78 && bzip2 -z 78.tar.gz
+tar -czvf "$(date '+%Y-%m-%d')78.tar.gz" 78 && bzip2 -z "$(date '+%Y-%m-%d')"78.tar.gz
 ```
 - Check the compressed size
 ```bash
@@ -25,6 +25,6 @@ du -sh 78.tar.gz.bz2
 ```
 - Decompressing and usage
 ```bash
-bzip2 -d 78.tar.gz.bz2 && tar -xvf 78.tar.gz
+bzip2 -d 2020-01-2978.tar.gz.bz2 && tar -xvf 2020-01-2978.tar.gz
 ```
 # All is done congratulations ;)
