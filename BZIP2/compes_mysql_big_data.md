@@ -17,7 +17,7 @@ du -sh test.img
 ```
 - Let's compress
 ```bash
-tar -cf 78.tar 78 && bzip2 78.tar
+tar -czvf 78.tar 78 && bzip2 78.tar
 ```
 - Check the compressed size
 ```bash
