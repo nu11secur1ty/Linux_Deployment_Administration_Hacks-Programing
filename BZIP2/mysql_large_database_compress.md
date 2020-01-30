@@ -1,6 +1,6 @@
 # All bases:
 ```bash
-mysqldump -u root -pPASSWORD --all-databases | bzip2 > /your/dir/database_`data ' %m-%d-%Y'`.sql.bz2
+mysqldump -u root -pPASSWORD --all-databases | bzip2 > /your/dir/databases_`data ' %m-%d-%Y'`.sql.bz2
 ```
 # Single base:
 ```bash
