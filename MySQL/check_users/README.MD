@@ -10,4 +10,5 @@ mysql> select * from mysql.user \G;
 # User and host
 ```mysql
 mysql> SELECT User, Host FROM mysql.user;
+mysql> SELECT User, Db, Host from mysql.db;
 ```
