@@ -1,6 +1,6 @@
 # Create folder
 ```bash
-mkdir -p ff
+mkdir -p ff && cd ff
 ```
 - Create file in this folder
 ```bash
