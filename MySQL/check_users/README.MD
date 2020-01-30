@@ -7,3 +7,7 @@ mysql>  SELECT User FROM mysql.user;
 mysql> select * from mysql.user;
 mysql> select * from mysql.user \G;
 ```
+# User and host
+```mysql
+mysql> SELECT User, Host FROM mysql.user;
+```
