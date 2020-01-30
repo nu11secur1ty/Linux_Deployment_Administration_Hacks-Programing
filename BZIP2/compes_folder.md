@@ -17,6 +17,6 @@ tar -czvf "$(date '+%Y-%m-%d_')ff.tar.gz" ff && bzip2 -z "$(date '+%Y-%m-%d_')"f
 ```
 - Check size
 ```bash
-du -sh ff.tar.gz.bz2
+du -sh *2020*
 ```
-# Have fun hackers :)P
+# Have fun, now you are a hacker hackers :)P
