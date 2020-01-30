@@ -12,6 +12,7 @@ du -sh image.png
 ```
 - Compress
 ```bash
+cd ../
 tar -czvf "$(date '+%Y-%m-%d_')ff.tar.gz" ff && bzip2 -z "$(date '+%Y-%m-%d_')"ff.tar.gz
 ```
 - Check size
