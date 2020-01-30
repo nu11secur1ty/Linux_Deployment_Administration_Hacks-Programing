@@ -1,4 +1,7 @@
-# Command
+# All bases:
 ```bash
-mysqldump -u root -pPASSWORD --all-databases | bzip2 > /mnt/disk2/database_`data ' %m-%d-%Y'`.sql.bz2
+mysqldump -u root -pPASSWORD --all-databases | bzip2 > /your/dir/database_`data ' %m-%d-%Y'`.sql.bz2
 ```
+# Single base:
+```bash
+mysqldump -u root -pPASSWORD tarator | bzip2 > /your/dir/tarator_`data ' %m-%d-%Y'`.sql.bz2
