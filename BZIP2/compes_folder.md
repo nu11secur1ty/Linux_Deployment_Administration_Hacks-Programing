@@ -19,4 +19,4 @@ tar -czvf "$(date '+%Y-%m-%d_')ff.tar.gz" ff && bzip2 -z "$(date '+%Y-%m-%d_')"f
 ```bash
 du -sh *2020*
 ```
-# Have fun, now you are a hacker hackers :)P
+# Have fun, now you are a hacker :)P
