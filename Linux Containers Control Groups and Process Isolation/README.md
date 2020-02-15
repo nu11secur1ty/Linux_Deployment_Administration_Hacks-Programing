@@ -1,3 +1,6 @@
+# Linux Containers, Control Groups and Process Isolation
+
+
 Everyone's heard the term, but what exactly are containers?
 
 The software enabling this technology comes in many forms, with Docker as the most popular. The recent rise in popularity of container technology within the data center is a direct result of its portability and ability to isolate working environments, thus limiting its impact and overall footprint to the underlying computing system. To understand the technology completely, you first need to understand the many pieces that make it all possible.
