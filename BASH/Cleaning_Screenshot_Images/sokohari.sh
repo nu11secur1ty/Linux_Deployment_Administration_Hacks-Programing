@@ -14,5 +14,5 @@ do
 	find $i -type f -mtime +7 -exec rm -fv {} \;
 	#find $i -type f -mmin +2 -exec rm -fv {} \;
 done
-	echo "Djanki"
+	echo "Well done"
 exit 0;
