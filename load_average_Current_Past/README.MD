@@ -163,4 +163,35 @@ virtual processor.
 
 “%idle” is the percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request.
 
+# Enable and install for Kali Linux
+
+- - - - - Install
+```bash
+apt install sysstat
+```
+- - - - - Enable
+```bash
+vim /etc/default/sysstat 
+ENABLED="true"
+```
+- - - - - Start
+```bas
+systemctl start sysstat
+systemctl enable sysstat
+```
+- - - - - Test 
+```bash
+sar 2 4
+```
+- - - - - Output
+```bash
+Linux 5.0.16-200.fc29.x86_64 (redhat)     05/22/2019     _x86_64_    (4 CPU)
+
+12:18:13 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+12:18:15 AM     all      1.25      0.00      0.50      0.00      0.00     98.24
+12:18:17 AM     all      2.50      0.00      0.38      0.00      0.00     97.12
+12:18:19 AM     all      2.12      0.00      0.62      0.12      0.00     97.12
+12:18:21 AM     all      1.75      0.00      0.50      0.00      0.00     97.75
+ Average:       all      1.91      0.00      0.50      0.03      0.00     97.56
+```
 
