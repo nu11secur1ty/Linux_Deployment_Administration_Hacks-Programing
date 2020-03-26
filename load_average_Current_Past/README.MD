@@ -12,7 +12,7 @@ sar -q
 
 - - - - Output
 
-```xml
+```bash
 root@hostdime.com(~)$ sar -q
 Linux 2.6.18-348.16.1.el5 (hostdime.com)   12/03/2013
 12:00:01 AM   runq-sz  plist-sz   ldavg-1   ldavg-5  ldavg-15
@@ -110,7 +110,7 @@ sar -u
 - - - - - Result:
 
 
-```xml
+```bash
 root@hostdime.com(~)$ sar -u Linux 2.6.18-348.16.1.el5 (hostdime.com)   12/03/2013
 
 12:00:01 AM       CPU     %user     %nice   %system   %iowait    %steal     %idle
@@ -136,5 +136,31 @@ root@hostdime.com(~)$ sar -u Linux 2.6.18-348.16.1.el5 (hostdime.com)   12/03/20
 03:20:01 AM         all          0.20      2.11      1.03          4.05      0.00     92.61
 03:30:01 AM         all          0.19      1.56      0.85          2.56      0.00     94.84
 ```
+
+Here’s an explanation of the above variables:
+
+“%user” is the percentage of CPU utilization that occurred while executing at the user level (application). This field includes time spent running virtual processors.
+
+“%usr” is the percentage of CPU utilization that occurred while executing at the user level (application). This field does NOT include time spent running virtual processors.
+
+“%nice” is the percentage of CPU utilization that occurred while executing at the user level with nice priority.
+
+“%system” is the percentage of CPU utilization that occurred while executing at the system level (kernel). This field includes time spent servicing hardware and software interrupts.
+
+“%sys” is the percentage of CPU utilization that occurred while executing at the system level (kernel). Note that this field does
+NOT include time spent servicing hardware or software interrupts.
+
+“%iowait” is the percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request.
+
+“%steal” is the percantage of time spent in involuntary wait by the virtual CPU or CPUs while the hypervisor was servicing another
+virtual processor.
+
+“%irq” is the percentage of time spent by the CPU or CPUs to service hardware interrupts.
+
+“%soft” is the percentage of time spent by the CPU or CPUs to service software interrupts.
+
+“%guest” is the percentage of time spent by the CPU or CPUs to run a virtual processor.
+
+“%idle” is the percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request.
 
 
