@@ -1,0 +1,1 @@
+- - - finding and deleting images which are old more than 7 days
