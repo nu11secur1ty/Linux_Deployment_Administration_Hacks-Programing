@@ -63,9 +63,17 @@ rsync -a -m --include='*.jpg' --include='*/' --exclude='*' src_directory/ dst_di
 
 When using multiple include/exclude option, the first matching rule applies.
 
---include='*.jpg' - First we are including all .jpg files.
---include='*/' - Then we are including all directories inside the in src_directory directory. Without this rsync will only copy *.jpg files in the top level directory.
--m - Removes the empty directories.
+- `--include='*.jpg'` 
+First we are including all .jpg files.
+`
+-  --include='*/' 
+
+Then we are including all directories inside the in src_directory directory. Without this rsync will 
+
+only copy *.jpg files in the top level directory.
+
+- -m - Removes the empty directories.
+
 Another option would be to pipe the output of the find command to rsync:
 
 
