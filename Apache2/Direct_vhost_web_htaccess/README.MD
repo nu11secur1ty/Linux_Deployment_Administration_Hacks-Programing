@@ -19,7 +19,7 @@
         # Dirrect web htacces from vhost configuration
         # Usin correct tag <location>
 <Location />
-        AuthUserFile /home/your/path/secret/.secretfile
+        AuthUserFile /home/your/path/qko_secret/.secretfile
         AuthName "Password Protected Area"
         AuthType Basic
         require valid-user
@@ -50,7 +50,7 @@
 	Require all granted
 </Directory>
 <Location />
-	AuthUserFile /home/your/path/.secretfile
+	AuthUserFile /home/your/path/qko_secret/.secretfile
 	AuthName "Password Protected Area"
 	AuthType Basic
 	require valid-user
