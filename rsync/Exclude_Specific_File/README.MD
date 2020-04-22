@@ -66,7 +66,7 @@ When using multiple include/exclude option, the first matching rule applies.
 - `--include='*.jpg'` 
 First we are including all .jpg files.
 `
--  --include='*/' 
+-  `--include='*/'`
 
 Then we are including all directories inside the in src_directory directory. Without this rsync will 
 
