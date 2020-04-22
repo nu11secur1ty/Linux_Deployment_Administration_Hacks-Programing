@@ -63,7 +63,7 @@ rsync -a -m --include='*.jpg' --include='*/' --exclude='*' src_directory/ dst_di
 
 When using multiple include/exclude option, the first matching rule applies.
 
-- `--include='*.jpg'` First we are including all .jpg files.
+- `--include='*.jpg'` - First we are including all .jpg files.
 `
 -  `--include='*/'` - Then we are including all directories inside the in src_directory directory. Without this rsync will 
 
@@ -73,17 +73,12 @@ only copy *.jpg files in the top level directory.
 
 Another option would be to pipe the output of the find command to rsync:
 
+```bash
+find src_directory/ -name "*.jpg" -printf %P\\0\\n | rsync -a --files-from=- src_directory/ dst_directory/
+```
 
+- `-printf %P\\0\\n` - will remove the src_directory/ from the file path.
+- `--files-from=-` - means include only the files from the standard input (files passed from the find command).
 
-
-
-
-
-
-
-
-
-
-
-
-
+# Conclusion
+In this tutorial, you learned how to exclude files and directories when transferring data with Rsync. There’s lots more to learn about Rsync at Rsync User’s Manual page.
