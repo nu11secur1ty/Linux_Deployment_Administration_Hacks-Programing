@@ -39,7 +39,7 @@
 <VirtualHost 0.0.0.0:80>
 	DocumentRoot "/home/your/path"
 	ServerName example.com
-	ServerAlias www. example.com
+	ServerAlias www.example.com
 	ErrorLog "/home/your/path/log/error_log"
 	CustomLog "/home/your/path/log/access_log" combined
 <Directory "/home/your/path/web/htdocs">
