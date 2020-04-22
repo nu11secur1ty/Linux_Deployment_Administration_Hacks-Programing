@@ -32,8 +32,9 @@
 </VirtualHost>
 ```
 ---------------------------------------------------
+
+# HTTP
 ```conf
-#### HTTP
 # your_host
 <VirtualHost 0.0.0.0:80>
 	DocumentRoot "/home/your/path"
