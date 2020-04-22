@@ -18,7 +18,7 @@
 </Directory>
       # Direct web htaccess from vhost configuration 
       # Using correct tag <location />
-      # manual: <location /path/path/app.py>
+ 
 <Location />
 # For advanced: <location /path/path/app.py>
         AuthUserFile /home/your/path/qko_secret/.secretfile
@@ -51,7 +51,11 @@
 	Options All ExecCGI
 	Require all granted
 </Directory>
+     # Direct web htaccess from vhost configuration 
+     # Using correct tag <location />
+
 <Location />
+# For advanced: <location /path/path/app.py>
 	AuthUserFile /home/your/path/qko_secret/.secretfile
 	AuthName "Password Protected Area"
 	AuthType Basic
