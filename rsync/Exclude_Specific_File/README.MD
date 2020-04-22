@@ -1,3 +1,17 @@
+- From a command line, using the --exclude option.
+- From a file, using the --exclude-from option.
+
+
+# Exclude a Specific File
+
+To exclude a specific file, pass the relative path to the file to the `--exclude` option.
+
+In the following example the file `src_directory/file.txt` will not be transferred:
+
+```bash
+rsync -a --exclude 'file.txt' src_directory/ dst_directory/
+```
+
 # Exclude a Specific Directory
 
 Excluding a specific directory is same as excluding a file, just pass the relative path to the directory to the `--exclude` option as shown below:
