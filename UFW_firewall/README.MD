@@ -116,27 +116,34 @@ Status: active
 [ 3] OpenSSH (v6)               ALLOW IN    Anywhere (v6)
 ```
 
+
 # Default
+```bash
 ufw default deny incoming
 ufw default allow incoming
-
-# Services
+```
+- Services
+```bash
 ufw allow ssh # for special
 ufw deny ssh # for all
 ufw allow from 0.0.0.0/24 to any port 00
 ufw allow from 0.0.0.0 to any port 00
-
-
-# Allow service listening on port 
+```
+- Allow service listening on port 
+```bash
 ufw allow from 0.0.0.0/24 to any port 0000
 ufw allow from 0.0.0.0 to any port 0000
-
-# Deny service listening on port 
+```
+- Deny service listening on port 
+```bash
 ufw deny from 0.0.0.0/24 to any port 0000
 ufw deny from 0.0.0.0 to any port 0000
-
-# Deny any all usoing special port
+```
+- Deny any all usoing special port
+```bash
 ufw deny 0000/tcp
-
-# Allow any all usoing special port
+```
+- Allow any all usoing special port
+```bash
 ufw deny 0000/tcp
+```
