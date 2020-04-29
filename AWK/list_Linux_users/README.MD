@@ -1,4 +1,4 @@
 # Check all users
 ```bash
-awk -F: '{ print $1}' /etc/passwd
+awk -F: '{print $1}' /etc/passwd
 ```
