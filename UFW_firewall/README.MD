@@ -1,4 +1,4 @@
-# Reset The Firewall on Ubuntu
+# Reset The Firewall UFW
 - Step 1: Disabling ufw
 
 By disabling ufw, we’re allowing all connections through. If, after executing the command below, you are able to connect via SSH, or to your website/application, the firewall was blocking your connection attempt and you can move forward with the next steps. If you are still unable to access your Droplet via SSH, or access to your website/application continues to be blocked, there may be another issue preventing access.
