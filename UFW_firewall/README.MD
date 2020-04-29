@@ -44,9 +44,31 @@ Allow TCP connections on Port 443
 ```bash
 sudo ufw allow 443/tcp
 ```
+- Step 6: Enabling ufw
+Now that we’ve reset the firewall and defined our whitelisted ports, we’ll enable ufw which will enforce the rules that we’ve put in to place.
 
+```bash
+sudo ufw --force enable
+```
 
+- Additional Ports
 
+MongoDB
+```bash
+sudo ufw allow 27017/tcp
+```
+MySQL
+```bash
+sudo ufw allow 3306/tcp
+```
+Postgres
+```bash
+sudo ufw allow 5432/tcp
+```
+Redis
+```bash
+sudo ufw allow 6379/tcp
+```
 
 
 # List Existing firewall rules
