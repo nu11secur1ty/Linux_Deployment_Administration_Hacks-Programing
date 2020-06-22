@@ -16,3 +16,8 @@ root@nu11secur1ty:~# find /root/check/1/* -mtime +1 -exec rm -rf {} \;
 ```bash
 root@nu11secur1ty:~# find /root/check/1/* -mmin +1 -exec rm -rf {} \;
 ```
+- - - If you want to view the output use option: `-rv` for example:
+
+```nash
+root@nu11secur1ty:~# find /root/check/1/* -mmin +1 -exec rm -rv {} \;
+```
