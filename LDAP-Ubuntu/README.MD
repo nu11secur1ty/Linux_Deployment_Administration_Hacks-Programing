@@ -1,4 +1,7 @@
 # Ubuntu 20.04
+
+[Ubuntu20.04](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/LDAP-Ubuntu/wall/ldap.jpg)
+
 # OpenLDAP : Configure LDAP Server
 
 ```bash
