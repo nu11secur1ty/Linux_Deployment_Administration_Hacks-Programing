@@ -13,7 +13,7 @@ our @folders = ('folder/*', 'folder2/*', 'folder3/*', 'folder4/*', 'folder5/*',
              'folder22/*', 'folder23/*');
 
 foreach (@folders) {
-        our $check_bots_clean = `rm -rf $_`;
+        our $check_folders_clean = `rm -rf $_`;
 }
         print "Cleaning is finished\n";
 exit 0;
