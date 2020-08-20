@@ -77,5 +77,5 @@ DEVEL_MODE="1" # devmode
 - - - to 
 
 ```bash
-DEVEL_MODE="0" working online
+DEVEL_MODE="0" # working online
 ```
