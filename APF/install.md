@@ -4,8 +4,7 @@
 
 - - - Install
 ```bash
- mkdir apf
- cd apfinst
+ mkdir apfinst && cd apfinst
  wget https://www.rfxn.com/downloads/apf-current.tar.gz
  tar -xvf apf-current.tar.gz
  cd apf-1.7.6
