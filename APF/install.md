@@ -70,7 +70,12 @@ apf -r # test
 ```
 if everything is OK stop the DEVEL_MODE
 
-5. Stop dev mode
+5. Stop dev mode from
+```bash
+DEVEL_MODE="1"
+```
+- - - to 
+
 ```bash
 DEVEL_MODE="0"
 ```
