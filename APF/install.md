@@ -32,11 +32,11 @@ vim /etc/apf/conf.apf
 
 # Common inbound (ingress) TCP ports
 ```bash
-IG_TCP_CPORTS="22,53,80,443,943,1194,1195"
+IG_TCP_CPORTS="53,80,443,943,1194,1195"
 ```
 # Common inbound (ingress) UDP ports
 ```bash
-IG_UDP_CPORTS="22,53,500,1194,1195,1701,4500"
+IG_UDP_CPORTS="53,500,1194,1195,1701,4500"
 ```
 # Common ICMP inbound (ingress) types
 ```bash
