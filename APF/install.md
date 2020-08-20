@@ -25,6 +25,10 @@ vim /etc/apf/allow_hosts.rules
 ```
 
 3. Configure POrts
+- - - Open config in:
+```bash
+vim /etc/apf/conf.apf
+```
 
 # Common inbound (ingress) TCP ports
 ```bash
