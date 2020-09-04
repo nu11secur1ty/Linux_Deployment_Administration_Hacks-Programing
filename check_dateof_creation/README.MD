@@ -68,6 +68,10 @@ Valid format sequences for file systems:
 - - - In my case 
 
 ```bash
-stat -c '%w %x %y %z' path/file.txt
+stat -c '%A %w %x %y %z' path/file.txt
+```
+- output should be
+```bash
+-rw-r--r-- - 2020-09-04 11:07:14.786018113 +0300 2019-10-17 10:22:29.990955200 +0300 2019-10-17 10:22:29.994955169 +0300
 ```
 - BR
