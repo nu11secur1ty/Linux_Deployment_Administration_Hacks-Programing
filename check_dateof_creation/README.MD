@@ -11,3 +11,9 @@ ls -lit /path
 ```bash
 ls -lit /path *
 ```
+
+# Check by using `stat`
+
+```bash
+stat -c '%y %d' /path/file.txt
+```
