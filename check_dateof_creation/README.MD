@@ -65,3 +65,9 @@ Valid format sequences for file systems:
   %t   file system type in hex
   %T   file system type in human readable form
 ```
+- - - In my case 
+
+```bash
+stat -c '%w %x %y %z' path/file.txt
+```
+- BR
