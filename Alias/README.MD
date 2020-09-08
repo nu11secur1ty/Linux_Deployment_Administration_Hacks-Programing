@@ -32,7 +32,10 @@ cd
 ```bash
 ls: cannot access '/var/log/koko': No such file or directory
 ```
-# Warning: DO NOT DO THIS IF YOU ARE NOT SHURE WAHT ACTUALY IS GOIN ON!
+# Warning:
+
+- - - - - DO NOT DO THIS! IF YOU ARE NOT SURE AND IF YOU DON'T KNOW HOW TO USE the `alias` program!
 
 - BR
+
 @nu11secur1ty
