@@ -5,5 +5,6 @@
 ```bash
 certbot delete --cert-name example.com
 ./certbot-auto delete --cert-name example.com
+./letsencrypt-auto delete --cert-name domain.example.com
 ```
 
