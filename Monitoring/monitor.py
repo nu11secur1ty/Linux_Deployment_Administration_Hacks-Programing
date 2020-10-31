@@ -27,7 +27,7 @@ os.system("echo -e 'Spec-log-new\n-----------------------' >> /root/.scripts/mai
 os.system("ps aux | grep -i speclognew -c  >> /root/.scripts/mail/pyproc/report_proc.txt")
 
 os.system("echo -e 'Spec-log-size\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("du -h /home/your/dir/spesize.log >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("du -h /home/your/dir/specsize.log >> /root/.scripts/mail/pyproc/report_proc.txt")
 
 os.system("echo -e 'Disk status\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
 os.system("df -h >> /root/.scripts/mail/pyproc/report_proc.txt")
