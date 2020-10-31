@@ -24,10 +24,10 @@ os.system("echo -e 'Zombi\n-----------------------' >> /root/.scripts/mail/pypro
 os.system("ps aux | awk {'print $8'}|grep -c Z  >> /root/.scripts/mail/pyproc/report_proc.txt")
 
 os.system("echo -e 'Spec-log-new\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("ps aux | grep -i your_proc -c  >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("ps aux | grep -i speclognew -c  >> /root/.scripts/mail/pyproc/report_proc.txt")
 
-os.system("echo -e 'Spec-log\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
-os.system("du -h /home/your/dir/tempobet.log >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("echo -e 'Spec-log-size\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
+os.system("du -h /home/your/dir/spesize.log >> /root/.scripts/mail/pyproc/report_proc.txt")
 
 os.system("echo -e 'Disk status\n-----------------------' >> /root/.scripts/mail/pyproc/report_proc.txt")
 os.system("df -h >> /root/.scripts/mail/pyproc/report_proc.txt")
