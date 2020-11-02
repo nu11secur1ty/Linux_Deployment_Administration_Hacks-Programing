@@ -16,7 +16,9 @@ Loading of         |
 the last one min   |
                    |_ Loading of the last five minute
 ```
-- - - Illustration:
+- - - Loading Illustration, by using cars on a highway:
+      Imagine that every car is a `process`
+
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/Load_Average/picture/understanding-load-averages.png)
 
 - When the machine is not busy
