@@ -45,6 +45,8 @@ processes in one minute
  |
 processes in one minute
 ```
+- This will be anormal
+
 - `WARNING:` If this will changing when you trying to connect to this machine, it will not respond to you if 
              the values are: `15.10 15.25 15.35`
              
@@ -57,6 +59,9 @@ processes in one minute
 processes in one minute
 ```
 - This will be anormal
+
+- `WARNING:` If this will changing when you trying to connect to this machine, it will not respond to you if 
+             the values are: `35.10 35.25 35.35`
 
 # Twenty-four CPU cores loading average:
 ```bash
