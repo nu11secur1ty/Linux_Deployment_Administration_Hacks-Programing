@@ -31,3 +31,15 @@ the last one min   |
  |
 processes in one minute
 ```
+
+# Dual CPU core max loading average:
+```bash
+10.10 10.25 10.35
+ |     |    |____ processes, for fifteen minutes
+ |     |__ processes, for five minutes  
+ |
+processes in one minute
+```
+- `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
+             the values are: `15.10 15.25 15.35`
+             
