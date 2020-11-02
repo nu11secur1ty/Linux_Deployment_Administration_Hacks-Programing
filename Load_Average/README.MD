@@ -16,6 +16,8 @@ Loading of         |
 the last one min   |
                    |_ Loading of the last five minute
 ```
+- - - Illustration:
+![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/Load_Average/picture/understanding-load-averages.png)
 
 - When the machine is not busy
 ```bash
