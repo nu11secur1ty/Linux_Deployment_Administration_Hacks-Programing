@@ -82,5 +82,8 @@ processes in one minute
 - `WARNING:` If this will changing when you trying to connect to this machine, it will not respond to you if 
              the values are: `131.10 131.25 131.35`
 
+- bonus :D
+
+[Reading more:](http://www.brendangregg.com/blog/2017-08-08/linux-load-averages.html)
 # BR 
 - @nu11secur1ty
