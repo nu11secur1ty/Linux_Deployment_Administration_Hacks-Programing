@@ -13,7 +13,8 @@ cat /proc/loadavg
 ```bash
 0.40 0.18 0.13 2/962 9068
 ```
-- - - Meaning: `capacity:` *5% = full 10% = full 15% = full*
+- - - Meaning: 
+      `capacity:` *5% = full 10% = full 15% = full*
 
 ```bash
 0.40 0.18 0.13 2/962 9068
