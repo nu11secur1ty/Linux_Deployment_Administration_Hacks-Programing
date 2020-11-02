@@ -26,8 +26,8 @@ the last one min   |
 - single CPU core max loading average:
 ```bash
 6.10 6.25 6.35
- |     |    |____ processes in fifteen minutes
- |     |__ processes in five minutes  
+ |     |    |____ processes, for fifteen minutes
+ |     |__ processes, for five minutes  
  |
 processes in one minute
 ```
