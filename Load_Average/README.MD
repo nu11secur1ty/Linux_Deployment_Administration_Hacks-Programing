@@ -21,3 +21,9 @@ the last one min   |
 ```bash
 0.00 0.00 0.00
 ```
+# Understanding loading
+
+- single CPU core max loading average:
+```bash
+6.10 6.25 6.35
+```
