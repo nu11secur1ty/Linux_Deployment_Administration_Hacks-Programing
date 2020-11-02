@@ -43,3 +43,12 @@ processes in one minute
 - `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
              the values are: `15.10 15.25 15.35`
              
+# Twelve CPU core max loading average:
+```bash
+12.10 12.25 12.35
+ |     |    |____ processes, for fifteen minutes
+ |     |__ processes, for five minutes  
+ |
+processes in one minute
+```
+- This will be anormal
