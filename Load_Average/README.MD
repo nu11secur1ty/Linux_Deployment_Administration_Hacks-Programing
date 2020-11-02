@@ -23,7 +23,7 @@ the last one min   |
 ```
 # Understanding loading
 
-- single CPU core max loading average:
+- single CPU core loading average:
 ```bash
 6.10 6.25 6.35
  |     |    |____ processes, for fifteen minutes
@@ -31,8 +31,9 @@ the last one min   |
  |
 processes in one minute
 ```
+- This will be anormal
 
-# Dual CPU core max loading average:
+# Dual CPU cores loading average:
 ```bash
 10.10 10.25 10.35
  |     |    |____ processes, for fifteen minutes
@@ -43,7 +44,7 @@ processes in one minute
 - `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
              the values are: `15.10 15.25 15.35`
              
-# Twelve CPU core max loading average:
+# Twelve CPU core loading average:
 ```bash
 12.10 12.25 12.35
  |     |    |____ processes, for fifteen minutes
