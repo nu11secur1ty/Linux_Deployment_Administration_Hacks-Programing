@@ -45,7 +45,7 @@ processes in one minute
  |
 processes in one minute
 ```
-- `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
+- `WARNING:` If this will changing when you trying to connect to this machine, it will not respond to you if 
              the values are: `15.10 15.25 15.35`
              
 # Twelve CPU cores loading average:
@@ -67,5 +67,5 @@ processes in one minute
 processes in one minute
 ```
 - This will be anormal
-- `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
+- `WARNING:` If this will changing when you trying to connect to this machine, it will not respond to you if 
              the values are: `131.10 131.25 131.35`
