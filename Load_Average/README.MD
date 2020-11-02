@@ -17,4 +17,7 @@ the last one min   |
                    |_ Loading of the last five minute
 ```
 
- 
+- When the machine is not busy
+```bash
+0.00 0.00 0.00
+```
