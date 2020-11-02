@@ -57,3 +57,15 @@ processes in one minute
 processes in one minute
 ```
 - This will be anormal
+
+# Twenty-four CPU cores loading average:
+```bash
+30.10 30.25 30.35
+ |     |    |____ processes, for fifteen minutes
+ |     |__ processes, for five minutes  
+ |
+processes in one minute
+```
+- This will be anormal
+- `WARNING:` If this will happen when you trying to connect to this machine, it will not respond to you if 
+             the values are: `131.10 131.25 131.35`
