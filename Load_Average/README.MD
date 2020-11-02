@@ -27,7 +27,7 @@ the last one min   |
 ```bash
 6.10 6.25 6.35
  |     |    |____ processes in fifteen minutes
- |     |__ processec in five minutes  
+ |     |__ processes in five minutes  
  |
 processes in one minute
 ```
