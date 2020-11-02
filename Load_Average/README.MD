@@ -1,6 +1,6 @@
 # Uderstanding CPU Load Average
 
-Hello friends, this table will be helping you to calculate your CPU Loading Average depends on what you want to run on your Linux Server, and how many Cores you use!
+Hello friends, this table will be helping you to calculate your CPU Loading Average depends on what you want to run on your Linux Server, and how many Cores you want to use!
 This example is building on VM Machine. I use this machine only for starting to create this table, and helping you to understand what actually is `Load Average`
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
