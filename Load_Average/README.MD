@@ -17,7 +17,7 @@ cat /proc/loadavg
 ```bash
         bridge1     bridge2    bridge3
            |          |          |
-capacity:  5% = full 10% = full 15% = full
+capacity:  5% < full 10% < full 15% < full
            |          |          |
           0.40       0.18       0.13 2/962 9068
 ```
@@ -34,6 +34,13 @@ the last one min   |
       Imagine that every car is a `process`
 
 ![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/Load_Average/picture/understanding-load-averages.png)
+
+# Interpretations:
+
+- If the averages are 0.0, then your system is idle.
+- If the 1 minute average is higher than the 5 or 15 minute averages, then load is increasing.
+- If the 1 minute average is lower than the 5 or 15 minute averages, then load is decreasing.
+- If they are higher than your CPU count, then you might have a performance problem (it depends).
 
 - When the machine is not busy
 ```bash
