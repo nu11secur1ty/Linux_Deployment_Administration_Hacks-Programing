@@ -24,6 +24,8 @@ For example, consider a system with just two processes: the first creating an `I
 That just about covers the basic metrics. Let's move on to the extended metrics now by calling the iostat command with the `-x`
 parameter.
 
+------------------------------------------------------------------------------------------------------------------------------
+
 The r/s and w/s numbers show the number of read and write requests issued to the device per second. These numbers provide a more detailed breakdown of the tps number we saw earlier, as tps = r/s + w/s.
 
 The avgqu-sz metric is an important value. Its name is rather poorly chosen as it does not in fact show the number of operations queued but not yet serviced. Instead, it shows the number of operations that were either queued or being serviced. Ideally you want to have an idea of the value of this metric during normal operations for use as a reference when trouble occurs. Single digit numbers with the occasional double digit spike are safe(ish) values. Triple digit numbers are generally not.
