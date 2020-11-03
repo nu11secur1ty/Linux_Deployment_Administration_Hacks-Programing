@@ -68,20 +68,20 @@ processes in one minute
  |
 processes in one minute
 ```
-- This will be anormal
+- This will be the limit
 
 - `WARNING:` If these values are changing when you trying to connect to this machine, it will not respond to you if 
              the values have became: `45.10 31.25 30.35`
              
 # Twelve CPU cores loading average:
 ```bash
-35.10 35.25 35.35
+50.10 45.25 41.35
  |     |    |____ processes, for fifteen minutes
  |     |__ processes, for five minutes  
  |
 processes in one minute
 ```
-- This will be anormal
+- This will be the limit
 
 - `WARNING:` If this values will changing when you trying to connect to this machine, it will not respond to you if 
              the values have became: `111.10 70.25 90.35`
@@ -94,7 +94,8 @@ processes in one minute
  |
 processes in one minute
 ```
-- This will be anormal
+- This will be the limit
+
 - `WARNING:` If this values will changing when you trying to connect to this machine, it will not respond to you if 
              the values have became: `157.10 131.25 145.35`
 
