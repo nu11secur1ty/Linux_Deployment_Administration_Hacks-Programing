@@ -1,5 +1,6 @@
 # IOSTA and What is
-[![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/IOSTAT/links/wikipedia_PNG31.png)"target_blank"](https://en.wikipedia.org/wiki/Iostat)
+
+[![](https://github.com/nu11secur1ty/Linux_Deployment_Administration_Hacks-Programing/blob/master/IOSTAT/links/wikipedia_PNG31.png)](https://en.wikipedia.org/wiki/Iostat)
 
 
 The iostat command can display both basic and extended metrics. We'll have a quick look at the basic metrics before moving on to the extended metrics in the rest of this post.
