@@ -71,7 +71,7 @@ processes in one minute
 - This will be anormal
 
 - `WARNING:` If these values are changing when you trying to connect to this machine, it will not respond to you if 
-             the values have became: `30.10 30.25 30.35`
+             the values have became: `45.10 31.25 30.35`
              
 # Twelve CPU cores loading average:
 ```bash
