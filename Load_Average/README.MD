@@ -42,6 +42,8 @@ the last one min   |
 - If the 1 minute average is lower than the 5 or 15 minute averages, then load is decreasing.
 - If they are higher than your CPU count, then you might have a performance problem (it depends).
 
+----------------------------------------------------------------------------------------------------
+
 - When the machine is not busy
 ```bash
 0.00 0.00 0.00
