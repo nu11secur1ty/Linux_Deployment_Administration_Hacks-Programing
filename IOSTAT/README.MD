@@ -24,6 +24,20 @@ For example, consider a system with just two processes: the first creating an `I
 That just about covers the basic metrics. Let's move on to the extended metrics now by calling the iostat command with the `-x`
 parameter.
 
+```bash
+$ iostat -mx 5
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           8.84    0.16    3.91    7.73    0.04   79.33
+
+Device:         r/s     w/s   avgrq-sz avgqu-sz   await   svctm  %util
+xvdap1        20.85   25.49   59.86     0.27      17.06    1.15   5.33
+xvdb           0.10    0.29   51.06     0.00       7.17    0.09   0.00
+xvdg          42.04   23.94   71.89     0.44       6.63    1.16   7.67
+xvdf         132.66   72.52   42.87     0.49       2.37    0.36   7.42
+xvdh          15.54   35.63   83.04     0.00      10.22    1.30   6.68
+```
+
 ------------------------------------------------------------------------------------------------------------------------------
 
 The r/s and w/s numbers show the number of read and write requests issued to the device per second. These numbers provide a more detailed breakdown of the tps number we saw earlier, as tps = r/s + w/s.
