@@ -15,6 +15,8 @@ cat /proc/loadavg
 ```
 - - - Meaning: 
 ```bash
+        bridge1     bridge2    bridge3
+           |          |          |
 capacity:  5% = full 10% = full 15% = full
            |          |          |
           0.40       0.18       0.13 2/962 9068
