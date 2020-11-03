@@ -61,3 +61,5 @@ It’s common to assume that the closer to 100% utilization a device is, the mor
 By now it should hopefully be clear that iostat is an incredibly powerful tool that can take some experience to use correctly. In a perfect world, your machines should regularly be writing these metrics to a monitoring service so you always have access to good baseline numbers. In a non-perfect world, knowing your device's average IOPS numbers can already help you out quite a bit when trying to figure out if a slowdown is I/O related.
 
 Note from Coderwall team: we've made up our own list of APM application performance monitoring tools.
+
+[More:](https://www.xaprb.com/blog/2010/01/09/how-linux-iostat-computes-its-results/)
