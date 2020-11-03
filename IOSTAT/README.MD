@@ -23,3 +23,25 @@ For example, consider a system with just two processes: the first creating an `I
 
 That just about covers the basic metrics. Let's move on to the extended metrics now by calling the iostat command with the `-x`
 parameter.
+
+The r/s and w/s numbers show the number of read and write requests issued to the device per second. These numbers provide a more detailed breakdown of the tps number we saw earlier, as tps = r/s + w/s.
+
+The avgqu-sz metric is an important value. Its name is rather poorly chosen as it does not in fact show the number of operations queued but not yet serviced. Instead, it shows the number of operations that were either queued or being serviced. Ideally you want to have an idea of the value of this metric during normal operations for use as a reference when trouble occurs. Single digit numbers with the occasional double digit spike are safe(ish) values. Triple digit numbers are generally not.
+
+Note that this metric is unlikely to hover around zero unless you are doing very little I/O. A certain amount of queueing is generally unavoidable as modern storage devices reorder disk operations so as to improve overall performance.
+
+The await metric is the average time from when a request is put in the queue to when the request is completed. Therefore, this metric is the sum of the time a request spent waiting in the queue and the time your storage device was working on servicing the request. This number is highly dependent on the number of items in the queue. Much like avgqu-sz, you'll want to have an idea of the value of this metric during normal operations for use as a reference when trouble occurs.
+
+Our next metric is svctm. You'll find a lot of older blog posts that go into quite some detail about this one. However, man iostat makes it quite clear that this metric has now been deprecated and should no longer be trusted.
+
+Our last metric is %util. Just like svctm, this metric has been touched by the progress of technology as well. The man pages show the following info.
+
+%util
+
+Percentage of elapsed time during which I/O requests were issued to the device (bandwidth utilization for the device). Device saturation occurs when this value is close to 100% for devices serving requests serially. But for devices serving requests in parallel, such as RAID arrays and modern SSDs, this number does not reflect their performance limits.
+
+It’s common to assume that the closer to 100% utilization a device is, the more saturated it is. This is true when the storage device corresponds to a single magnetic disk as such a device can only serve one request at a time. However, a single SSD or a RAID array consisting of multiple disks can serve multiple requests at the same time. For such devices %util essentially indicates the percentage of time that the device was busy serving at least one request. Unfortunately, this tells us nothing about the maximum number of requests such a device can handle, and as such this value is useless as a saturation indicator for SSDs and RAID arrays.
+
+By now it should hopefully be clear that iostat is an incredibly powerful tool that can take some experience to use correctly. In a perfect world, your machines should regularly be writing these metrics to a monitoring service so you always have access to good baseline numbers. In a non-perfect world, knowing your device's average IOPS numbers can already help you out quite a bit when trying to figure out if a slowdown is I/O related.
+
+Note from Coderwall team: we've made up our own list of APM application performance monitoring tools.
