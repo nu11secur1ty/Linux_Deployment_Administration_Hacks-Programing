@@ -74,7 +74,7 @@ Sep 07 04:35:29 geeklab sshd[21232]: fatal: Read from socket failed: Connection 
 Oct 26 19:39:33 geeklab sshd[34860]: fatal: Read from socket failed: Connection reset by peer [preauth]
 Oct 26 19:39:34 geeklab sshd[34862]: fatal: Read from socket failed: Connection reset by peer [preau
 ```
-7. All logs
+7. All system logs
 ```bash
 # journalctl 
 ```
