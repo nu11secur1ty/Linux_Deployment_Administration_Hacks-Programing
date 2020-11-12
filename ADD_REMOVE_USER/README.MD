@@ -35,8 +35,8 @@ kur : kur users
 ```
 - Remove user from group
 ```bash
-usermod -G root kur
-usermod -G root,users kur
+gpasswd -d kur root
+gpasswd -d kur root,users
 ```
 
 # BR
