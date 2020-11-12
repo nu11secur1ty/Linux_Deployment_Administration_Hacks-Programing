@@ -13,6 +13,7 @@ hostnamectl set-hostname kube-master
 2. Disable swap.
 ```bash
 vi /etc/fstab
+# 
 swapoff -a
 ```
 3. Add firewall rules for kubernetes service endpoint & kubelet.
@@ -26,6 +27,7 @@ cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
+#
 sysctl --system
 ```
 5. Add kubnenetes repository.
@@ -44,6 +46,7 @@ EOF
 6. Set SElinux to enforcing mode.
 ```bash
 setenforce 0
+#
 sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 ```
 
@@ -54,12 +57,14 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 8. Add Docker repository and and install docker
 ```bash
 yum-config-manager --add-repo   https://download.docker.com/linux/centos/docker-ce.repo
+#
 yum update -y && yum install containerd.io docker-ce docker-ce-cli
 ```
 
 9. Create a overlay2 docker configuration file.
 ```bash
 mkdir /etc/docker
+#
 cat > /etc/docker/daemon.json <<EOF
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
@@ -77,8 +82,11 @@ EOF
 10. Add docker to systemd.
 ```bash
 mkdir -p /etc/systemd/system/docker.service.d
+#
 systemctl daemon-reload
+#
 systemctl restart docker
+#
 systemctl enable docker 
 ```
 
