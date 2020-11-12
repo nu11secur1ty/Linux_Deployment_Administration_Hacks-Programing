@@ -2,8 +2,20 @@
 ```bash
 useradd -m kur
 ```
-# Remove user
+# Manipulation for removing the user `kur`
 ```bash
+# Lock User Accounts in Linux
+passwd --lock kur
+
+# Find and Kill All Running Processes of User
 killall -9 -u kur
-userdel -r kur
+
+# Backup User Data Before Deleting
+tar jcvf /user-backups/kur-home-directory-backup.tar.bz2 /home/kur
+
+# Delete/Remove User Account and Files
+userdel -r kur 
+deluser --remove-home kur
+userdel --remove kur
 ```
+# BR
