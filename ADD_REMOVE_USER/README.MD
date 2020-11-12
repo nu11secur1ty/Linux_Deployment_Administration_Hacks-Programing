@@ -20,6 +20,7 @@ userdel --remove kur
 ```
 
 # Adding a User `kur` to a Group
+
 -  Create group
 ```bash 
 groupadd testgroup1
@@ -28,7 +29,7 @@ groupadd testgroup1
 usermod -a -G root kur
 usermod -a -G developers testuser
 ```
-- Oner
+- Ownership
 ```bash
 groups kur 
 kur : kur users
@@ -36,7 +37,7 @@ kur : kur users
 - Remove user from group
 ```bash
 gpasswd -d kur root
-gpasswd -d kur root,users
+gpasswd -d kur develpers
 ```
 
 # BR
