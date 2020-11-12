@@ -19,6 +19,7 @@ swapoff -a
 3. Add firewall rules for kubernetes service endpoint & kubelet.
 ```bash
 firewall-cmd --permanent --add-port=6443/tcp
+#
 firewall-cmd --permanent --add-port=10250/tcp
 ```
 4. Letting iptables see bridged traffic.
@@ -93,12 +94,16 @@ systemctl enable docker
 11. Install kubeadm and other important packages.
 ```bash
 yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+#
 systemctl enable --now kubelet
 ======================================================================================
+#
 kubeadm init --pod-network-cidr 10.244.0.0/16 --apiserver-advertise-address=192.168.99.112
+#
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
-
+#
 yum install bash-completion
+#
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 # BR
