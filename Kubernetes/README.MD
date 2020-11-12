@@ -1,3 +1,5 @@
+# CentOS 7
+
 Prerequesites:
 -------------
 Hardware requirement:
