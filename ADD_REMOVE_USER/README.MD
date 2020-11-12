@@ -18,4 +18,11 @@ userdel -r kur
 deluser --remove-home kur
 userdel --remove kur
 ```
+
+# Adding a User `kur` to a Group
+-  Create group
+```bash 
+groupadd testgroup1
+```
+
 # BR
