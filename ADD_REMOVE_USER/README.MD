@@ -23,6 +23,20 @@ userdel --remove kur
 -  Create group
 ```bash 
 groupadd testgroup1
+
+# Add user to this group
+usermod -a -G root kur
+usermod -a -G developers testuser
+```
+- Oner
+```bash
+groups kur 
+kur : kur users
+```
+- Remove user from group
+```bash
+usermod -G root kur
+usermod -G root,users kur
 ```
 
 # BR
