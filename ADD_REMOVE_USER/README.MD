@@ -1,4 +1,4 @@
-# Add user on Stsem D
+# Add user on System D with `home` directory
 ```bash
 useradd -m kur
 ```
