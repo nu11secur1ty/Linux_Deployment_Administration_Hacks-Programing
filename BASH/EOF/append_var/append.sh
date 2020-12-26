@@ -5,6 +5,6 @@ use strict;
 use warnings;
 use diagnostics;
 
-my $welcome = `ls -al ~/*`;
+my $welcome = `ls -all ~/*`;
 print $welcome;
 EOF
