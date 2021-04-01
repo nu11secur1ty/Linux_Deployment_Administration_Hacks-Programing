@@ -1,6 +1,8 @@
 #!/usr/bin/bash
-echo "Please give the path of the file which you want to know the birth day"
-	read kogi
+# @nu11secur1ty
+echo "Please give the path of the file which you want to know when he was born"
+echo "For example: /path/path/file"
+        read kogi
 cat > findbirth.java << EOF
 //@nu11secur1ty
 import java.io.File;
@@ -27,4 +29,4 @@ public class findbirth {
 EOF
 javac findbirth.java
 java findbirth
-	exit 0;
+        exit 0;
