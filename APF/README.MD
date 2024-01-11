@@ -205,7 +205,7 @@ B) If the IP isn't already listed in deny_hosts.rules and you wish to allow it, 
 > COMMENTSHERENOSPACES is obvious, add comments to why the IP is being removed These rules are loaded right away into the firewall, so they're instantly active.
 Example:
 
-./apf -a 185.14.157.123 UNBLOCKING
+./apf -a your_ip UNBLOCKING
 
 pico /etc/apf/allow_hosts.rules
 
