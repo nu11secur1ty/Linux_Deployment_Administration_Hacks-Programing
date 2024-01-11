@@ -1,1 +1,3 @@
+# Allow:
+.domain.com
 domain.com
