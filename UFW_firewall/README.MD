@@ -139,11 +139,11 @@ ufw allow from 0.0.0.0 to any port 0000
 ufw deny from 0.0.0.0/24 to any port 0000
 ufw deny from 0.0.0.0 to any port 0000
 ```
-- Deny any all usoing special port
+- Deny any all using special port
 ```bash
 ufw deny 0000/tcp
 ```
-- Allow any all usoing special port
+- Allow any all using special port
 ```bash
 ufw deny 0000/tcp
 ```
