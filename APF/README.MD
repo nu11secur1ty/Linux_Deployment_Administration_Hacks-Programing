@@ -52,6 +52,7 @@ Common ingress (inbound) ports
 # Common ingress (inbound) TCP ports -3000_3500 = passive port range for Pure FTPD
 IG_TCP_CPORTS=""21,22,25,53,80,110,143,443,2082,2083, 2086,2087, 2095, 2096,3000_3500""
 #
+
 # Common ingress (inbound) UDP ports
 IG_UDP_CPORTS=""53""
 
