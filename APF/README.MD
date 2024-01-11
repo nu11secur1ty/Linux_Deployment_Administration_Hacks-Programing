@@ -146,8 +146,8 @@ Will show any changes to allow and deny hosts among other things.
 tail -f /var/log/apf_log
 
 Example output:
-Aug 23 01:25:55 ocean apf(31448): (insert) deny all to/from 185.14.157.123
-Aug 23 01:39:43 ocean apf(32172): (insert) allow all to/from 185.14.157.123
+Aug 23 01:25:55 ocean apf(31448): (insert) deny all to/from your_ip
+Aug 23 01:39:43 ocean apf(32172): (insert) allow all to/from your_ip
 
 
 12. New - Make APF Start automatically at boot time
@@ -170,16 +170,15 @@ A) /etc/apf/apf -d IPHERE COMMENTHERENOSPACES
 These rules are loaded right away into the firewall, so they're instantly active.
 Example:
 
-./apf -d 185.14.157.123 TESTING
+./apf -d your_ip TESTING
 
 pico /etc/apf/deny_hosts.rules
 
 Shows the following:
 
-# added 185.14.157.123 on 08/23/05 01:25:55
+# added your_ip on 08/23/05 01:25:55
 # TESTING
-185.14.157.123
-
+your_ip
 B) pico /etc/apf/deny_hosts.rules
 
 You can then just add a new line and enter the IP you wish to block. Before this becomes active though you'll need to reload the APF ruleset.
@@ -209,6 +208,6 @@ Example:
 
 pico /etc/apf/allow_hosts.rules
 
-# added 185.14.157.123 on 08/23/05 01:39:43
+# added your_ip on 08/23/05 01:39:43
 # UNBLOCKING
-185.14.157.123
+your_ip
