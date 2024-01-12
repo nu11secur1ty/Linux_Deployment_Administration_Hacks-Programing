@@ -117,9 +117,9 @@ Status: active
 ```
 
 
-# Default
+# Default allow all
 ```bash
-ufw default deny incoming
+ufw default allow incoming
 ufw default allow incoming
 ```
 - Services
