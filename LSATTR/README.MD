@@ -1,8 +1,10 @@
 ### lsattr
 
-Attributes in Linux
+## Attributes in Linux
 Some filesystems support additional attributes (other than those described in the preceding sections). In particular, some Linux-native filesystems support several attributes that you can adjust with the chattr command. The files and directories can have the following attributes:
 
+
+```
 a - append only
 c - compressed
 d - no dump
@@ -16,7 +18,8 @@ A - no atime updates
 D - synchronous directory updates
 S - synchronous updates
 T - top of directory hierarchy
-Define each file attributes
+```
+### Define each file attributes
 The detailed meaning of these attributes according to the manual page is:
 
 a - append only: this attribute allows a file to be added to, but not to be removed. It prevents accidental or malicious changes to files that record data, such as log files.
