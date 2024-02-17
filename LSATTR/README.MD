@@ -19,9 +19,12 @@ D - synchronous directory updates
 S - synchronous updates
 T - top of directory hierarchy
 ```
+
 ## Define each file attributes
 The detailed meaning of these attributes according to the manual page is:
 
+
+```
 a - append only: this attribute allows a file to be added to, but not to be removed. It prevents accidental or malicious changes to files that record data, such as log files.
 c - compressed: it causes the kernel to compress data written to the file automatically and uncompress it when it’s read back.
 d - no dump: it makes sure the file is not backed up in backups where the dump utility is used
