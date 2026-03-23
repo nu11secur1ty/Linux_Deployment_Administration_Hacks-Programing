@@ -11,5 +11,5 @@
 - Paste into the tool
 - Enjoy ;)
  
-[here](https://nu11secur1ty.github.io/DownGit/#/home)
+[tool](https://nu11secur1ty.github.io/DownGit/#/home)
 
