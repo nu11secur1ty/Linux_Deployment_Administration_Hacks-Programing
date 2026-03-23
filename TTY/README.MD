@@ -22,7 +22,9 @@ This README provides a **professional and comprehensive explanation of TTY in Li
 
 ---
 
-## 🧩 What Is a TTY
+<a id="what-is-a-tty"></a>
+
+## What Is a TTY
 
 A **TTY (Teletypewriter)** in Linux is a **character-based terminal interface** that allows the user to interact with the operating system using text commands. Originally referring to physical teletype machines, today it represents **virtual consoles** and **pseudo-terminals**.
 
@@ -35,7 +37,9 @@ In Linux, a TTY is a device file located under `/dev/` such as:
 
 ---
 
-## 🏛 Historical Background
+<a id="historical-background"></a>
+
+## Historical Background
 
 Before modern monitors, computers used electromechanical teletypes. Linux preserved the concept for backward compatibility and because text consoles are reliable, minimal, and scriptable.
 
@@ -49,7 +53,9 @@ TTYs remain essential for:
 
 ---
 
-## 🧭 Types of TTY Devices
+<a id="types-of-tty-devices"></a>
+
+## Types of TTY Devices
 
 Linux supports several terminal types:
 
@@ -84,7 +90,9 @@ Hardware serial ports (`/dev/ttyS0`, `/dev/ttyUSB0`) used for:
 
 ---
 
-## ⚙️ How TTY Works in Linux
+<a id="how-tty-works-in-linux"></a>
+
+## How TTY Works in Linux
 
 A TTY connects three components:
 
@@ -96,7 +104,9 @@ Linux uses the kernel's terminal subsystem to manage all TTY devices.
 
 ---
 
-## 🔧 Practical Commands
+<a id="practical-commands"></a>
+
+## Practical Commands
 
 ### Check your current TTY
 
@@ -124,7 +134,9 @@ ls -l /dev/tty*
 
 ---
 
-## 🔄 Switching Between TTYs
+<a id="switching-between-ttys"></a>
+
+## Switching Between TTYs
 
 Linux provides multiple text consoles.
 
@@ -142,7 +154,9 @@ Ctrl + Alt + F1
 
 ---
 
-## 🪟 Pseudo-Terminals (PTYs)
+<a id="pseudo-terminals-ptys"></a>
+
+## Pseudo-Terminals (PTYs)
 
 A PTY has two ends:
 
@@ -153,7 +167,9 @@ This allows GUI terminal windows and remote SSH sessions to behave like physical
 
 ---
 
-## 🛠 Debugging & Troubleshooting
+<a id="debugging--troubleshooting"></a>
+
+## Debugging & Troubleshooting
 
 ### Black screen after login? Try switching TTYs.
 
@@ -183,7 +199,9 @@ dmesg | grep tty
 
 ---
 
-## 🔐 Security Notes
+<a id="security-notes"></a>
+
+## Security Notes
 
 * TTYs support secure password input
 * You can restrict access using PAM
@@ -192,7 +210,9 @@ dmesg | grep tty
 
 ---
 
-## 🧰 Useful Tools <a id="useful-tools"></a>
+<a id="useful-tools"></a>
+
+## Useful Tools <a id="useful-tools"></a>
 
 * `screen` / `tmux` — advanced terminal multiplexing
 * `minicom` / `picocom` — serial communication
@@ -201,7 +221,9 @@ dmesg | grep tty
 
 ---
 
-## 📬 Contact
+<a id="contact"></a>
+
+## Contact
 
 If you want this README adapted to your distribution, kernel version, or project:
 
@@ -209,5 +231,3 @@ If you want this README adapted to your distribution, kernel version, or project
 * GitHub: **[https://github.com/your-user](https://github.com/your-user)**
 
 ---
-
-
