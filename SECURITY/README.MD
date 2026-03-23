@@ -206,5 +206,3 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve { printf("%s executed %s\
 * GitHub / Contact: **@nu11secur1ty**
 
 ---
-
-💡 **Enterprise Tip:** Combining **auditd, eBPF, fail2ban, and SIEM integration** provides near-instant detection and automated mitigation of unauthorized access while maintaining a robust forensic trail.
