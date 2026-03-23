@@ -5,6 +5,11 @@
 
 - ***$Container = inode***
 
+**HOWTO**
 
+- Copy the link address from the repository dir
+- Paste into the tool
+- Enjoy ;)
+ 
 [here](https://nu11secur1ty.github.io/DownGit/#/home)
 
