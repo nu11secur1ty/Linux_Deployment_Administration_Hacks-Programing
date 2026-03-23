@@ -17,7 +17,7 @@ This README provides a **professional and comprehensive explanation of TTY in Li
 7. [Pseudo-Terminals (PTYs)](#pseudo-terminals-ptys)
 8. [Debugging & Troubleshooting](#debugging--troubleshooting)
 9. [Security Notes](#security-notes)
-10. [Useful Tools](#Useful-tools)
+10. [Useful Tools](#useful-tools)
 11. [Contact](#contact)
 
 ---
@@ -192,7 +192,7 @@ dmesg | grep tty
 
 ---
 
-## 🧰 Useful Tools
+## 🧰 Useful Tools <a id="useful-tools"></a>
 
 * `screen` / `tmux` — advanced terminal multiplexing
 * `minicom` / `picocom` — serial communication
