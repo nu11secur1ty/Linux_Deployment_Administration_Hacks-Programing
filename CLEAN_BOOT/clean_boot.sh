@@ -1,25 +1,27 @@
 #!/bin/bash
-# Author: Dick Fucker
+# Author Dick Fucker
 # Check if the script is running with root privileges
 if [ "$EUID" -ne 0 ]; then
-  echo "Please run the script as root (sudo)."
+  echo "Please run this script as root (sudo)."
   exit
 fi
-  echo "--- Starting /boot cleanup ---"
-# 1. Remove configuration files of already removed kernels
+
+echo "--- Starting cleanup of /boot ---"
+
+# 1. Remove configuration files for already uninstalled kernels
 echo "Removing residual configuration files..."
 apt purge $(dpkg --list | grep '^rc' | awk '{print $2}') -y
 
 # 2. Automatically remove unnecessary packages and old kernels
-echo "Executing apt autoremove..."
+echo "Running apt autoremove..."
 apt autoremove --purge -y
 
-# 3. Update the GRUB menu
+# 3. Update the GRUB boot menu
 echo "Updating GRUB..."
 update-grub
 
-# 4. Clear the apt cache
-echo "Clearing apt cache..."
+# 4. Clean the apt cache
+echo "Cleaning apt cache..."
 apt clean
 
 echo "--- Cleanup completed successfully! ---"
