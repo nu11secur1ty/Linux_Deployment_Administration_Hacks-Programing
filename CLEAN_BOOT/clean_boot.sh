@@ -1,26 +1,26 @@
 #!/bin/bash
-# Автор Кур Еблив
-# Проверка дали скриптът се изпълнява с root права
+# Author: Dick Fucker
+# Check if the script is running with root privileges
 if [ "$EUID" -ne 0 ]; then
-  echo "Моля, стартирай скрипта като root (sudo)."
+  echo "Please run the script as root (sudo)."
   exit
 fi
-  echo "--- Започва почистване на /boot ---"
-# 1. Премахване на конфигурационните файлове на вече премахнати ядра
-echo "Премахване на остатъчни конфигурационни файлове..."
+  echo "--- Starting /boot cleanup ---"
+# 1. Remove configuration files of already removed kernels
+echo "Removing residual configuration files..."
 apt purge $(dpkg --list | grep '^rc' | awk '{print $2}') -y
 
-# 2. Автоматично премахване на ненужни пакети и стари ядра
-echo "Изпълнение на apt autoremove..."
+# 2. Automatically remove unnecessary packages and old kernels
+echo "Executing apt autoremove..."
 apt autoremove --purge -y
 
-# 3. Актуализиране на GRUB менюто
-echo "Актуализиране на GRUB..."
+# 3. Update the GRUB menu
+echo "Updating GRUB..."
 update-grub
 
-# 4. Изчистване на кеша на apt
-echo "Изчистване на apt кеша..."
+# 4. Clear the apt cache
+echo "Clearing apt cache..."
 apt clean
 
-echo "--- Почистването приключи успешно! ---"
+echo "--- Cleanup completed successfully! ---"
 df -h /boot | grep /boot
