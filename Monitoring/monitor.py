@@ -8,8 +8,8 @@ from email.MIMEBase import MIMEBase
 from email import encoders
 import os
 
-# You can create your own directory for report similar to mine "/root/.scripts/mail/pyproc/report_proc.txt" 
-# If you want of course or you can just create the same as mine, this is your choice =)
+# You can create your own directory for a report similar to mine "/root/.scripts/mail/pyproc/report_proc.txt" 
+# If you want, of course, or you can create the same as mine, this is your choice =)
 
 # Operations:
 os.system("echo -e 'Report Status of Your-PROD Server' > /root/.scripts/mail/pyproc/report_proc.txt")
